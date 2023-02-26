@@ -1,4 +1,6 @@
-﻿using attestant.IPA;
+﻿using attestant.DataStructures;
+using attestant.IPA;
+using attestant.SoundLaws;
 
 namespace attestant;
 
@@ -17,8 +19,30 @@ public class DepthFirstTransformation
         _soundLaws = soundLaws;
     }
 
-    public void TransformWord(Word word)
+    public HashSet<UNode<Word>> TransformWord(Word word)
     {
-        
+        var originalWordNode = new UNode<Word>(word);
+        return ApplyLawLayer(new HashSet<UNode<Word>>(), originalWordNode, 0);
     }
+
+    private HashSet<UNode<Word>> ApplyLawLayer(HashSet<UNode<Word>> reconstructions, UNode<Word> wordNode, int layer)
+    {
+        if (layer == _soundLaws.Count) // Base case
+        {
+            reconstructions.Add(wordNode);
+            return reconstructions;
+        }
+        
+        Word curWord = wordNode.Value;
+        Word newWord;
+        
+        foreach (var soundLaw in _soundLaws[layer]) // Recursive case 1
+            if ((newWord = soundLaw(curWord)) != curWord)
+                ApplyLawLayer(reconstructions, wordNode.AddDescendant(newWord), layer);
+
+        return ApplyLawLayer(reconstructions, wordNode, ++layer); // Recursive case 2
+    }
+    
+    // Note: Can same law happen sequentially in 1 word? e.g. aV -> aa for abc > aac > aaa?
+    //       --> In that case, should go through word in every possible sequence?
 }

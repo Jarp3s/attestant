@@ -10,23 +10,26 @@ public class UNode<T>
     public T Value { get; }
     public UNode<T>? Ancestor { get; }
     public List<UNode<T>> Descendants { get; } = new();
+    public UNode<T> Root { get; }
 
     public UNode(T value)
     {
         Value = value;
+        Root = this;
     }
     
-    public UNode(T value, UNode<T>? ancestor)
+    public UNode(T value, UNode<T>? ancestor, UNode<T> root)
     {
         Value = value;
         Ancestor = ancestor;
+        Root = root;
     }
 
     public UNode<T> this[int i] => Descendants[i];
 
     public UNode<T> AddDescendant(T value)
     {
-        var node = new UNode<T>(value, this);
+        var node = new UNode<T>(value, this, Root);
         Descendants.Add(node);
         return node;
     }

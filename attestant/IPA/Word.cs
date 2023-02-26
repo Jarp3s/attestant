@@ -1,7 +1,7 @@
 ﻿namespace attestant.IPA;
 
 
-public class Word
+public record struct Word
 {
     
 }
