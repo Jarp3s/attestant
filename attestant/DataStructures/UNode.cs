@@ -1,4 +1,4 @@
-﻿namespace attestant;
+﻿namespace attestant.DataStructures;
 
 
 /// <summary>
@@ -8,7 +8,7 @@
 public class UNode<T>
 {
     public T Value { get; }
-    public UNode<T> Ancestor { get; } = null!;
+    public UNode<T>? Ancestor { get; }
     public List<UNode<T>> Descendants { get; } = new();
 
     public UNode(T value)
@@ -16,7 +16,7 @@ public class UNode<T>
         Value = value;
     }
     
-    public UNode(T value, UNode<T> ancestor)
+    public UNode(T value, UNode<T>? ancestor)
     {
         Value = value;
         Ancestor = ancestor;
@@ -46,6 +46,6 @@ public class UNode<T>
     public void TraverseUp(Action<T> action)
     {
         action(Value);
-        Ancestor.TraverseUp(action);
+        Ancestor?.TraverseUp(action);
     }
 }
