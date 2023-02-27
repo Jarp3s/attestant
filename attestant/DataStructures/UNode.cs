@@ -34,11 +34,6 @@ public class UNode<T>
         return node;
     }
 
-    public List<UNode<T>> AddDescendants(params T[] values)
-    {
-        return values.Select(AddDescendant).ToList();
-    }
-
     public void TraverseDown(Action<T> action)
     {
         action(Value);

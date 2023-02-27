@@ -15,10 +15,13 @@ public class Table<T1, T2> where T1 : notnull where T2 : notnull
     public Indexer<T1, T2> Row { get; }
     public Indexer<T2, T1> Column { get; }
 
-    public Table()
+    public Table(params (T1, T2)[] entries)
     {
         Row = new Indexer<T1, T2>(_row, _column);
         Column = new Indexer<T2, T1>(_column, _row);
+
+        foreach ((T1 k1, T2 k2) entry in entries)
+            Add(entry.k1, entry.k2);
     }
 
     public void Add(T1 k1, T2 k2)
