@@ -37,7 +37,7 @@ public class DepthFirstTransformation
         Word newWord;
         
         foreach (var soundLaw in _soundLaws[layer]) // Recursive case 1
-            if ((newWord = soundLaw.Apply(curWord)).SequenceEqual(curWord))
+            if ((newWord = soundLaw.ApplyOnWord(curWord)).SequenceEqual(curWord))
                 ApplyLawLayer(reconstructions, wordNode.AddDescendant(newWord), layer);
 
         return ApplyLawLayer(reconstructions, wordNode, ++layer); // Recursive case 2

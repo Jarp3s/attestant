@@ -1,7 +1,4 @@
 ﻿namespace attestant.IPA;
 
 
-public record struct Phoneme
-{
-    
-}
+public record struct Phoneme(int Encoding);

@@ -3,30 +3,71 @@
 namespace attestant.SoundLaws;
 
 
-public delegate List<Phoneme> SoundChange(List<Phoneme> phonemes);
+//public delegate List<int> SoundChange(List<int> phonemes);
 
 public class SoundLaw
 {
-    private readonly SoundChange _soundChange;
-    private readonly int _phonemeCount;
+    private readonly List<Phoneme> _antecedent;
+    private readonly List<Phoneme> _consequent;
+    private int PhonemeCount => _antecedent.Count;
 
-    public SoundLaw(Func<List<Phoneme>, List<Phoneme>> soundChange, int phonemeCount)
+    public SoundLaw(List<Phoneme> antecedent, List<Phoneme> consequent)
     {
-        _soundChange = new SoundChange(soundChange);
-        _phonemeCount = phonemeCount;
+        _antecedent = antecedent;
+        _consequent = consequent;
     }
 
-    public Word Apply(Word word)
+    public Word ApplyOnWord(Word word)
     {
         var transformedWord = new Word();
         
-        for (var i = 0; i < word.Count - _phonemeCount; i++) // Note: cannot sequentially apply law in word
-        {                                                    // thus: aea > aka > akk w/ VV -> kV
-            List<Phoneme> oldPhonemes = word.GetRange(i, _phonemeCount);
-            List<Phoneme> newPhonemes = _soundChange(oldPhonemes);
+        for (var i = 0; i < word.Count - PhonemeCount; i++) // Note: cannot sequentially apply law in word
+        {                                                   // thus: aea > aka > akk w/ VV -> kV
+            List<Phoneme> oldPhonemes = word.GetRange(i, PhonemeCount);
+            List<Phoneme> newPhonemes = ApplyOnPhonemes(oldPhonemes);
             transformedWord.AddRange(newPhonemes);
         }
         
         return transformedWord;
+    }
+
+    private List<Phoneme> ApplyOnPhonemes(IReadOnlyList<Phoneme> phonemes)
+    {
+        for (var i = 0; i < PhonemeCount; i++)
+        {
+            var wrdPhoneme = phonemes[i];
+            var lawPhoneme = _antecedent[i];
+            // TODO: Compare phonemes in equality;
+            //       if not applicable: return phonemes;
+        }
+        
+        return _consequent;
+            
+        // Phoneme equality:
+        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
+        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
+        // ------------------------------------------ =
+        // true
+    
+        // All-equality:
+        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
+        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ &
+        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
+        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ =
+        // true
+    
+        // ≥1-equality:
+        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
+        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ ^
+        // 0b_1010_0010_0000_0001_0000_0000_0100_0000
+        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ &
+        // 0b_1010_0000_0000_0000_0000_0000_0000_0000
+        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ !=
+        // true
     }
 }
