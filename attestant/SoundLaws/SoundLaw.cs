@@ -1,6 +1,4 @@
-﻿using attestant.IPA;
-
-namespace attestant.SoundLaws;
+﻿namespace attestant.SoundLaws;
 
 
 //public delegate List<int> SoundChange(List<int> phonemes);

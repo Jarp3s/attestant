@@ -1,7 +1,13 @@
 ﻿using attestant.DataStructures;
 
-namespace attestant.IPA;
+namespace attestant;
 
+
+public record struct Phoneme(int Encoding);
+
+public class Word : List<Phoneme>
+{
+}
 
 public record Ipa
 {
@@ -12,5 +18,5 @@ public record Ipa
         ('c', 0b_0000_0000_0000_0000_0000_0000_0000_0010),
         ('d', 0b_0000_0000_0000_0000_0000_0000_0000_0100)
         
-        );
+    );
 }
