@@ -1,7 +1,6 @@
 ﻿namespace attestant.IPA;
 
 
-public record struct Word
+public class Word : List<Phoneme>
 {
-    
 }

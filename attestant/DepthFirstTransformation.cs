@@ -37,12 +37,14 @@ public class DepthFirstTransformation
         Word newWord;
         
         foreach (var soundLaw in _soundLaws[layer]) // Recursive case 1
-            if ((newWord = soundLaw(curWord)) != curWord)
+            if ((newWord = soundLaw.Apply(curWord)).SequenceEqual(curWord))
                 ApplyLawLayer(reconstructions, wordNode.AddDescendant(newWord), layer);
 
         return ApplyLawLayer(reconstructions, wordNode, ++layer); // Recursive case 2
     }
     
     // Note: Can same law happen sequentially in 1 word? e.g. aV -> aa for abc > aac > aaa?
-    //       --> In that case, should go through word in every possible sequence?
+    //       --> In that case, should go through word in every possible sequence? (Non-deterministic?)
+    
+    // Note: Cannot apply laws of same layer in any order
 }
