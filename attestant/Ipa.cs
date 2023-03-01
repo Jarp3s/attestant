@@ -3,15 +3,16 @@
 namespace attestant;
 
 
-public record struct Phoneme(int Encoding);
-
-public class Word : List<Phoneme>
+public enum SymbolTypes
 {
+    Phoneme,
+    CoverAnd,
+    CoverOr
 }
 
-public record Ipa
+public record struct Symbol(int Encoding, SymbolTypes SymbolType)
 {
-    public static Table<char, int> EncodingTable = new (
+    public static Table<char, int> IpaTable = new (
         // Examples of entries:
         ('a', 0b_0000_0000_0000_0000_0000_0000_0000_0000),
         ('b', 0b_0000_0000_0000_0000_0000_0000_0000_0001),
@@ -19,4 +20,44 @@ public record Ipa
         ('d', 0b_0000_0000_0000_0000_0000_0000_0000_0100)
         
     );
+    
+    public delegate bool BitOperation(int s1, int s2);
+    
+    public static readonly Dictionary<SymbolTypes, BitOperation> BitOperations = new()
+    {
+        [SymbolTypes.Phoneme] = (s1, s2) => s1 == s2,
+        [SymbolTypes.CoverAnd] = (s1, s2) => (s1 & s2) == s2,
+        [SymbolTypes.CoverOr] = (s1, s2) => ((s1 ^ s2) & s2) != s2
+        
+        // Phoneme:
+        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
+        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
+        // ------------------------------------------ =
+        // true
+    
+        // Cover-And:
+        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
+        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ &
+        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
+        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ =
+        // true
+        
+        // Cover-Or:
+        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
+        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ ^
+        // 0b_1010_0010_0000_0001_0000_0000_0100_0000
+        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ &
+        // 0b_1010_0000_0000_0000_0000_0000_0000_0000
+        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
+        // ------------------------------------------ !=
+        // true
+    };
+}
+
+public class Word : List<Symbol>
+{
 }

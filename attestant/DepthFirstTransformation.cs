@@ -20,7 +20,7 @@ public class DepthFirstTransformation
 
     public HashSet<UNode<Word>> TransformWord(Word word)
     {
-        var originalWordNode = new UNode<Word>(word);
+        UNode<Word> originalWordNode = new (word);
         return ApplyLawLayer(new HashSet<UNode<Word>>(), originalWordNode, 0);
     }
 
