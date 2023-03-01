@@ -13,6 +13,11 @@ public class SoundLaw
         _consequent = consequent;
     }
 
+    public static HashSet<SoundLaw> Parse(string law)
+    {
+        throw new NotImplementedException();
+    }
+
     public Word ApplyOnWord(Word word)
     {
         var transformedWord = new Word();

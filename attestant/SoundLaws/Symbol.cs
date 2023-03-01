@@ -1,6 +1,6 @@
 ﻿using attestant.DataStructures;
 
-namespace attestant;
+namespace attestant.SoundLaws;
 
 
 public enum SymbolTypes
@@ -56,8 +56,4 @@ public record struct Symbol(int Encoding, SymbolTypes SymbolType)
         // ------------------------------------------ !=
         // true
     };
-}
-
-public class Word : List<Symbol>
-{
 }
