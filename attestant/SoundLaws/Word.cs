@@ -3,8 +3,9 @@ namespace attestant.SoundLaws;
 
 public class Word : List<Symbol>
 {
-    public static Word Parse(string word)
+    public static Word Parse(string inputWord)
     {
-        throw new NotImplementedException();
+        return (Word) inputWord.Select(
+            phoneme => new Symbol(Symbol.IpaTable.Row[phoneme], SymbolType.Phoneme, SymbolFrequency.Once));
     }
 }

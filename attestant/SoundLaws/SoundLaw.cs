@@ -1,4 +1,6 @@
-﻿namespace attestant.SoundLaws;
+﻿using System.Data;
+
+namespace attestant.SoundLaws;
 
 
 public class SoundLaw
@@ -13,7 +15,7 @@ public class SoundLaw
         _consequent = consequent;
     }
 
-    public static HashSet<SoundLaw> Parse(string law)
+    public static HashSet<SoundLaw> Parse(string inputLaw)
     {
         throw new NotImplementedException();
     }
@@ -21,31 +23,39 @@ public class SoundLaw
     public Word ApplyOnWord(Word word)
     {
         var transformedWord = new Word();
-        
-        for (var i = 0; i < word.Count - SymbolCount; i++) // Note: does not apply law correctly in both
-        {                                                  // recursive & consecutive way
-            List<Symbol> phonemes = word.GetRange(i, SymbolCount);
+        int? curIndex = 0;
 
-            if (IsApplicable(phonemes))
-                transformedWord.AddRange(_consequent);
+        // Note: does not apply law correctly in both
+        // recursive & consecutive way
+        while (curIndex < word.Count - SymbolCount)
+        {
+            var newIndex = curIndex;
+            
+            foreach (var symbol in _antecedent)
+            {
+                newIndex = newIndex is null 
+                    ? throw new InvalidExpressionException() 
+                    : symbol.GiveNextIndexIfApplicable(word, (int)newIndex);
+
+                if (newIndex is null)
+                    break;
+            }
+
+            if (newIndex is null)
+            {
+                var symbol = curIndex is null
+                    ? throw new InvalidExpressionException()
+                    : word[(int)curIndex];
+                transformedWord.Add(symbol);
+                curIndex++;
+            }
             else
-                transformedWord.Add(word[i]);
+            {
+                transformedWord.AddRange(_consequent);
+                curIndex = newIndex;
+            }
         }
         
         return transformedWord;
-    }
-
-    private bool IsApplicable(IReadOnlyList<Symbol> phonemes)
-    {
-        for (var i = 0; i < SymbolCount; i++)
-        {
-            var wrdPhoneme = phonemes[i];
-            var lawSymbol = _antecedent[i];
-
-            if (!Symbol.BitOperations[lawSymbol.SymbolType](wrdPhoneme.Encoding, lawSymbol.Encoding))
-                return false;
-        }
-        
-        return true;
     }
 }

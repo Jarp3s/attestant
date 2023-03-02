@@ -1,18 +1,26 @@
-﻿using attestant.DataStructures;
+using attestant.DataStructures;
 
 namespace attestant.SoundLaws;
 
 
-public enum SymbolTypes
+public enum SymbolType
 {
     Phoneme,
     CoverAnd,
     CoverOr
 }
 
-public record struct Symbol(int Encoding, SymbolTypes SymbolType)
+public enum SymbolFrequency
 {
-    public static Table<string, uint> IpaTable = new (
+    Once,
+    Optional,
+    OptionalMultiple,
+    Multiple
+}
+
+public readonly record struct Symbol(int Encoding, SymbolType SymbolType, SymbolFrequency SymbolFrequency)
+{
+    public static readonly Table<char, int> IpaTable = new (
         // Examples of entries:
         ("p", 0b_1011_0000_0001_0000_0000_0000_0000_0100),
         ("b", 0b_1101_0000_0001_0000_0000_0000_0000_0100),
@@ -64,38 +72,65 @@ public record struct Symbol(int Encoding, SymbolTypes SymbolType)
     );
     
     public delegate bool BitOperation(int s1, int s2);
-    
-    public static readonly Dictionary<SymbolTypes, BitOperation> BitOperations = new()
+
+    public BitOperation Operation => SymbolType switch
     {
-        [SymbolTypes.Phoneme] = (s1, s2) => s1 == s2,
-        [SymbolTypes.CoverAnd] = (s1, s2) => (s1 & s2) == s2,
-        [SymbolTypes.CoverOr] = (s1, s2) => ((s1 ^ s2) & s2) != s2
-        
-        // Phoneme:
-        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
-        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
-        // ------------------------------------------ =
-        // true
-    
-        // Cover-And:
-        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
-        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
-        // ------------------------------------------ &
-        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
-        // 0b_0100_0010_0000_0000_0000_0000_0000_0000
-        // ------------------------------------------ =
-        // true
-        
-        // Cover-Or:
-        // 0b_0100_0010_0000_0001_0000_0000_0100_0000
-        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
-        // ------------------------------------------ ^
-        // 0b_1010_0010_0000_0001_0000_0000_0100_0000
-        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
-        // ------------------------------------------ &
-        // 0b_1010_0000_0000_0000_0000_0000_0000_0000
-        // 0b_1110_0000_0000_0000_0000_0000_0000_0000
-        // ------------------------------------------ !=
-        // true
+        SymbolType.Phoneme  => (s1, s2) => s1 == s2,
+        SymbolType.CoverAnd => (s1, s2) => (s1 & s2) == s2,
+        SymbolType.CoverOr  => (s1, s2) => ((s1 ^ s2) & s2) != s2,
+        _                   => throw new ArgumentOutOfRangeException()
     };
+
+    public int? GiveNextIndexIfApplicable(Word word, int index)
+    {
+        switch (SymbolFrequency)
+        {
+            case SymbolFrequency.Once:
+                return Encoding == word[index].Encoding ? ++index : null;
+            
+            case SymbolFrequency.Optional:
+                return Encoding == word[index].Encoding ? ++index : index;
+            
+            case SymbolFrequency.OptionalMultiple:
+                while (Encoding == word[index].Encoding)
+                    index++;
+                return index;
+            
+            case SymbolFrequency.Multiple:
+                var i = index;
+                while (Encoding == word[i].Encoding)
+                    i++;
+                return i == index ? null : i;
+            
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }
 }
+
+// Phoneme:
+// 0b_0100_0010_0000_0001_0000_0000_0100_0000
+// 0b_0100_0010_0000_0001_0000_0000_0100_0000
+// ------------------------------------------ =
+// true
+    
+// Cover-And:
+// 0b_0100_0010_0000_0001_0000_0000_0100_0000
+// 0b_0100_0010_0000_0000_0000_0000_0000_0000
+// ------------------------------------------ &
+// 0b_0100_0010_0000_0000_0000_0000_0000_0000
+// 0b_0100_0010_0000_0000_0000_0000_0000_0000
+// ------------------------------------------ =
+// true
+        
+// Cover-Or:
+// 0b_0100_0010_0000_0001_0000_0000_0100_0000
+// 0b_1110_0000_0000_0000_0000_0000_0000_0000
+// ------------------------------------------ ^
+// 0b_1010_0010_0000_0001_0000_0000_0100_0000
+// 0b_1110_0000_0000_0000_0000_0000_0000_0000
+// ------------------------------------------ &
+// 0b_1010_0000_0000_0000_0000_0000_0000_0000
+// 0b_1110_0000_0000_0000_0000_0000_0000_0000
+// ------------------------------------------ !=
+// true
