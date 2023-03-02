@@ -18,9 +18,45 @@ public enum SymbolFrequency
     Multiple
 }
 
-public readonly record struct Symbol(int Encoding, SymbolType SymbolType, SymbolFrequency SymbolFrequency)
+public readonly record struct Symbol(uint Encoding, SymbolType SymbolType, SymbolFrequency SymbolFrequency)
 {
-    public static readonly Table<char, int> IpaTable = new (
+    private delegate bool BitOperation(uint s1, uint s2);
+
+    private BitOperation Operation => SymbolType switch
+    {
+        SymbolType.Phoneme  => (s1, s2) => s1 == s2,
+        SymbolType.CoverAnd => (s1, s2) => (s1 & s2) == s2,
+        SymbolType.CoverOr  => (s1, s2) => ((s1 ^ s2) & s2) != s2,
+        _                   => throw new ArgumentOutOfRangeException()
+    };
+
+    public int? GiveNextIndexIfApplicable(Word word, int index)
+    {
+        switch (SymbolFrequency)
+        {
+            case SymbolFrequency.Once:
+                return Operation(Encoding, word[index].Encoding) ? ++index : null;
+            
+            case SymbolFrequency.Optional:
+                return Operation(Encoding, word[index].Encoding) ? ++index : index;
+            
+            case SymbolFrequency.OptionalMultiple:
+                while (Operation(Encoding, word[index].Encoding))
+                    index++;
+                return index;
+            
+            case SymbolFrequency.Multiple:
+                var i = index;
+                while (Operation(Encoding, word[i].Encoding))
+                    i++;
+                return i == index ? null : i;
+            
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }
+    
+    public static readonly Table<string, uint> IpaTable = new (
         // Examples of entries:
         ("p", 0b_1011_0000_0001_0000_0000_0000_0000_0100),
         ("b", 0b_1101_0000_0001_0000_0000_0000_0000_0100),
@@ -67,70 +103,6 @@ public readonly record struct Symbol(int Encoding, SymbolType SymbolType, Symbol
         ("a", 0b_0100_0000_0000_0000_0100_1000_0001_0100),
         ("ɑ", 0b_0100_0000_0000_0000_0100_1000_0001_0100),
         ("ə", 0b_0100_0000_0000_0000_0101_0000_1000_0100),
-        ("#", 0b_0000_0000_0000_0000_0000_0000_0000_0000) // word boundry
-
+        ("#", 0b_0000_0000_0000_0000_0000_0000_0000_0000) // word boundary
     );
-    
-    public delegate bool BitOperation(int s1, int s2);
-
-    public BitOperation Operation => SymbolType switch
-    {
-        SymbolType.Phoneme  => (s1, s2) => s1 == s2,
-        SymbolType.CoverAnd => (s1, s2) => (s1 & s2) == s2,
-        SymbolType.CoverOr  => (s1, s2) => ((s1 ^ s2) & s2) != s2,
-        _                   => throw new ArgumentOutOfRangeException()
-    };
-
-    public int? GiveNextIndexIfApplicable(Word word, int index)
-    {
-        switch (SymbolFrequency)
-        {
-            case SymbolFrequency.Once:
-                return Encoding == word[index].Encoding ? ++index : null;
-            
-            case SymbolFrequency.Optional:
-                return Encoding == word[index].Encoding ? ++index : index;
-            
-            case SymbolFrequency.OptionalMultiple:
-                while (Encoding == word[index].Encoding)
-                    index++;
-                return index;
-            
-            case SymbolFrequency.Multiple:
-                var i = index;
-                while (Encoding == word[i].Encoding)
-                    i++;
-                return i == index ? null : i;
-            
-            default:
-                throw new ArgumentOutOfRangeException();
-        }
-    }
 }
-
-// Phoneme:
-// 0b_0100_0010_0000_0001_0000_0000_0100_0000
-// 0b_0100_0010_0000_0001_0000_0000_0100_0000
-// ------------------------------------------ =
-// true
-    
-// Cover-And:
-// 0b_0100_0010_0000_0001_0000_0000_0100_0000
-// 0b_0100_0010_0000_0000_0000_0000_0000_0000
-// ------------------------------------------ &
-// 0b_0100_0010_0000_0000_0000_0000_0000_0000
-// 0b_0100_0010_0000_0000_0000_0000_0000_0000
-// ------------------------------------------ =
-// true
-        
-// Cover-Or:
-// 0b_0100_0010_0000_0001_0000_0000_0100_0000
-// 0b_1110_0000_0000_0000_0000_0000_0000_0000
-// ------------------------------------------ ^
-// 0b_1010_0010_0000_0001_0000_0000_0100_0000
-// 0b_1110_0000_0000_0000_0000_0000_0000_0000
-// ------------------------------------------ &
-// 0b_1010_0000_0000_0000_0000_0000_0000_0000
-// 0b_1110_0000_0000_0000_0000_0000_0000_0000
-// ------------------------------------------ !=
-// true
