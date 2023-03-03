@@ -1,5 +1,6 @@
 ﻿using attestant;
 using attestant.DataStructures;
+using System.Text.RegularExpressions;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 

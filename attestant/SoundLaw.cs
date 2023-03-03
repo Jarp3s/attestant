@@ -20,8 +20,21 @@ public class SoundLaw
     /// <summary>
     ///     Convert a string to a SoundLaw.
     /// </summary>
-    public static HashSet<SoundLaw> Parse(string inputLaw)
-    {
+    public static SoundLaw Parse(string inputLaw)
+    { 
+        var law = Regex.Replace(inputLaw, @"[\s*]", @"");
+        var segments = Regex.Split(law, @"[+>/]");
+        var sound = segments[2];
+
+        /*
+         * replace all cover symbols w/ [lookup(cover)]
+         * replace all other special symbols
+         * replace symbol between '()' w/ ? 
+         * replace '#' at start w/ ^ & at end w/ $
+         * _antecedent  = replace '_' w/ ([symbols])
+         * _consequents = foreach symbol, replace _ w/ symbol in a way of substitution.
+         */ 
+        
         throw new NotImplementedException();
     }
 
