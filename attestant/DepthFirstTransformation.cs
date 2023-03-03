@@ -1,44 +1,53 @@
 ﻿using attestant.DataStructures;
-using attestant.SoundLaws;
 
 namespace attestant;
 
 
 /// <summary>
-///    Algorithm that performs dfs by applying layers of sound laws on a given word;
-///    this way the given word is transformed into other phoneme-arrangements
+///    Algorithm that performs dfs by applying a number of sound laws on a given word;
+///    this way the given word is transformed into other phoneme-arrangements.
 /// </summary>
-
 public class DepthFirstTransformation
 {
-    private readonly List<HashSet<SoundLaw>> _soundLaws;
+    private readonly List<SoundLaw> _soundLaws;
 
-    public DepthFirstTransformation(List<HashSet<SoundLaw>> soundLaws)
+    public DepthFirstTransformation(List<SoundLaw> soundLaws)
     {
         _soundLaws = soundLaws;
     }
 
-    public HashSet<UNode<Word>> TransformWord(Word word)
+    /// <summary>
+    ///     Perform word-reconstruction by transforming the given word
+    ///     using a list of sound laws, returns the set of all reconstructed words.
+    /// </summary>
+    public HashSet<UNode<string>> TransformWord(string word)
     {
-        UNode<Word> originalWordNode = new (word);
-        return ApplyLawLayer(new HashSet<UNode<Word>>(), originalWordNode, 0);
+        UNode<string> originalWordNode = new (word);
+        return ApplyLaws(originalWordNode, 0);
     }
 
-    private HashSet<UNode<Word>> ApplyLawLayer(HashSet<UNode<Word>> reconstructions, UNode<Word> wordNode, int layer)
+    private HashSet<UNode<string>> ApplyLaws(UNode<string> wordNode, int lawNumber)
     {
-        if (layer == _soundLaws.Count) // Base case
+        HashSet<UNode<string>> reconstructions = new();
+        
+        for (var i = lawNumber; i < _soundLaws.Count; i++)
         {
-            reconstructions.Add(wordNode);
-            return reconstructions;
-        }
-        
-        Word curWord = wordNode.Value;
-        Word newWord;
-        
-        foreach (var soundLaw in _soundLaws[layer]) // Recursive case 1
-            if (!(newWord = soundLaw.ApplyOnWord(curWord)).SequenceEqual(curWord))
-                ApplyLawLayer(reconstructions, wordNode.AddDescendant(newWord), ++layer);
+            var curWord = wordNode.Value;
+            IEnumerable<string> newWords = _soundLaws[i].Apply(curWord);
 
-        return ApplyLawLayer(reconstructions, wordNode, ++layer); // Recursive case 2
+            var isTransformed = false;
+            foreach (var word in newWords)
+                if (word != curWord)
+                {
+                    isTransformed = true;
+                    reconstructions.UnionWith(ApplyLaws(wordNode.AddDescendant(word), i));
+                }
+
+            if (isTransformed)
+                break;
+        }
+
+        reconstructions.Add(wordNode);
+        return reconstructions;
     }
 }

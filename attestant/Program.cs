@@ -1,13 +1,11 @@
 ﻿using attestant;
 using attestant.DataStructures;
-using attestant.SoundLaws;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 
-List<HashSet<SoundLaw>> soundLaws = new();
-Word word = new();
+List<SoundLaw> soundLaws = new();
+const string word = "";
 
 var dft = new DepthFirstTransformation(soundLaws);
-HashSet<UNode<Word>> reconstructions = dft.TransformWord(word);
-    
+HashSet<UNode<string>> reconstructions = dft.TransformWord(word);
