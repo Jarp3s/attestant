@@ -11,10 +11,13 @@ public class SoundLaw
     private readonly Regex _antecedent;
     private readonly HashSet<string> _consequents;
 
-    public SoundLaw(string antecedent, HashSet<string> consequents)
+    private readonly string _soundLaw;
+
+    public SoundLaw(string antecedent, HashSet<string> consequents, string soundLaw)
     {
         _antecedent = new Regex(antecedent);
         _consequents = consequents;
+        _soundLaw = soundLaw;
     }
 
     /// <summary>
@@ -43,7 +46,7 @@ public class SoundLaw
     /// </summary>
     public override string ToString()
     {
-        throw new NotImplementedException();
+        return _soundLaw;
     }
 
     /// <summary>
