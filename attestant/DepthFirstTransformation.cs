@@ -10,7 +10,7 @@ namespace attestant;
 public class DepthFirstTransformation
 {
     private readonly List<SoundLaw> _soundLaws;
-    private CoverSymbols = new CoverSymbols();
+    private CoverSymbols coverSymbols = new CoverSymbols();
 
     public DepthFirstTransformation(List<SoundLaw> soundLaws)
     {
