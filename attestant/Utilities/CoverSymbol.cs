@@ -1,8 +1,21 @@
-﻿namespace attestant;
+﻿using System.Text.RegularExpressions;
+
+namespace attestant.Utilities;
 
 
-internal static class CoverSymbols
+internal static class CoverSymbol
 {
+    /// <summary>
+    ///     Convert the given cover symbol to a RegEx-string covering all phonemes
+    /// </summary>
+    public static string ToRegexString(char coverSymbol)
+    {
+        var phonemes = "";
+        foreach (var phoneme in CoverSymbol.Phonemes(coverSymbol))
+            phonemes += $"|{phoneme}";
+        return $"({new Regex(@"\|").Replace(phonemes, @"", 1)})";
+    }
+    
     // TODO: Palatalization, Lenition
     /// <summary>
     ///     Map the given cover symbol to a set of phonemes.

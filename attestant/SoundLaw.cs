@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using attestant.Utilities;
 
 namespace attestant;
 
@@ -28,11 +29,12 @@ public class SoundLaw
         return _soundLaw;
     }
 
+    // TODO: does not account for anomalies denoted between parentheses after law
     /// <summary>
     ///     Convert a string to a SoundLaw.
     /// </summary>
-    public static SoundLaw Parse(string inputLaw) // Example input: *i, *u > *e, *o /_$a(C)# - (a-affection)
-    {
+    public static SoundLaw Parse(string inputLaw) // Example input: *i, *u > *e, *o /_$a(C)#
+    {                                             // Example input: *o > *ö /_$ī, i, ü, ö, ẹ, j
         var law = Regex.Replace(inputLaw, @"[\s*]", @"");
         var lawSegments = Regex.Split(law, @"[+>/]");
 
@@ -83,13 +85,8 @@ public class SoundLaw
             sound = Regex.Replace(sound, @"^#", @"^");
             sound = Regex.Replace(sound, @"#$", @"$");
             sound = Regex.Replace(sound, @"(\()(.)(\))", @"$2?");
-            sound = Regex.Replace(sound, @"[A-Z]", match =>
-            {
-                var phonemes = "";
-                foreach (var phoneme in CoverSymbols.Phonemes(char.Parse(match.Value)))
-                    phonemes += $"|{phoneme}";
-                return $"({new Regex(@"\|").Replace(phonemes, @"", 1)})";
-            });
+            sound = Regex.Replace(sound, @"[A-Z]", match 
+                => CoverSymbol.ToRegexString(char.Parse(match.Value)));
 
             return sound;
         }
