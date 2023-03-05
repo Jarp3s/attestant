@@ -4,6 +4,9 @@
 internal static class CoverSymbols
 {
     // TODO: Palatalization, Lenition
+    /// <summary>
+    ///     Map the given cover symbol to a set of phonemes.
+    /// </summary>
     public static HashSet<string> Phonemes(char coverSymbol) => coverSymbol switch
     {
         'V' => new HashSet<string> // Vowel
