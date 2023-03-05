@@ -1,0 +1,6 @@
+﻿{
+  "language": "Old Irish",
+  "laws": [
+    {"number": "OIr0", "law": "a, b > c, d /_e", "context": "first Old Irish law"}
+  ]
+}
