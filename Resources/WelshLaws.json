@@ -1,6 +1,6 @@
 ﻿{
   "language": "Welsh",
-  "laws": [
+  "soundLawRepresentations": [
     {"number": "W0", "law": "a, b > c, d /_e", "context": "first Welsh law"}
   ]
 }

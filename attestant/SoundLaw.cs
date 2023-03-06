@@ -44,19 +44,18 @@ public class SoundLaw
         // Create a RegEx pattern-string (antecedent) by grouping the sound-context with the sound
         string GetAntecedent()
         {
-            var antecedentSymbols = Regex.Split(lawSegments[0], @",");
+            var replacedSound = Regex.Split(lawSegments[0], @",");
             var replacedSymbols = "";
-            foreach (var symbol in antecedentSymbols)
+            foreach (var symbol in replacedSound)
             {
-                // TODO: convert special symbols to RegEx & convert cover symbols
-                var finalSymbol = $"|{symbol}";
-                replacedSymbols += finalSymbol;
+                // TODO: convert special symbols to RegEx
+                var parsedSymbol = Regex.Replace(symbol, @"[A-Z]", match 
+                    => CoverSymbol.ToRegexString(char.Parse(match.Value)));
+                replacedSymbols += $"|{parsedSymbol}";
             }
             replacedSymbols = new Regex(@"\|").Replace(replacedSymbols, @"", 1);
             
             var soundSegments = Regex.Split(GetSoundContext(), @"_");
-            // TODO: Convert OR-relation (,) to RegEx alternation construct
-
             return $"({soundSegments[0]})({replacedSymbols})({soundSegments[1]})";
         }
 
@@ -68,8 +67,8 @@ public class SoundLaw
             foreach (var symbol in consequentSymbols)
             {
                 // TODO: convert special symbols to RegEx
-                var finalSymbol = Regex.Replace(symbol, @"Ø", @"");
-                consequents.Add($"$1{finalSymbol}$3"); // TODO: alter group numbers to right amount
+                var parsedSymbol = Regex.Replace(symbol, @"Ø", @"");
+                consequents.Add($"$1{parsedSymbol}$3");
             }
 
             return consequents;
@@ -88,6 +87,8 @@ public class SoundLaw
             sound = Regex.Replace(sound, @"[A-Z]", match 
                 => CoverSymbol.ToRegexString(char.Parse(match.Value)));
 
+            // TODO: Convert OR-relation (,) to RegEx alternation construct
+            
             return sound;
         }
     }
