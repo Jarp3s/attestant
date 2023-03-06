@@ -5,34 +5,42 @@ namespace attestant.InputReaders;
 
 public static class SoundLawReader
 {
-    public static List<LanguageDevelopment> LanguageDevelopments
+    public static List<LanguageDevelopment> GetLanguageDevelopments()
     {
-        get
-        {
-            List<LanguageDevelopment> languageDevelopments = new();
+        List<LanguageDevelopment> languageDevelopments = new();
 
-            var fileName = "";
-            var jsonString = File.ReadAllText(fileName);
-            languageDevelopments.Add(JsonSerializer.Deserialize<LanguageDevelopment>(jsonString)!);
+        var currentDirectoryPath = Directory.GetCurrentDirectory();
             
-            fileName = "";
-            jsonString = File.ReadAllText(fileName);
-            languageDevelopments.Add(JsonSerializer.Deserialize<LanguageDevelopment>(jsonString)!);
+        var fileName = "WelshLaws.json";
+        var filePath = 
+            Path.GetFullPath(Path.Combine(currentDirectoryPath, "..", "..", "Resources", fileName)); 
+        var jsonString = File.ReadAllText(filePath);
+        languageDevelopments.Add(JsonSerializer.Deserialize<LanguageDevelopment>(jsonString)!);
             
-            return languageDevelopments;
-        }
+        fileName = "OldIrishLaws.json";
+        filePath = 
+            Path.GetFullPath(Path.Combine(currentDirectoryPath, "..", "..", "Resources", fileName));
+        jsonString = File.ReadAllText(filePath);
+        languageDevelopments.Add(JsonSerializer.Deserialize<LanguageDevelopment>(jsonString)!);
+            
+        return languageDevelopments;
     }
 }
 
 public class LanguageDevelopment
 {
     public string Language { get; } = null!;
-    public SoundLaw[] SoundLaws { get; } = null!;
-
-    public class SoundLaw
+    private SoundLawRepresentation[] SoundLawRepresentations { get; } = null!;
+    public List<SoundLaw> SoundLaws 
+        => (List<SoundLaw>) SoundLawRepresentations.Select(slr => slr.ToSoundLaw());
+    
+    public class SoundLawRepresentation
     {
-        public string Number { get; } = null!;
-        public string Law { get; } = null!;
-        public string Context { get; } = null!;
+        private readonly string _soundLaw = null!;
+
+        public SoundLaw ToSoundLaw()
+        {
+            return SoundLaw.Parse(_soundLaw);
+        }
     }
 }
