@@ -7,11 +7,8 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 
 List<LanguageDevelopment> languageDevelopments = SoundLawReader.GetLanguageDevelopments();
-const string word = "";
+WordReconstructor wordReconstructor = new(languageDevelopments);
+HashSet<string> reconstructedWords = wordReconstructor.Reconstruct("");
 
-List<HashSet<UNode<string>>> reconstructions = new();
-foreach (var lanDev in languageDevelopments)
-{
-    var dft = new DepthFirstTransformation(lanDev.SoundLaws);
-    reconstructions.Add(dft.TransformWord(word));
-}
+foreach(var word in reconstructedWords)
+    Console.WriteLine(word);
