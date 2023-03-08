@@ -1,13 +1,11 @@
 using attestant.DataStructures;
 using attestant.InputReaders;
 
-namespace attestant;
+namespace attestant.Algorithms;
 
 
 /// <summary>
 ///     Algorithm that calculates all possible word-reconstructions from the given word.
-///     by applying dfs on the word foreach language, after which all reconstructions
-///     appearing in every language are filtered & returned as final result.
 /// </summary>
 public class WordReconstructor
 {

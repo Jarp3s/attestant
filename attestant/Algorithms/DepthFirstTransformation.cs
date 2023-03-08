@@ -1,6 +1,6 @@
 ﻿using attestant.DataStructures;
 
-namespace attestant;
+namespace attestant.Algorithms;
 
 
 /// <summary>
