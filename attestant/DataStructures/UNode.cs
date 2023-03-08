@@ -42,7 +42,7 @@ public class UNode<T>
     public UNode<T> this[int i] => Descendants[i];
 
     /// <summary>
-    ///     Add a direct descendent with the given value to the node.
+    ///     Adds a direct descendent with the given value to the node.
     /// </summary>
     public UNode<T> AddDescendant(T value)
     {
@@ -52,7 +52,7 @@ public class UNode<T>
     }
 
     /// <summary>
-    ///     Apply the given action on all nodes in the tree using pre-order traversal.
+    ///     Applies the given action on all nodes in the tree using pre-order traversal.
     /// </summary>
     public void TraverseDown(Action<T> action)
     {
@@ -62,7 +62,7 @@ public class UNode<T>
     }
 
     /// <summary>
-    ///     Apply the given action on all nodes in the node's branch by traversing up.
+    ///     Applies the given action on all nodes in the node's branch by traversing up.
     /// </summary>
     public void TraverseUp(Action<T> action)
     {

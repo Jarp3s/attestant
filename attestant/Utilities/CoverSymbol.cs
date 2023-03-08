@@ -6,7 +6,7 @@ namespace attestant.Utilities;
 internal static class CoverSymbol
 {
     /// <summary>
-    ///     Convert the given cover symbol to a RegEx-string covering all phonemes
+    ///     Converts the given cover symbol to a RegEx-string covering all phonemes
     /// </summary>
     public static string ToRegexString(char coverSymbol)
     {
@@ -18,9 +18,9 @@ internal static class CoverSymbol
     
     // TODO: Palatalization, Lenition
     /// <summary>
-    ///     Map the given cover symbol to a set of phonemes.
+    ///     Maps the given cover symbol to a set of phonemes.
     /// </summary>
-    public static HashSet<string> Phonemes(char coverSymbol) => coverSymbol switch
+    private static HashSet<string> Phonemes(char coverSymbol) => coverSymbol switch
     {
         'V' => new HashSet<string> // Vowel
         { 

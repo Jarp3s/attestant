@@ -4,8 +4,16 @@ using System.Text.Json.Serialization;
 namespace attestant.InputReaders;
 
 
+/// <summary>
+///     Input reader that reads & parses sound laws from JSON-files.
+/// </summary>
 public static class SoundLawReader
 {
+    /// <summary>
+    ///     Reads JSON from specified files, parses it to language-developments;
+    ///     which are used to store information about the development within a language.
+    ///     Returns these language-developments.
+    /// </summary>
     public static List<LanguageDevelopment> GetLanguageDevelopments()
     {
         List<LanguageDevelopment> languageDevelopments = new();

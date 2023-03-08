@@ -4,6 +4,11 @@ using attestant.InputReaders;
 namespace attestant;
 
 
+/// <summary>
+///     Algorithm that calculates all possible word-reconstructions from the given word.
+///     by applying dfs on the word foreach language, after which all reconstructions
+///     appearing in every language are filtered & returned as final result.
+/// </summary>
 public class WordReconstructor
 {
     private readonly List<LanguageDevelopment> _languageDevelopments;
@@ -13,6 +18,10 @@ public class WordReconstructor
         _languageDevelopments = languageDevelopments;
     }
 
+    /// <summary>
+    ///     Foreach language, applies dfs on the given word, after which all reconstructions
+    ///     appearing in every language (i.e. duplicates) are filtered & returned as final result.
+    /// </summary>
     public HashSet<string> Reconstruct(string word)
     {
         List<HashSet<UNode<string>>> lanReconstructs = new();

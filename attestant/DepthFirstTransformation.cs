@@ -4,8 +4,8 @@ namespace attestant;
 
 
 /// <summary>
-///    Algorithm that performs dfs by applying a number of sound laws on a given word;
-///    this way the given word is transformed into other phoneme-arrangements.
+///     Algorithm that performs dfs by applying a number of sound laws on a given word;
+///     this way the given word is transformed into other phoneme-arrangements.
 /// </summary>
 public class DepthFirstTransformation
 {
@@ -17,7 +17,7 @@ public class DepthFirstTransformation
     }
 
     /// <summary>
-    ///     Perform word-reconstruction by transforming the given word
+    ///     Performs word-reconstruction by transforming the given word
     ///     using a list of sound laws, returns the set of all reconstructed words.
     /// </summary>
     public HashSet<UNode<string>> TransformWord(string word)

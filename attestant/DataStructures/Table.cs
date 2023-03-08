@@ -31,7 +31,7 @@ public class Table<T1, T2> where T1 : notnull where T2 : notnull
     }
 
     /// <summary>
-    ///     Add a (k1 ∈ T1, k2 ∈ T2)-pair.
+    ///     Adds a (k1 ∈ T1, k2 ∈ T2)-pair.
     /// </summary>
     public void Add(T1 k1, T2 k2)
     {

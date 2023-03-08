@@ -22,7 +22,14 @@ public class SoundLaw
     }
     
     /// <summary>
-    ///     Convert a SoundLaw to a string.
+    ///     Applies the sound law on the given word,
+    ///     possibly transforming it into new word(s).
+    /// </summary>
+    public IEnumerable<string> Apply(string word)
+        => _consequents.Select(consequent => _antecedent.Replace(word, consequent));
+    
+    /// <summary>
+    ///     Converts a SoundLaw to a string.
     /// </summary>
     public override string ToString()
     {
@@ -31,7 +38,7 @@ public class SoundLaw
 
     // TODO: does not account for anomalies denoted between parentheses after law
     /// <summary>
-    ///     Convert a string to a SoundLaw.
+    ///     Converts a string to a SoundLaw.
     /// </summary>
     public static SoundLaw Parse(string inputLaw) // Example input: *i, *u > *e, *o /_$a(C)#
     {                                             // Example input: *o > *ö /_$ī, i, ü, ö, ẹ, j
@@ -41,7 +48,7 @@ public class SoundLaw
         return new SoundLaw(GetAntecedent(), GetConsequents(), inputLaw);
         
         
-        // Create a RegEx pattern-string (antecedent) by grouping the sound-context with the sound
+        // Creates a RegEx pattern-string (antecedent) by grouping the sound-context with the sound
         string GetAntecedent()
         {
             var replacedSound = Regex.Split(lawSegments[0], @",");
@@ -91,14 +98,5 @@ public class SoundLaw
             
             return sound;
         }
-    }
-
-    /// <summary>
-    ///     Apply the sound law on the given word,
-    ///     possibly transforming it into new word(s).
-    /// </summary>
-    public IEnumerable<string> Apply(string word)
-    {
-        return _consequents.Select(consequent => _antecedent.Replace(word, consequent));
     }
 }
