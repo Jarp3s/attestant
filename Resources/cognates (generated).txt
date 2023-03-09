@@ -21,6 +21,7 @@ bostā; bos; bos
 bow; bó; bu
 bowdro; ; budyr
 brig; ; bre
+brīgo/ā; bríg; bri
 bristi; ; brys
 brixtu; bricht; -brith
 brokko; ; broch
@@ -30,6 +31,7 @@ budaro; bodar; byddar
 buyo; biid; 
 dā; -tartat; 
 damniyo; damnae; defnydd
+dexs(i)wo; dess; dehau
 dīko; ; dic
 dina; denaid; dynu
 dīreyo; díre; dirwy
@@ -59,6 +61,7 @@ gliwo; ; glew
 gloydo; ; glud
 gloysto; glésse; 
 gnāto; gnáth; gnawt
+gnāw(y)o; ; gno
 gnūsti; gnúis; gnis
 gowstā; gúas; 
 gritu; grith; gryt
@@ -81,6 +84,7 @@ kolanī̆; colainn; kelein
 komrūno; ; cyfrin23
 koynnV; cóenna; 
 krid; ; cryddu
+kruw(y)o; cró; creu
 ladano; ladan; 
 lamyo; ro-laimethar;; llafasu
 lēko; líach; 
@@ -101,8 +105,10 @@ messu; mess; mes
 meto; ; medi
 mēto; méth; 
 mī; mé; mi
+mlāto/i; mláith; blawd
 nanī; ; nain
 nāwā; nau; noe
+naw(i)nyā; naunae; neuynn
 nawito; neóit; neued
 nemo; neim; 
 nemos; nem; nef
@@ -125,24 +131,28 @@ sekwo; ; hebu
 sferā; ; ffer
 skwetlo; scél; chwedl
 skāto; scáth; ysgawd
+skerd(y)o; scerdaid; 
 skīto; scíth; escud
+(s)kītto; ; chwith
 skoltā; ; hollt
 sligo; sligid; 
 slimno; slemonslemun; llyfn
 slunko; slucaid; llyncu
-snīs; sní; ni
+snīs; sní37; ni
 stlondo; slond; 
-sukko; socc; hwch
+sukko; soc(c); hwch
 swanna; seinnid; 
 swekru; ; chwegr
 swerwo; serb; chwerw
 swīs; sí; chwi
+tāti/tānt; táid; 
 tawso; tó; taw
 tegu; ; tew
 tixtā; techt; teith
 tlāti; ; tlawdd
 trātu; tráth; trawd
 trātV; ; trawd
+trexs(n)o; trén; trech
 trīkont; trícho; 
 tuxtu; tucht; 
 ufokliyo; fochla; 

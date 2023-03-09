@@ -48,11 +48,11 @@ internal static class CoverSymbol
             "i", "y", "ẹ", "e", "ø", "ɛ", "æ", "ī", "ȳ", "ē", "ε̄", "ǣ"
         },
         
-        /*'V' => new HashSet<string> // Back vowel
+        'O' => new HashSet<string> // Back vowel
         { 
             "u","o", "ɔ", "a",
             "ū", "ō", "ɔ̄", "ā"
-        },*/
+        },
         
         'C' => new HashSet<string> // Consonant
         { 

@@ -57,8 +57,8 @@ public class UNode<T>
     public void TraverseDown(Action<T> action)
     {
         action(Value);
-        foreach (var descendent in Descendants)
-            descendent.TraverseDown(action);
+        foreach (var descendant in Descendants)
+            descendant.TraverseDown(action);
     }
 
     /// <summary>
