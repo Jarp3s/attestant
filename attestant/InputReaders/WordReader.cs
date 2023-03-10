@@ -1,31 +1,19 @@
 namespace attestant.InputReaders;
 
 
-public class WordReader
+public static class WordReader
 {
-    internal List<WordSet> ReadWords()
+    public static List<WordSet> ReadWords()
     {
-        string fileName = "cognates.txt";
-        string filePath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "Resources", fileName));
-        FileStream s = new(filePath, FileMode.Open);
-        StreamReader r = new StreamReader(s);
-
-
+        const string fileName = "cognates.txt";
+        var filePath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "Resources", fileName));
+        FileStream stream = new(filePath, FileMode.Open);
+        StreamReader reader = new(stream);
+        
         List<WordSet> words = new();
-        string read;
-
-        while ((read = r.ReadLine()) != null)
-        {
-            words.Add(Parse(read));
-        }
+        while (reader.ReadLine() is { } line)
+            words.Add(WordSet.Parse(line));
 
         return words;
-    }
-
-    private WordSet Parse(string cognates)
-    {
-        string[] split = cognates.Split(';');
-        WordSet word = new(split[1].TrimStart(), split[2].TrimStart(), split[0]);
-        return word;
     }
 }
