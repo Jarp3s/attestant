@@ -77,7 +77,7 @@ internal static class CoverSymbol
    
         'R' => new HashSet<string> // Resonant
         { 
-            "m", "m̥", "n", "n̥", "r", "r̥", "ρ", "l", "ɬ", "λ", "j", "ŋ", "ŋ̊", "w"
+            "m", "m̥", "μ", "n", "n̥", "ν", "r", "r̥", "ρ", "l", "ɬ", "λ", "j", "ŋ", "ŋ̊", "w"
         },
     
         'L' => new HashSet<string> // Liquid
