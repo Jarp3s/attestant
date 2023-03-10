@@ -56,8 +56,8 @@ internal static class CoverSymbol
         
         'C' => new HashSet<string> // Consonant
         { 
-            "p", "b", "m", "m̥", "ɸ", "β", "f", "v", "t", "d", "n", "n̥", "r", "r̥", "θ", "ð", 
-            "s", "z", "l", "ɬ", "j", "k", "g", "ŋ", "ŋ̊", "x", "ɣ", "h", "kʷ", "gʷ", "w"
+            "p", "b", "m", "m̥", "ɸ", "β", "μ", "f", "v", "t", "d", "n", "n̥", "ν", "r", "r̥", "ρ", "θ", "ð", 
+            "s", "z", "l", "ɬ", "λ", "j", "k", "g", "ŋ", "ŋ̊", "x", "ɣ", "h", "kʷ", "gʷ", "w"
         },
         
         'T' => new HashSet<string> // Plosive
@@ -67,22 +67,22 @@ internal static class CoverSymbol
        
         'N' => new HashSet<string> // Nasal
         { 
-            "m", "m̥", "n", "n̥", "ŋ", "ŋ̊"
+            "m", "m̥", "μ", "n", "n̥", "ν", "ŋ", "ŋ̊"
         },
      
         'F' => new HashSet<string> // Fricative
         { 
-            "ɸ", "β", "f", "v", "θ", "ð", "s", "z", "x", "ɣ", "h"
+            "ɸ", "β", "μ", "f", "v", "θ", "ð", "s", "z", "x", "ɣ", "h"
         },
    
         'R' => new HashSet<string> // Resonant
         { 
-            "m", "m̥", "n", "n̥", "r", "r̥", "l", "ɬ", "j", "ŋ", "ŋ̊", "w"
+            "m", "m̥", "n", "n̥", "r", "r̥", "ρ", "l", "ɬ", "λ", "j", "ŋ", "ŋ̊", "w"
         },
     
         'L' => new HashSet<string> // Liquid
         { 
-            "r", "r̥", "l", "ɬ",
+            "r", "r̥", "ρ", "l", "ɬ", "λ"
         },
      
         _ => throw new ArgumentOutOfRangeException(nameof(coverSymbol), coverSymbol, null)
