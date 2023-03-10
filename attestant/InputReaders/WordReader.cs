@@ -3,7 +3,7 @@ using attestant.Utilities;
 namespace attestant.InputReaders;
 
 
-public static class WordReader
+public class WordReader
 {
     Spelling WelshSpelling;
     Spelling IrishSpelling;
@@ -20,25 +20,17 @@ public static class WordReader
 
 
         List<WordSet> words = new();
-        while (reader.ReadLine() is { } line)
-            words.Add(WordSet.Parse(line));
+        while (r.ReadLine() is { } line)
+            words.Add(Phonetic(WordSet.Parse(line)));
 
         return words;
-    }
-
-    private WordSet Parse(string cognates)
-    {
-        string[] split = cognates.Split(';');
-        WordSet word = new(split[1].TrimStart(), split[2].TrimStart(), split[0]);
-        word.ProtoCeltic.Replace('y', 'j');
-        return word;
     }
 
     private WordSet Phonetic(WordSet words)
     {
         // Proto-Celtic forms are fine already
         words.OldIrish = IrishSpelling.Phonetic(words.OldIrish);
-        words.MiddleWelsh = IrishSpelling.Phonetic(words.MiddleWelsh);
+        words.MiddleWelsh = WelshSpelling.Phonetic(words.MiddleWelsh);
 
         return words;
     }

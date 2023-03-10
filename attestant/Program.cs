@@ -6,7 +6,8 @@ using attestant.InputReaders;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-List<WordSet> words = WordReader.ReadWords();
+WordReader wordReader = new();
+List<WordSet> words = wordReader.ReadWords();
 List<LanguageDevelopment> languageDevelopments = SoundLawReader.GetLanguageDevelopments();
 WordReconstructor wordReconstructor = new(languageDevelopments);
 HashSet<string> reconstructedWords = wordReconstructor.Reconstruct("");

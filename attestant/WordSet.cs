@@ -3,16 +3,16 @@
 
 public class WordSet
 {
-    private readonly string _oldIrish; 
-    private readonly string _middleWelsh; 
-    private readonly string _protoCeltic;
+    public string OldIrish; 
+    public string MiddleWelsh; 
+    public string ProtoCeltic;
     public string Reconstructed { get; } = null!;
 
-    private WordSet(string oldIrish, string middleWelsh, string protoCeltic)
+    private WordSet(string oir, string mw, string pc)
     { 
-        _oldIrish = oldIrish; 
-        _middleWelsh = middleWelsh; 
-        _protoCeltic = protoCeltic;
+        OldIrish = oir; 
+        MiddleWelsh = mw; 
+        ProtoCeltic = pc;
     }
     
     public static WordSet Parse(string inputCognates)
