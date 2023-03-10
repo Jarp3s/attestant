@@ -1,29 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace attestant;
 
-namespace attestant
+
+public class WordSet
 {
-    internal class WordSet
+    private readonly string _oldIrish; 
+    private readonly string _middleWelsh; 
+    private readonly string _protoCeltic;
+    public string Reconstructed { get; } = null!;
+
+    private WordSet(string oldIrish, string middleWelsh, string protoCeltic)
+    { 
+        _oldIrish = oldIrish; 
+        _middleWelsh = middleWelsh; 
+        _protoCeltic = protoCeltic;
+    }
+    
+    public static WordSet Parse(string inputCognates)
     {
-        public string OldIrish;
-        public string MiddleWelsh;
-        public string ProtoCeltic;
-        public string Reconstructed;
-
-        public WordSet(string OIr, string MW, string PC)
-        {
-            OldIrish = OIr;
-            MiddleWelsh = MW;
-            ProtoCeltic = PC;
-        }
-
-        public bool Equals {
-            get {
-                return ProtoCeltic == Reconstructed;
-            }
-        }
+        var cognates = inputCognates.Split(';');
+        return new WordSet(cognates[1].TrimStart(), cognates[2].TrimStart(), cognates[0]);
     }
 }

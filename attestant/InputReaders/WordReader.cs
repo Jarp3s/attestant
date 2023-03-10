@@ -3,7 +3,7 @@ using attestant.Utilities;
 namespace attestant.InputReaders;
 
 
-public class WordReader
+public static class WordReader
 {
     Spelling WelshSpelling;
     Spelling IrishSpelling;
@@ -20,12 +20,8 @@ public class WordReader
 
 
         List<WordSet> words = new();
-        string read;
-
-        while ((read = r.ReadLine()) != null)
-        {
-            words.Add(Parse(read));
-        }
+        while (reader.ReadLine() is { } line)
+            words.Add(WordSet.Parse(line));
 
         return words;
     }
