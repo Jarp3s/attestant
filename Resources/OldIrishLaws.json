@@ -1,6 +1,265 @@
 ﻿{
   "language": "Old Irish",
   "soundLawRepresentations": [
-    {"number": "OIr0", "law": "a, b > c, d /_e", "context": "first Old Irish law"}
+    {
+      "number": "PI1a",
+      "law": "au > ō",
+      "context": ""
+    },
+    {
+      "number": "PI1b",
+      "law": "θ > s /#_r",
+      "context": ""
+    },
+    {
+      "number": "PI1c",
+      "law": "ðd > dd",
+      "context": ""
+    },
+    {
+      "number": "PI1d",
+      "law": "ts > s",
+      "context": ""
+    },
+    {
+      "number": "PI2aa",
+      "law": "i, e, æ > ε̄ /_ NP, ns",
+      "context": ""
+    },
+    {
+      "number": "PI2ab",
+      "law": "mp, nt, nk, nkʷ > bb, dd, gg, gʷgʷ /V_",
+      "context": ""
+    },
+    {
+      "number": "PI2ac",
+      "law": "on > ō /_s",
+      "context": ""
+    },
+    {
+      "number": "PI2ad",
+      "law": "un > ū /_s",
+      "context": ""
+    },
+    {
+      "number": "PI3",
+      "law": "e > i /_(h)O",
+      "context": ""
+    },
+    {
+      "number": "PI4a",
+      "law": "Ø > ʲ /#C_E",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "PI4b",
+      "law": "Ø > ʲ /EC_E",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "PI4c",
+      "law": "Ø > ʲ /aC_i,ī",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "PI4d",
+      "law": "Ø > ʲ /VD_i,ī",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "PI5a",
+      "law": "e > i /_$U",
+      "context": "Raising of e"
+    },
+    {
+      "number": "PI5b",
+      "law": "o > u /_$U",
+      "context": "Raising of o"
+    },
+    {
+      "number": "PI6a",
+      "law": "a > o /Kʷ(L)_",
+      "context": ""
+    },
+    {
+      "number": "PI6b",
+      "law": "i > u /Kʷ(L)_",
+      "context": ""
+    },
+    {
+      "number": "PI6c",
+      "law": "ʷ > Ø",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "PI6d",
+      "law": "Ø > u /S_Cu",
+      "context": "u-infection"
+    },
+    {
+      "number": "PI7",
+      "law": "i > e /_$a,ā,o,ō",
+      "context": "Lowering of i"
+    },
+    {
+      "number": "PI7",
+      "law": "u > o /_$a,ā,o,ō",
+      "context": "Lowering of u"
+    },
+    {
+      "number": "PI8a",
+      "law": "ī > i /V$_\",",
+      "context": ""
+    },
+    {
+      "number": "PI8b",
+      "law": "ū > u /V$_\",",
+      "context": ""
+    },
+    {
+      "number": "PI8c",
+      "law": "ē > e /V$_\",",
+      "context": ""
+    },
+    {
+      "number": "PI8d",
+      "law": "ō > o /V$_\",",
+      "context": ""
+    },
+    {
+      "number": "PI8e",
+      "law": "ε̄ > ɛ /V$_\",",
+      "context": ""
+    },
+    {
+      "number": "PI8f",
+      "law": "ǣ > æ /V$_\",",
+      "context": ""
+    },
+    {
+      "number": "PI8g",
+      "law": "ā > a /V$_\",",
+      "context": ""
+    },
+    {
+      "number": "PI9",
+      "law": "Ø > ʲ /C_E(C)#",
+      "context": "Second Palatalisation"
+    },
+    {
+      "number": "PI10",
+      "law": "V(C)# > Ø",
+      "context": "Apocope"
+    },
+    {
+      "number": "PI11a",
+      "law": "iF > īu /_Rʲ",
+      "context": ""
+    },
+    {
+      "number": "PI11b",
+      "law": "eF > ēu /_Rʲ",
+      "context": ""
+    },
+    {
+      "number": "PI11c",
+      "law": "iF > ī /_Rʲ",
+      "context": ""
+    },
+    {
+      "number": "PI11d",
+      "law": "eF > ē /_Rʲ",
+      "context": ""
+    },
+    {
+      "number": "PI11e",
+      "law": "aF > ā /_R",
+      "context": ""
+    },
+    {
+      "number": "PI11f",
+      "law": "oF > ō /_R",
+      "context": ""
+    },
+    {
+      "number": "PI11g",
+      "law": "uF > ū /_R",
+      "context": ""
+    },
+    {
+      "number": "PI12a",
+      "law": "ou, eu, iu > u /V$_",
+      "context": ""
+    },
+    {
+      "number": "PI12b",
+      "law": "oi, ai > i /V$_",
+      "context": ""
+    },
+    {
+      "number": "PI13",
+      "law": "u > i /V$_Cʲ",
+      "context": ""
+    },
+    {
+      "number": "PI14",
+      "law": "Ø > ʲ /#$V$_E$V",
+      "context": "Third Palatalisation"
+    },
+    {
+      "number": "PI15",
+      "law": "V > Ø /#$V$_$V",
+      "context": "Syncope"
+    },
+    {
+      "number": "PI16a",
+      "law": "w,h,j > Ø /V_V",
+      "context": ""
+    },
+    {
+      "number": "PI16b",
+      "law": "w > β /L,n_",
+      "context": ""
+    },
+    {
+      "number": "PI16c",
+      "law": "w > Ø /C_",
+      "context": ""
+    },
+    {
+      "number": "PI17",
+      "law": "Ø > ə /C_L#",
+      "context": ""
+    },
+    {
+      "number": "OIr1",
+      "law": "i,e,a,o > ə /V$_C",
+      "context": ""
+    },
+    {
+      "number": "OIr2",
+      "law": "t > d /V$V_",
+      "context": ""
+    },
+    {
+      "number": "OIr3a",
+      "law": "ē > ia",
+      "context": ""
+    },
+    {
+      "number": "OIr3b",
+      "law": "ō > ua",
+      "context": ""
+    },
+    {
+      "number": "OIr5a",
+      "law": "θ > ð /_#",
+      "context": ""
+    },
+    {
+      "number": "OIr5b",
+      "law": "x > ɣ /_ʲ",
+      "context": ""
+    }
   ]
 }

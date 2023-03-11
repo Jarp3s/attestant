@@ -1,0 +1,95 @@
+﻿{
+  "language": "Common Celtic",
+  "soundLawRepresentations": [
+    {
+      "number": "NC15",
+      "law": "ð > Ø /_#",
+      "context": "Loss of word-final ð"
+    },
+    {
+      "number": "NC16",
+      "law": "e, i > Ø /t, s _#",
+      "context": "Early i-apocope"
+    },
+    {
+      "number": "NC17",
+      "law": "e > a /_Ra",
+      "context": ""
+    },
+    {
+      "number": "NC18a",
+      "law": "a > æ /_NT, Ns, nn, N#",
+      "context": ""
+    },
+    {
+      "number": "NC18b",
+      "law": "e > æ /_ge,gi",
+      "context": ""
+    },
+    {
+      "number": "NC19",
+      "law": "",
+      "context": ""
+    },
+    {
+      "number": "NC20a",
+      "law": "stm tst < ts / V_",
+      "context": ""
+    },
+    {
+      "number": "NC20b",
+      "law": "s > Ø /L_T",
+      "context": ""
+    },
+    {
+      "number": "NC21a",
+      "law": "s > θ / #_r",
+      "context": ""
+    },
+    {
+      "number": "NC21b",
+      "law": "ts > θ /_r",
+      "context": ""
+    },
+    {
+      "number": "NC21c",
+      "law": "s > ð /_r",
+      "context": ""
+    },
+    {
+      "number": "NC21d",
+      "law": "s > ð /_B",
+      "context": ""
+    },
+    {
+      "number": "NC22a",
+      "law": "e > o /_u",
+      "context": ""
+    },
+    {
+      "number": "NC22b",
+      "law": "e, u > o /_w",
+      "context": ""
+    },
+    {
+      "number": "NC23",
+      "law": "ou > ō",
+      "context": ""
+    },
+    {
+      "number": "NC24",
+      "law": "m > n /_#",
+      "context": ""
+    },
+    {
+      "number": "NC25a",
+      "law": "oi, ai, ē > ī /_#",
+      "context": ""
+    },
+    {
+      "number": "NC25b",
+      "law": "s > h /V_V,R,#",
+      "context": ""
+    }
+  ]
+}

@@ -57,14 +57,25 @@ internal static class CoverSymbol
         'C' => new HashSet<string> // Consonant
         { 
             "p", "b", "m", "m̥", "ɸ", "β", "μ", "f", "v", "t", "d", "n", "n̥", "ν", "r", "r̥", "ρ", "θ", "ð", 
-            "s", "z", "l", "ɬ", "λ", "j", "k", "g", "ŋ", "ŋ̊", "x", "ɣ", "h", "kʷ", "gʷ", "w"
+            "s", "z", "l", "ɬ", "λ", "j", "k", "g", "ŋ", "ŋ̊", "x", "ɣ", "xʷ", "ɣʷ", "h", "kʷ", "gʷ", "w"
         },
         
         'T' => new HashSet<string> // Plosive
         { 
             "p", "b", "t", "d", "k", "g", "kʷ", "gʷ"
         },
-       
+        'B' => new HashSet<string> // Voiced Plosive
+        {
+            "b", "d", "g", "gʷ"
+        },
+        'P' => new HashSet<string> // Voiceless Plosive
+        {
+            "p", "t", "k", "kʷ"
+        },
+        'D' => new HashSet<string> // Dental
+        {
+            "t", "d", "n", "n̥", "ν", "r", "r̥", "ρ", "θ", "ð", "s", "z", "l", "ɬ", "λ"        },
+
         'N' => new HashSet<string> // Nasal
         { 
             "m", "m̥", "μ", "n", "n̥", "ν", "ŋ", "ŋ̊"
@@ -72,7 +83,7 @@ internal static class CoverSymbol
      
         'F' => new HashSet<string> // Fricative
         { 
-            "ɸ", "β", "μ", "f", "v", "θ", "ð", "s", "z", "x", "ɣ", "h"
+            "ɸ", "β", "μ", "f", "v", "θ", "ð", "s", "z", "x", "xʷ", "ɣ", "ɣʷ", "h"
         },
    
         'R' => new HashSet<string> // Resonant
