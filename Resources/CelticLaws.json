@@ -18,7 +18,7 @@
     },
     {
       "number": "PC10d",
-      "law": "m > μ /V_V,R,#",
+      "law": "m > μ /V_V,R",
       "context": "Lenition"
     },
     {
