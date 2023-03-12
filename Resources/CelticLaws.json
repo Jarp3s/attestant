@@ -2,6 +2,26 @@
   "language": "Common Celtic",
   "soundLawRepresentations": [
     {
+      "number": "PC10a",
+      "law": "b > β /V_V,R,#",
+      "context": "Lenition"
+    },
+    {
+      "number": "PC10b",
+      "law": "g > ɣ /V_V,R,#",
+      "context": "Lenition"
+    },
+    {
+      "number": "PC10c",
+      "law": "d > ð /V_V,R,#",
+      "context": "Lenition"
+    },
+    {
+      "number": "PC10d",
+      "law": "m > μ /V_V,R,#",
+      "context": "Lenition"
+    },
+    {
       "number": "NC15",
       "law": "ð > Ø /_#",
       "context": "Loss of word-final ð"
