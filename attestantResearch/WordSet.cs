@@ -1,4 +1,4 @@
-﻿namespace attestant;
+﻿namespace attestantResearch;
 
 
 public class WordSet

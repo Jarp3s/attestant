@@ -48,7 +48,7 @@ public class SoundLaw
         return new SoundLaw(GetAntecedent(), GetConsequents(), inputLaw);
         
         
-        // Creates a RegEx pattern-string (antecedent) by grouping the sound-context with the sound
+        // Creates a RegEx pattern-string (antecedent) by grouping the environment with the sound
         string GetAntecedent()
         {
             var replacedSound = Regex.Split(lawSegments[0], @",");
@@ -62,27 +62,27 @@ public class SoundLaw
             }
             replacedSymbols = new Regex(@"\|").Replace(replacedSymbols, @"", 1);
             
-            var soundSegments = Regex.Split(GetSoundContext(), @"_");
-            return $"({soundSegments[0]})({replacedSymbols})({soundSegments[1]})";
+            var environment = Regex.Split(GetEnvironment(), @"_");
+            return $"({environment[0]})({replacedSymbols})({environment[1]})";
         }
 
         // Create RegEx replacement-strings (consequents) by processing each symbol individually
         HashSet<string> GetConsequents()
         {
-            var consequentSymbols = Regex.Split(lawSegments[1], @",");
-            HashSet<string> consequents = new();
-            foreach (var symbol in consequentSymbols)
+            var replacingSound = Regex.Split(lawSegments[1], @",");
+            HashSet<string> replacingSymbols = new();
+            foreach (var symbol in replacingSound)
             {
                 // TODO: convert special symbols to RegEx
                 var parsedSymbol = Regex.Replace(symbol, @"Ø", @"");
-                consequents.Add($"$1{parsedSymbol}$3");
+                replacingSymbols.Add($"$1{parsedSymbol}$3");
             }
 
-            return consequents;
+            return replacingSymbols;
         }
         
         // Create a RegEx pattern-string (sound-context) by parsing non-literal law-symbols
-        string GetSoundContext()
+        string GetEnvironment()
         {
             var sound = lawSegments![2];
 

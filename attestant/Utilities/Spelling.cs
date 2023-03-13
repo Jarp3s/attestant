@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace attestant.Utilities;
 
-namespace attestant.Utilities
+
+public class Spelling
 {
-    internal class Spelling
+    public Spelling()
     {
-        public Spelling()
-        {
 
-        }
+    }
 
-        internal string Phonetic(string written)
-        {
-            return "";
-        }
+    public string Phonetic(string written)
+    {
+        return "";
     }
 }

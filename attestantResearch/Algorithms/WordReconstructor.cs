@@ -1,7 +1,8 @@
+using attestant.Algorithms;
 using attestant.DataStructures;
 using attestant.InputReaders;
 
-namespace attestant.Algorithms;
+namespace attestantResearch.Algorithms;
 
 
 /// <summary>
@@ -11,14 +12,13 @@ public class WordReconstructor
 {
     private readonly List<LanguageDevelopment> _languageDevelopments;
 
-    public WordReconstructor(List<LanguageDevelopment> languageDevelopments)
+    public WordReconstructor()
     {
-        _languageDevelopments = languageDevelopments;
+        _languageDevelopments = SoundLawReader.GetLanguageDevelopments();
     }
 
     /// <summary>
-    ///     Foreach language, applies dfs on the given word, after which all reconstructions
-    ///     appearing in every language (i.e. duplicates) are filtered & returned as final result.
+    ///     Foreach language, applies dfs on the given word in order to .
     /// </summary>
     public HashSet<string> Reconstruct(string word)
     {
