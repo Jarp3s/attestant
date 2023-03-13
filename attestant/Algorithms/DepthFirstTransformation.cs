@@ -17,37 +17,39 @@ public class DepthFirstTransformation
     }
 
     /// <summary>
-    ///     Performs word-reconstruction by transforming the given word
-    ///     using a list of sound laws, returns the set of all reconstructed words.
+    ///     Performs word-development by transforming the given word
+    ///     using a list of sound laws, returns the set of all developed words.
     /// </summary>
-    public HashSet<UNode<string>> TransformWord(string word)
+    public HashSet<UNode<string, SoundLaw>> TransformWord(string word)
     {
-        UNode<string> originalWordNode = new (word);
+        UNode<string, SoundLaw> originalWordNode = new (word);
         return ApplyLaws(originalWordNode, 0);
     }
 
-    private HashSet<UNode<string>> ApplyLaws(UNode<string> wordNode, int lawNumber)
+    private HashSet<UNode<string, SoundLaw>> ApplyLaws(UNode<string, SoundLaw> wordNode, int lawNumber)
     {
-        HashSet<UNode<string>> reconstructions = new();
-        
+        HashSet<UNode<string, SoundLaw>> wordDevelopments = new();
+
+        var isTransformed = false;
         for (var i = lawNumber; i < _soundLaws.Count; i++)
         {
             var curWord = wordNode.Value;
             IEnumerable<string> newWords = _soundLaws[i].Apply(curWord);
-
-            var isTransformed = false;
+            
             foreach (var word in newWords)
                 if (word != curWord)
                 {
                     isTransformed = true;
-                    reconstructions.UnionWith(ApplyLaws(wordNode.AddDescendant(word), i));
+                    wordDevelopments.UnionWith(ApplyLaws(wordNode.AddDescendant(word, _soundLaws[i]), i));
                 }
 
             if (isTransformed)
                 break;
         }
-
-        reconstructions.Add(wordNode);
-        return reconstructions;
+        
+        if (!isTransformed)
+            wordDevelopments.Add(wordNode);
+        
+        return wordDevelopments;
     }
 }

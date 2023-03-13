@@ -20,20 +20,16 @@ public class WordReconstructor
     /// <summary>
     ///     Foreach language, applies dfs on the given word in order to .
     /// </summary>
-    public HashSet<string> Reconstruct(string word)
+    public List<HashSet<UNode<string, SoundLaw>>> Develop(string word)
     {
-        List<HashSet<UNode<string>>> lanReconstructs = new();
+        List<HashSet<UNode<string, SoundLaw>>> wordDevelopments = new();
         
         foreach (var lanDev in _languageDevelopments)
         {
             var dft = new DepthFirstTransformation(lanDev.SoundLaws);
-            lanReconstructs.Add(dft.TransformWord(word));
+            wordDevelopments.Add(dft.TransformWord(word));
         }
-
-        HashSet<string> reconstructs = lanReconstructs[0].Select(uNode => uNode.Value).ToHashSet();
-        foreach(HashSet<UNode<string>> reconstruct in lanReconstructs)
-            reconstructs.IntersectWith(reconstruct.Select(uNode => uNode.Value));
-
-        return reconstructs;
+        
+        return wordDevelopments;
     }
 }

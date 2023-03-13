@@ -48,12 +48,12 @@ public class LanguageDevelopment
     
     public class SoundLawRepresentation
     {
+        [JsonPropertyName("number")] 
+        public string Number { get; set; } = null!;
+        
         [JsonPropertyName("law")]
         public string Law { get; set; } = null!;
 
-        public SoundLaw ToSoundLaw()
-        {
-            return SoundLaw.Parse(Law);
-        }
+        public SoundLaw ToSoundLaw() => SoundLaw.Parse($"{Number}. {Law}");
     }
 }
