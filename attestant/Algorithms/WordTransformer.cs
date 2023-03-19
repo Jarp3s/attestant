@@ -27,7 +27,7 @@ public class WordTransformer
     {
         var normalizedWord = word.Normalize(NormalizationForm.FormC);
         normalizedWord = Regex.Replace(normalizedWord, @"\P{M}\p{M}+", match 
-            => CoverSymbol.Characterization.Forward[match.Value].ToString());
+            => Phoneme.Characterization.Forward[match.Value].ToString());
         
         UNode<string, SoundLaw> wordNode = new(normalizedWord);
         

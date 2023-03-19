@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using attestant.DataStructures;
+﻿using attestant.DataStructures;
 
 namespace attestant.Utilities;
 
@@ -17,20 +16,7 @@ internal static class CoverSymbol
         phonemes += "]";
         return phonemes;
     }
-
-    public static Table<string, char> Characterization = 
-        new(
-            ("ε̄", 'Ⅰ'),
-            ("ɔ̄", 'Ⅱ'),
-            ("m̥", 'Ⅲ'),
-            ("n̥", 'Ⅳ'),
-            ("r̥", 'Ⅴ'),
-            ("ŋ̊", 'Ⅵ'),
-            ("xʷ", 'Ⅶ'),
-            ("ɣʷ", 'Ⅷ'),
-            ("kʷ", 'Ⅸ'),
-            ("gʷ", 'Ⅹ')
-        );
+    
 
     // TODO: Palatalization, Lenition
     /// <summary>

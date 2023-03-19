@@ -53,7 +53,7 @@ public class SoundLaw
     {                                             // Example input: *o > *ö /_$ī, i, ü, ö, ẹ, j
         var normalizedLaw = inputLaw.Normalize(NormalizationForm.FormC);
         normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+", match 
-            => CoverSymbol.Characterization.Forward[match.Value].ToString());
+            => Phoneme.Characterization.Forward[match.Value].ToString());
         
         normalizedLaw = Regex.Replace(normalizedLaw, @"[\s*]", @"");
         var lawSegments = Regex.Split(normalizedLaw, @"[.>/]");
