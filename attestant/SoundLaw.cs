@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Text;
+using System.Text.RegularExpressions;
 using attestant.Utilities;
 
 namespace attestant;
@@ -45,14 +46,17 @@ public class SoundLaw
         => Regex.Replace(soundLaw, @".", @"").Split(" ")[1];
     
     
-    // TODO: does not account for anomalies denoted between parentheses after law
     /// <summary>
     ///     Converts a string-representation to a SoundLaw.
     /// </summary>
-    public static SoundLaw Parse(string inputLaw) // Example input: *i, *u > *e, *o /_$a(C)#
+    public static SoundLaw Parse(string inputLaw) // Example input: *i, *u > *e /_$a(C)#
     {                                             // Example input: *o > *ö /_$ī, i, ü, ö, ẹ, j
-        var law = Regex.Replace(inputLaw, @"[\s*]", @"");
-        var lawSegments = Regex.Split(law, @"[.>/]");
+        var normalizedLaw = inputLaw.Normalize(NormalizationForm.FormC);
+        normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+", match 
+            => CoverSymbol.Characterization.Forward[match.Value].ToString());
+        
+        normalizedLaw = Regex.Replace(normalizedLaw, @"[\s*]", @"");
+        var lawSegments = Regex.Split(normalizedLaw, @"[.>/]");
 
         return new SoundLaw(GetAntecedent(), GetConsequent(), inputLaw);
         
@@ -60,25 +64,20 @@ public class SoundLaw
         // Creates a RegEx pattern-string (antecedent) by grouping the environment with the sound
         string GetAntecedent()
         {
-            var replacedSound = Regex.Split(lawSegments[1], @",");
-            var replacedSymbols = "";
-            foreach (var symbol in replacedSound)
-            {
-                // TODO: convert special symbols to RegEx
-                var parsedSymbol = Regex.Replace(symbol, @"[A-Z]", match 
-                    => CoverSymbol.ToRegexString(char.Parse(match.Value)));
-                replacedSymbols += $"|{parsedSymbol}";
-            }
-            replacedSymbols = new Regex(@"\|").Replace(replacedSymbols, @"", 1);
-            
+            var replacedSound = Regex.Replace(lawSegments[1], @",", @"|");
+            // TODO: convert special symbols to RegEx
+            replacedSound = Regex.Replace(replacedSound, @"[A-Z]", match
+                => CoverSymbol.ToRegexString(char.Parse(match.Value)));
+
             var environment = Regex.Split(GetEnvironment(), @"_");
-            return $"({environment[0]})({replacedSymbols})({environment[1]})";
+            return $"({environment[0]})({replacedSound})({environment[1]})";
         }
 
         // Create RegEx replacement-strings (consequents) by processing each symbol individually
         string GetConsequent()
         {
             var replacingSound = lawSegments[2];
+            // TODO: convert special symbols to RegEx
             replacingSound = Regex.Replace(replacingSound, @"Ø", @"");
             return $"$1{replacingSound}$3";
         }
@@ -86,19 +85,20 @@ public class SoundLaw
         // Create a RegEx pattern-string (sound-context) by parsing non-literal law-symbols
         string GetEnvironment()
         {
-            var sound = lawSegments[3];
+            if (lawSegments.Length < 4)
+                return "_";
+            
+            var environmentSound = Regex.Replace(lawSegments[3], @",", @"|");
 
             // Parse non-literals (i.e. operator-symbols) to their RegEx equivalent
-            sound = Regex.Replace(sound, @"$", @"C*");
-            sound = Regex.Replace(sound, @"^#", @"^");
-            sound = Regex.Replace(sound, @"#$", @"$");
-            sound = Regex.Replace(sound, @"(\()(.)(\))", @"$2?");
-            sound = Regex.Replace(sound, @"[A-Z]", match 
+            environmentSound = Regex.Replace(environmentSound, @"$", @"C*");
+            environmentSound = Regex.Replace(environmentSound, @"^#", @"^");
+            environmentSound = Regex.Replace(environmentSound, @"#$", @"$");
+            environmentSound = Regex.Replace(environmentSound, @"(\()(.+)(\))", @"($2)?");
+            environmentSound = Regex.Replace(environmentSound, @"[A-Z]", match 
                 => CoverSymbol.ToRegexString(char.Parse(match.Value)));
 
-            // TODO: Convert OR-relation (,) to RegEx alternation construct
-            
-            return sound;
+            return environmentSound;
         }
     }
 }

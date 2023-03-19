@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using attestant.DataStructures;
 
 namespace attestant.Utilities;
 
@@ -6,94 +7,110 @@ namespace attestant.Utilities;
 internal static class CoverSymbol
 {
     /// <summary>
-    ///     Converts the given cover symbol to a RegEx-string covering all phonemes
+    ///     Converts the given cover symbol to a RegEx-char covering all phonemes
     /// </summary>
     public static string ToRegexString(char coverSymbol)
     {
-        var phonemes = "";
+        var phonemes = "[";
         foreach (var phoneme in CoverSymbol.Phonemes(coverSymbol))
-            phonemes += $"|{phoneme}";
-        return $"({new Regex(@"\|").Replace(phonemes, @"", 1)})";
+            phonemes += phoneme;
+        phonemes += "]";
+        return phonemes;
     }
-    
+
+    public static Table<string, char> Characterization = 
+        new(
+            ("ε̄", 'Ⅰ'),
+            ("ɔ̄", 'Ⅱ'),
+            ("m̥", 'Ⅲ'),
+            ("n̥", 'Ⅳ'),
+            ("r̥", 'Ⅴ'),
+            ("ŋ̊", 'Ⅵ'),
+            ("xʷ", 'Ⅶ'),
+            ("ɣʷ", 'Ⅷ'),
+            ("kʷ", 'Ⅸ'),
+            ("gʷ", 'Ⅹ')
+        );
+
     // TODO: Palatalization, Lenition
     /// <summary>
     ///     Maps the given cover symbol to a set of phonemes.
     /// </summary>
-    private static HashSet<string> Phonemes(char coverSymbol) => coverSymbol switch
+    private static HashSet<char> Phonemes(char coverSymbol) => coverSymbol switch
     {
-        'V' => new HashSet<string> // Vowel
+        'V' => new HashSet<char> // Vowel
         { 
-            "i", "y", "ɨ", "ʉ", "u", "ẹ", "e", "ø", "o", "ɛ", "ɔ", "æ", 
-            "a", "ə", "ī", "ȳ", "ū", "ē", "ō", "ε̄", "ɔ̄", "ǣ", "ā"
+            'i', 'y', 'ɨ', 'ʉ', 'u', 'ẹ', 'e', 'ø', 'o', 'ɛ', 'ɔ', 'æ', 
+            'a', 'ə', 'ī', 'ȳ', 'ū', 'ē', 'ō', 'Ⅰ', 'Ⅱ', 'ǣ', 'ā'
         },
         
-        'S' => new HashSet<string> // Short vowel
+        'S' => new HashSet<char> // Short vowel
         { 
-            "i", "y", "ɨ", "ʉ", "u", "ẹ", "e", "ø", "o", "ɛ", "ɔ", "æ", "a", "ə",
+            'i', 'y', 'ɨ', 'ʉ', 'u', 'ẹ', 'e', 'ø', 'o', 'ɛ', 'ɔ', 'æ', 'a', 'ə',
         },
         
-        'W' => new HashSet<string> // Long vowel
+        'W' => new HashSet<char> // Long vowel
         { 
-            "ī", "ȳ", "ū", "ē", "ō", "ε̄", "ɔ̄", "ǣ", "ā"
+            'ī', 'ȳ', 'ū', 'ē', 'ō', 'Ⅰ', 'Ⅱ', 'ǣ', 'ā'
         },
         
-        'U' => new HashSet<string> // High vowel
+        'U' => new HashSet<char> // High vowel
         { 
-            "i", "y", "ɨ", "ʉ", "u", "ī", "ȳ", "ū"
+            'i', 'y', 'ɨ', 'ʉ', 'u', 'ī', 'ȳ', 'ū'
         },
         
-        'E' => new HashSet<string> // Front vowel
+        'E' => new HashSet<char> // Front vowel
         { 
-            "i", "y", "ẹ", "e", "ø", "ɛ", "æ", "ī", "ȳ", "ē", "ε̄", "ǣ"
+            'i', 'y', 'ẹ', 'e', 'ø', 'ɛ', 'æ', 'ī', 'ȳ', 'ē', 'Ⅰ', 'ǣ'
         },
         
-        'O' => new HashSet<string> // Back vowel
+        'O' => new HashSet<char> // Back vowel
         { 
-            "u","o", "ɔ", "a",
-            "ū", "ō", "ɔ̄", "ā"
+            'u','o', 'ɔ', 'a',
+            'ū', 'ō', 'Ⅱ', 'ā'
         },
         
-        'C' => new HashSet<string> // Consonant
+        'C' => new HashSet<char> // Consonant
         { 
-            "p", "b", "m", "m̥", "ɸ", "β", "μ", "f", "v", "t", "d", "n", "n̥", "ν", "r", "r̥", "ρ", "θ", "ð", 
-            "s", "z", "l", "ɬ", "λ", "j", "k", "g", "ŋ", "ŋ̊", "x", "ɣ", "xʷ", "ɣʷ", "h", "kʷ", "gʷ", "w"
+            'p', 'b', 'm', 'Ⅲ', 'ɸ', 'β', 'μ', 'f', 'v', 't', 'd', 'n', 'Ⅳ', 'ν', 'r', 'Ⅴ', 'ρ', 'θ', 'ð', 
+            's', 'z', 'l', 'ɬ', 'λ', 'j', 'k', 'g', 'ŋ', 'Ⅵ', 'x', 'ɣ', 'Ⅶ', 'Ⅷ', 'h', 'Ⅸ', 'Ⅹ', 'w'
         },
         
-        'T' => new HashSet<string> // Plosive
+        'T' => new HashSet<char> // Plosive
         { 
-            "p", "b", "t", "d", "k", "g", "kʷ", "gʷ"
+            'p', 'b', 't', 'd', 'k', 'g', 'Ⅸ', 'Ⅹ'
         },
-        'B' => new HashSet<string> // Voiced Plosive
+        'B' => new HashSet<char> // Voiced Plosive
         {
-            "b", "d", "g", "gʷ"
+            'b', 'd', 'g', 'Ⅹ'
         },
-        'P' => new HashSet<string> // Voiceless Plosive
+        'P' => new HashSet<char> // Voiceless Plosive
         {
-            "p", "t", "k", "kʷ"
+            'p', 't', 'k', 'Ⅸ'
         },
-        'D' => new HashSet<string> // Dental
+        'D' => new HashSet<char> // Dental
         {
-            "t", "d", "n", "n̥", "ν", "r", "r̥", "ρ", "θ", "ð", "s", "z", "l", "ɬ", "λ"        },
+            't', 'd', 'n', 'Ⅳ', 'ν', 'r', 'Ⅴ', 'ρ', 'θ', 'ð', 's', 'z', 'l', 'ɬ', 'λ'        
+        },
 
-        'N' => new HashSet<string> // Nasal
+        'N' => new HashSet<char> // Nasal
         { 
-            "m", "m̥", "μ", "n", "n̥", "ν", "ŋ", "ŋ̊"
+            'm', 'Ⅲ', 'μ', 'n', 'Ⅳ', 'ν', 'ŋ', 'Ⅵ'
         },
      
-        'F' => new HashSet<string> // Fricative
+        'F' => new HashSet<char> // Fricative
         { 
-            "ɸ", "β", "μ", "f", "v", "θ", "ð", "s", "z", "x", "xʷ", "ɣ", "ɣʷ", "h"
+            'ɸ', 'β', 'μ', 'f', 'v', 'θ', 'ð', 's', 'z', 'x', 'Ⅶ', 'ɣ', 'Ⅷ', 'h'
         },
    
-        'R' => new HashSet<string> // Resonant
+        'R' => new HashSet<char> // Resonant
         { 
-            "m", "m̥", "μ", "n", "n̥", "ν", "r", "r̥", "ρ", "l", "ɬ", "λ", "j", "ŋ", "ŋ̊", "w"
+            'm', 'Ⅲ', 'μ', 'n', 'Ⅳ', 'ν', 'r', 'Ⅴ', 'ρ', 'l', 'ɬ', 'λ', 'j', 'ŋ', 'Ⅵ', 'w'
         },
     
-        'L' => new HashSet<string> // Liquid
+        'L' => new HashSet<char> // Liquid
         { 
-            "r", "r̥", "ρ", "l", "ɬ", "λ"
+            'r', 'Ⅴ', 'ρ', 'l', 'ɬ', 'λ'
         },
      
         _ => throw new ArgumentOutOfRangeException(nameof(coverSymbol), coverSymbol, null)

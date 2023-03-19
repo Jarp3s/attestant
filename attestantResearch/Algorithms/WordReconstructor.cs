@@ -27,7 +27,7 @@ public class WordReconstructor
         foreach (var lanDev in _languageDevelopments)
         {
             var transformer = new WordTransformer(lanDev.SoundLaws);
-            wordDevelopments.Add(transformer.TransformWord(word));
+            wordDevelopments.Add(transformer.Transform(word));
         }
         
         return wordDevelopments;
