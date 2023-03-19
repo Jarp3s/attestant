@@ -10,14 +10,14 @@ namespace attestant;
 public class SoundLaw
 {
     private readonly Regex _antecedent;
-    private readonly HashSet<string> _consequents;
+    private readonly string _consequent;
     
     private readonly string _soundLaw;
 
-    private SoundLaw(string antecedent, HashSet<string> consequents, string soundLaw)
+    private SoundLaw(string antecedent, string consequent, string soundLaw)
     {
         _antecedent = new Regex(antecedent);
-        _consequents = consequents;
+        _consequent = consequent;
         _soundLaw = soundLaw;
     }
     
@@ -25,8 +25,7 @@ public class SoundLaw
     ///     Applies the sound law on the given word,
     ///     possibly transforming it into new word(s).
     /// </summary>
-    public IEnumerable<string> Apply(string word)
-        => _consequents.Select(consequent => _antecedent.Replace(word, consequent));
+    public string Apply(string word) => _antecedent.Replace(word, _consequent);
     
     /// <summary>
     ///     Converts a SoundLaw to a string-representation.
@@ -55,7 +54,7 @@ public class SoundLaw
         var law = Regex.Replace(inputLaw, @"[\s*]", @"");
         var lawSegments = Regex.Split(law, @"[.>/]");
 
-        return new SoundLaw(GetAntecedent(), GetConsequents(), inputLaw);
+        return new SoundLaw(GetAntecedent(), GetConsequent(), inputLaw);
         
         
         // Creates a RegEx pattern-string (antecedent) by grouping the environment with the sound
@@ -77,18 +76,11 @@ public class SoundLaw
         }
 
         // Create RegEx replacement-strings (consequents) by processing each symbol individually
-        HashSet<string> GetConsequents()
+        string GetConsequent()
         {
-            var replacingSound = Regex.Split(lawSegments[2], @",");
-            HashSet<string> replacingSymbols = new();
-            foreach (var symbol in replacingSound)
-            {
-                // TODO: convert special symbols to RegEx
-                var parsedSymbol = Regex.Replace(symbol, @"Ø", @"");
-                replacingSymbols.Add($"$1{parsedSymbol}$3");
-            }
-
-            return replacingSymbols;
+            var replacingSound = lawSegments[2];
+            replacingSound = Regex.Replace(replacingSound, @"Ø", @"");
+            return $"$1{replacingSound}$3";
         }
         
         // Create a RegEx pattern-string (sound-context) by parsing non-literal law-symbols

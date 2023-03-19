@@ -18,16 +18,16 @@ public class WordReconstructor
     }
 
     /// <summary>
-    ///     Foreach language, applies dfs on the given word in order to .
+    ///     Foreach language, apply all given laws in order to transform the word.
     /// </summary>
-    public List<HashSet<UNode<string, SoundLaw>>> Develop(string word)
+    public List<UNode<string, SoundLaw>> Develop(string word)
     {
-        List<HashSet<UNode<string, SoundLaw>>> wordDevelopments = new();
+        List<UNode<string, SoundLaw>> wordDevelopments = new();
         
         foreach (var lanDev in _languageDevelopments)
         {
-            var dft = new DepthFirstTransformation(lanDev.SoundLaws);
-            wordDevelopments.Add(dft.TransformWord(word));
+            var transformer = new WordTransformer(lanDev.SoundLaws);
+            wordDevelopments.Add(transformer.TransformWord(word));
         }
         
         return wordDevelopments;
