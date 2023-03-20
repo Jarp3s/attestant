@@ -76,9 +76,9 @@ namespace attestant.Utilities
             bool cons2 = phon2 >> 31 == 1
 
             if (cons1 && cons2)
-                return BitSum(phon1 ^ phon2) / 17 // 17 bits used for consonants
+                return BitSum(phon1 ^ phon2) / 16 // 17 bits used for consonants. One simply marks it as consonant.
             else if (!cons1 && !cons2)
-                return BitSum(phon1 ^ phon2) / 13 // 13 bits used for vowels
+                return BitSum(phon1 ^ phon2) / 12 // 13 bits used for vowels. One simply marks it as vowel.
             else return 1; // If a vowel and consonant, the difference is max
         }
 
