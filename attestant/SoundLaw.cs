@@ -26,7 +26,8 @@ public class SoundLaw
     ///     Applies the sound law on the given word,
     ///     possibly transforming it into new word(s).
     /// </summary>
-    public string Apply(string word) => _antecedent.Replace(word, _consequent);
+    public Word Apply(Word word) 
+        => new (_antecedent.Replace(word.CharacterizedPhonemes, _consequent));
     
     /// <summary>
     ///     Converts a SoundLaw to a string-representation.

@@ -1,7 +1,4 @@
-﻿using System.Text;
-using System.Text.RegularExpressions;
-using attestant.DataStructures;
-using attestant.Utilities;
+﻿using attestant.DataStructures;
 
 namespace attestant.Algorithms;
 
@@ -23,19 +20,15 @@ public class WordTransformer
     ///     Performs word-development by transforming the given word
     ///     using a list of sound laws, returns the set of all developed words.
     /// </summary>
-    public UNode<string, SoundLaw> Transform(string word)
+    public UNode<Word, SoundLaw> Transform(string phonemes)
     {
-        var normalizedWord = word.Normalize(NormalizationForm.FormC);
-        normalizedWord = Regex.Replace(normalizedWord, @"\P{M}\p{M}+", match 
-            => Phoneme.Characterization.Forward[match.Value].ToString());
-        
-        UNode<string, SoundLaw> wordNode = new(normalizedWord);
+        UNode<Word, SoundLaw> wordNode = new(new Word(phonemes));
         
         foreach (var soundLaw in _soundLaws)
         {
             var curWord = wordNode.Value;
             var newWord = soundLaw.Apply(curWord);
-            if (newWord != curWord)
+            if (!newWord.Equals(curWord))
                 wordNode = wordNode.Add(newWord, soundLaw);
         }
 
