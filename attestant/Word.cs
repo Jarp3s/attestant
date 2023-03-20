@@ -4,15 +4,26 @@ using attestant.Utilities;
 
 namespace attestant;
 
-
+/// <summary>
+///     IPA-encoded word, containing several representations in order to comply with different functionality.
+/// </summary>
 public class Word : IEquatable<Word>
 {
+    /// <summary>
+    ///     A word represented as an array of phonemes.
+    /// </summary>
     public string Phonemes { get; }
 
+    /// <summary>
+    ///     A word represented as an array of binary feature embeddings.
+    /// </summary>
     internal uint[] EmbeddedPhonemes
         => CharacterizedPhonemes.Select(phoneme 
             => Phoneme.Embedding.Forward[Phoneme.Characterization.Reverse[phoneme]]).ToArray();
 
+    /// <summary>
+    ///     A word represented as an array of characterized phonemes.
+    /// </summary>
     internal string CharacterizedPhonemes 
         => Regex.Replace(Phonemes, @"\P{M}\p{M}+", match 
             => Phoneme.Characterization.Forward[match.Value].ToString());
@@ -24,11 +35,13 @@ public class Word : IEquatable<Word>
 
     public bool Equals(Word? other) => Phonemes == other?.Phonemes;
 
-    // For memoization
+    // Memoization Matrix
     private static int[,] _table = null!;
 
-    // Dynamic programming algorithm for calculating the Damerau-Levenshtein distance
-    // The difference is that the substitution cost varies, depending on how much the sounds are alike (value between 0 and 1)
+    /// <summary>
+    ///     Dynamic programming algorithm that calculates the Damerau-Levenshtein distance, where
+    ///     the substitution cost between 2 phonemes varies, depending on the similarity reflected in their encoding.
+    /// </summary>
     public int EditDistance(Word other)
     {
         var otherEmbeddedPhonemes = other.EmbeddedPhonemes;
@@ -61,8 +74,8 @@ public class Word : IEquatable<Word>
 
         if (i > 1 && j > 1 && word1[i - 1] == word2[j - 2] && word1[i - 2] == word2[j - 1])
         {
-            int transposition = CalculateDistance(word1, word2, i - 2, j - 2) + 1;
-            distance = Math.Min(distance, transposition);
+            int transpositionCost = CalculateDistance(word1, word2, i - 2, j - 2) + 1;
+            distance = Math.Min(distance, transpositionCost);
         }
 
         _table[i, j] = distance;

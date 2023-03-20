@@ -1,12 +1,13 @@
-﻿using attestant.DataStructures;
-
-namespace attestant.Utilities;
+﻿namespace attestant.Utilities;
 
 
+/// <summary>
+///    Utility class that offers functionality to operate on cover symbols.
+/// </summary>
 internal static class CoverSymbol
 {
     /// <summary>
-    ///     Converts the given cover symbol to a RegEx-char covering all phonemes
+    ///     Converts the given cover symbol to a RegEx-char covering all phonemes.
     /// </summary>
     public static string ToRegexString(char coverSymbol)
     {

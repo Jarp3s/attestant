@@ -18,7 +18,7 @@ public class WordReconstructor
     }
 
     /// <summary>
-    ///     Foreach language, apply all given laws in order to transform the word.
+    ///     Foreach language, applies all given laws in order to transform the word.
     /// </summary>
     public List<UNode<Word, SoundLaw>> Develop(string phonemes)
     {

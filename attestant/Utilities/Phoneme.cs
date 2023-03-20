@@ -3,8 +3,14 @@
 namespace attestant.Utilities;
 
 
+/// <summary>
+///    Utility class that offers functionality to operate on phonemes.
+/// </summary>
 public static class Phoneme
 {
+    /// <summary>
+    ///     Converts the given phoneme-string to a single replacement-character.
+    /// </summary>
     public static readonly Table<string, char> Characterization = new(
             ("ε̄", 'Ⅰ'),
             ("ɔ̄", 'Ⅱ'),
@@ -18,7 +24,10 @@ public static class Phoneme
             ("gʷ", 'Ⅹ')
         );
     
-     public static readonly Table<string, uint> Embedding = new (
+    /// <summary>
+    ///     Maps the given phoneme to a binary embedding using phonetic features.
+    /// </summary>
+    public static readonly Table<string, uint> Embedding = new ( 
         // Examples of entries:
         ("p", 0b_1011_0000_0001_0000_0000_0000_0000_0100),
         ("b", 0b_1101_0000_0001_0000_0000_0000_0000_0100),

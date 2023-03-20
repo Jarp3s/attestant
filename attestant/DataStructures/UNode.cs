@@ -2,7 +2,7 @@
 
 
 /// <summary>
-///    Undirected node w/ both link to direct ancestor & direct descendants.
+///    Undirected node w/ link to both previous & next node.
 /// </summary>
 public class UNode<T1, T2>
 {
@@ -17,47 +17,47 @@ public class UNode<T1, T2>
     private T2 Label { get; }
 
     /// <summary>
-    ///     The direct ancestor (i.e. parent) of the node.
+    ///     The previous node
     /// </summary>
     public UNode<T1, T2>? Previous { get; }
     
     /// <summary>
-    ///     The direct descendants (i.e. children) of the node.
+    ///     The next node.
     /// </summary>
     public UNode<T1, T2>? Next { get; private set; }
     
     /// <summary>
-    ///     The root of the tree the node is part of.
+    ///     The first node of the nodes linked to.
     /// </summary>
-    public UNode<T1, T2> Root { get; }
+    public UNode<T1, T2> First { get; }
 
     public UNode(T1 value, T2 label = default!)
     {
         Value = value;
         Label = label;
-        Root = this;
+        First = this;
     }
 
-    private UNode(T1 value, T2 label, UNode<T1, T2> previous, UNode<T1, T2> root)
+    private UNode(T1 value, T2 label, UNode<T1, T2> previous, UNode<T1, T2> first)
     {
         Value = value;
         Label = label;
         Previous = previous;
-        Root = root;
+        First = first;
     }
 
     /// <summary>
-    ///     Adds a direct descendent with the given value to the node.
+    ///     Adds a new node with the given value & label.
     /// </summary>
     public UNode<T1, T2> Add(T1 value, T2 label)
     {
-        UNode<T1, T2> node = new(value, label, this, Root);
+        UNode<T1, T2> node = new(value, label, this, First);
         Next = node;
         return node;
     }
 
     /// <summary>
-    ///     Applies the given action on all nodes in the tree using pre-order traversal.
+    ///     Applies the given action on all nodes in the link by traversing down
     /// </summary>
     public void TraverseDown(Action<T1, T2> action)
     {
@@ -66,7 +66,7 @@ public class UNode<T1, T2>
     }
 
     /// <summary>
-    ///     Applies the given action on all nodes in the node's branch by traversing up.
+    ///     Applies the given action on all nodes in the link by traversing up.
     /// </summary>
     public void TraverseUp(Action<T1, T2> action)
     {

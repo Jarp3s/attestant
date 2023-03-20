@@ -1,4 +1,5 @@
 ﻿global using attestant;
+using System.Text.RegularExpressions;
 using attestant.InputReaders;
 using attestantResearch;
 using attestantResearch.Algorithms;
