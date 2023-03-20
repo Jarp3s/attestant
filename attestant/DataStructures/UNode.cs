@@ -14,46 +14,45 @@ public class UNode<T1, T2>
     /// <summary>
     ///     The context-information assigned to the node.
     /// </summary>
-    private T2 Label { get; } = default!;
+    private T2 Label { get; }
 
     /// <summary>
     ///     The direct ancestor (i.e. parent) of the node.
     /// </summary>
-    public UNode<T1, T2>? Ancestor { get; }
+    public UNode<T1, T2>? Previous { get; }
     
     /// <summary>
     ///     The direct descendants (i.e. children) of the node.
     /// </summary>
-    public List<UNode<T1, T2>> Descendants { get; } = new();
+    public UNode<T1, T2>? Next { get; private set; }
     
     /// <summary>
     ///     The root of the tree the node is part of.
     /// </summary>
     public UNode<T1, T2> Root { get; }
 
-    public UNode(T1 value)
-    {
-        Value = value;
-        Root = this;
-    }
-
-    private UNode(T1 value, T2 label, UNode<T1, T2> ancestor, UNode<T1, T2> root)
+    public UNode(T1 value, T2 label = default!)
     {
         Value = value;
         Label = label;
-        Ancestor = ancestor;
-        Root = root;
+        Root = this;
     }
 
-    public UNode<T1, T2> this[int i] => Descendants[i];
+    private UNode(T1 value, T2 label, UNode<T1, T2> previous, UNode<T1, T2> root)
+    {
+        Value = value;
+        Label = label;
+        Previous = previous;
+        Root = root;
+    }
 
     /// <summary>
     ///     Adds a direct descendent with the given value to the node.
     /// </summary>
-    public UNode<T1, T2> AddDescendant(T1 value, T2 label)
+    public UNode<T1, T2> Add(T1 value, T2 label)
     {
         UNode<T1, T2> node = new(value, label, this, Root);
-        Descendants.Add(node);
+        Next = node;
         return node;
     }
 
@@ -63,8 +62,7 @@ public class UNode<T1, T2>
     public void TraverseDown(Action<T1, T2> action)
     {
         action(Value, Label);
-        foreach (UNode<T1, T2> descendant in Descendants)
-            descendant.TraverseDown(action);
+        Next?.TraverseDown(action);
     }
 
     /// <summary>
@@ -73,6 +71,6 @@ public class UNode<T1, T2>
     public void TraverseUp(Action<T1, T2> action)
     {
         action(Value, Label);
-        Ancestor?.TraverseUp(action);
+        Previous?.TraverseUp(action);
     }
 }

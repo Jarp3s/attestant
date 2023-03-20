@@ -36,7 +36,7 @@ public class WordTransformer
             var curWord = wordNode.Value;
             var newWord = soundLaw.Apply(curWord);
             if (newWord != curWord)
-                wordNode = wordNode.AddDescendant(newWord, soundLaw);
+                wordNode = wordNode.Add(newWord, soundLaw);
         }
 
         return wordNode;
