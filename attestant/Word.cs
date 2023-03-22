@@ -33,13 +33,23 @@ public class Word : IEquatable<Word>
         Phonemes = phonemes.Normalize(NormalizationForm.FormC);
     }
 
+    public string Print()
+    {
+        string print = "";
+        foreach (uint phoneme in EmbeddedPhonemes)
+        {
+            print += Phoneme.Embedding.Reverse[phoneme];
+        }
+        return print;
+    }
+
     public bool Equals(Word? other) => Phonemes == other?.Phonemes;
 
     // Memoization Matrix
     private static int[,] _table = null!;
 
     /// <summary>
-    ///     Dynamic programming algorithm that calculates the Damerau-Levenshtein distance, where
+    ///     Dynamic programming algorithm that calculates the Levenshtein distance, where
     ///     the substitution cost between 2 phonemes varies, depending on the similarity reflected in their encoding.
     /// </summary>
     public int EditDistance(Word other)
@@ -71,12 +81,6 @@ public class Word : IEquatable<Word>
         var substitutionCost = CalculateDistance(word1, word2, i - 1, j - 1) + CalculateSubstitutionCost(word1, word2, i-1, j-1);
             
         var distance = Math.Min(Math.Min(deletionCost, insertionCost), substitutionCost);
-
-        if (i > 1 && j > 1 && word1[i - 1] == word2[j - 2] && word1[i - 2] == word2[j - 1])
-        {
-            int transpositionCost = CalculateDistance(word1, word2, i - 2, j - 2) + 1;
-            distance = Math.Min(distance, transpositionCost);
-        }
 
         _table[i, j] = distance;
         return distance;

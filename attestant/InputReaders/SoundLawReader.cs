@@ -19,13 +19,13 @@ public static class SoundLawReader
         List<LanguageDevelopment> languageDevelopments = new();
         var currentDirectoryPath = Directory.GetCurrentDirectory();
 
-        var fileName = "WelshLaws.json";
+        var fileName = "OldIrishLaws.json";
         var filePath = 
             Path.GetFullPath(Path.Combine(currentDirectoryPath, "..", "..", "..", "..", "Resources", fileName)); 
         var jsonString = File.ReadAllText(filePath);
         languageDevelopments.Add(JsonSerializer.Deserialize<LanguageDevelopment>(jsonString)!);
             
-        fileName = "OldIrishLaws.json";
+        fileName = "WelshLaws.json";
         filePath = 
             Path.GetFullPath(Path.Combine(currentDirectoryPath, "..", "..", "..", "..", "Resources", fileName));
         jsonString = File.ReadAllText(filePath);
@@ -45,12 +45,12 @@ public class LanguageDevelopment
 
     public List<SoundLaw> SoundLaws 
         => SoundLawRepresentations.Select(slr => slr.ToSoundLaw()).ToList();
-    
+
     public class SoundLawRepresentation
     {
-        [JsonPropertyName("number")] 
+        [JsonPropertyName("number")]
         public string Number { get; set; } = null!;
-        
+
         [JsonPropertyName("law")]
         public string Law { get; set; } = null!;
 

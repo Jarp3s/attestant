@@ -3,13 +3,15 @@
 
 public class Spelling
 {
-    public Spelling()
-    {
+    private readonly List<SoundLaw> _spellingLaws;
 
+    public Spelling(List<SoundLaw> spellingLaws)
+    {
+        _spellingLaws = spellingLaws;
     }
 
     public string Phonetic(string written)
     {
-        return "";
+        return written; // TODO
     }
 }

@@ -5,8 +5,9 @@ namespace attestantResearch.InputReaders;
 
 public static class WordReader
 {
-    private static readonly Spelling WelshSpelling = new();
-    private static readonly Spelling IrishSpelling = new();
+    private static readonly Spelling WelshSpelling = new(new List<SoundLaw>()); // TODO
+    private static readonly Spelling IrishSpelling = new(new List<SoundLaw>()); // TODO
+    private static readonly Spelling ProtoCelticSpelling = new(new List<SoundLaw>()); // TODO
 
     public static List<WordSet> ReadWords()
     {
@@ -24,7 +25,7 @@ public static class WordReader
 
     private static WordSet Phonetic(WordSet words)
     {
-        // Proto-Celtic forms are fine already
+        words.ProtoCeltic = ProtoCelticSpelling.Phonetic(words.ProtoCeltic);
         words.OldIrish = IrishSpelling.Phonetic(words.OldIrish);
         words.MiddleWelsh = WelshSpelling.Phonetic(words.MiddleWelsh);
 
