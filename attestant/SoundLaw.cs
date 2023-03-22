@@ -51,7 +51,7 @@ public class SoundLaw
     ///     Converts a string-representation to a SoundLaw.
     /// </summary>
     public static SoundLaw Parse(string inputLaw) // Example input: *i, *u > *e /_$a(C)#
-    {                                             // Example input: *o > *ö /_$ī, i, ü, ö, ẹ, j
+    {                                             // Example input: *o > *ö /_$ī, $i, $ü, $ö, $ẹ, $j
         var normalizedLaw = inputLaw.Normalize(NormalizationForm.FormC);
         normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+", match 
             => Phoneme.Characterization.Forward[match.Value].ToString());
