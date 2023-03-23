@@ -1,4 +1,5 @@
 ﻿global using attestant;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using attestant.Algorithms;
 using attestant.InputReaders;
@@ -16,6 +17,18 @@ LanguageDevelopment irishDevelopment = langDevs[0];
 LanguageDevelopment welshDevelopment = langDevs[1];
 WordTransformer irishTransformer = new(irishDevelopment.SoundLaws);
 WordTransformer welshTransformer = new(welshDevelopment.SoundLaws);
+
+List<LanguageDevelopment> spellingDevs = SoundLawReader.GetSpelling();
+LanguageDevelopment irishSpelling = spellingDevs[0];
+LanguageDevelopment welshSpelling = spellingDevs[1];
+WordTransformer irishPhoneticizer = new(irishSpelling.SoundLaws);
+WordTransformer welshPhoneticizer = new(welshSpelling.SoundLaws);
+
+foreach (var wordSet in wordSets)
+{
+    wordSet.OldIrish = irishPhoneticizer.Transform(wordSet.OldIrish).Value;
+    wordSet.MiddleWelsh = welshPhoneticizer.Transform(wordSet.MiddleWelsh).Value;
+}
 
 foreach (var wordSet in wordSets)
 {

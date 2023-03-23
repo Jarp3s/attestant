@@ -1,0 +1,230 @@
+﻿{
+  "language": "Old Irish",
+  "soundLawRepresentations": [
+    {
+      "number": "SOI1a",
+      "law": "b > β /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "SOI1b",
+      "law": "g > ɣ /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "SOI1c",
+      "law": "d > ð /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "SOI1d",
+      "law": "m > μ /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "SOI1e",
+      "law": "p > b /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "SOI1f",
+      "law": "t > d /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "SOI1g",
+      "law": "c > g /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "SOI2",
+      "law": "x > xs",
+      "context": ""
+    },
+    {
+      "number": "SOI3a",
+      "law": "ph > ɸ",
+      "context": ""
+    },
+    {
+      "number": "SOI3b",
+      "law": "th > θ",
+      "context": ""
+    },
+    {
+      "number": "SOI3c",
+      "law": "ch > x",
+      "context": ""
+    },
+    {
+      "number": "SOI4a",
+      "law": "pp > p",
+      "context": ""
+    },
+    {
+      "number": "SOI4b",
+      "law": "tt > t",
+      "context": ""
+    },
+    {
+      "number": "SOI4c",
+      "law": "cc > c",
+      "context": ""
+    },
+    {
+      "number": "SOI5",
+      "law": "c > k",
+      "context": ""
+    },
+    {
+      "number": "SOI6a",
+      "law": "a,o > ə /VC($)_",
+      "context": ""
+    },
+    {
+      "number": "SOI6b",
+      "law": "ai > ə⁊ /VC($)_",
+      "context": ""
+    },
+    {
+      "number": "SOI6c",
+      "law": "e > ʲə /VC($)_",
+      "context": ""
+    },
+    {
+      "number": "SOI6d",
+      "law": "i > ʲə⁊ /VC($)_",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI7",
+      "law": "i > ⁊ /$V_",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI7",
+      "law": "i > ⁊ /#$V_",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI8a",
+      "law": "e > ʲe /_#",
+      "context": ""
+    },
+    {
+      "number": "SOI8b",
+      "law": "ae > e /_#",
+      "context": ""
+    },
+    {
+      "number": "SOI8c",
+      "law": "i > ʲi /_#",
+      "context": ""
+    },
+    {
+      "number": "SOI8d",
+      "law": "ui > i /_#",
+      "context": ""
+    },
+    {
+      "number": "SOI8e",
+      "law": "iu > ʲu /_#",
+      "context": ""
+    },
+    {
+      "number": "SOI8f",
+      "law": "eo > ʲo /_#",
+      "context": ""
+    },
+    {
+      "number": "SOI8g",
+      "law": "ea > ʲa /_#",
+      "context": ""
+    },
+    {
+      "number": "SOI9a",
+      "law": "aí > ai⁊",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI9b",
+      "law": "áe > ai",
+      "context": ""
+    },
+    {
+      "number": "SOI9c",
+      "law": "oí > oi⁊",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI9d",
+      "law": "óe > oi",
+      "context": ""
+    },
+    {
+      "number": "SOI9e",
+      "law": "uí > ui",
+      "context": ""
+    },
+    {
+      "number": "SOI10",
+      "law": "o > u /a,e_",
+      "context": ""
+    },
+    {
+      "number": "SOI11",
+      "law": "Ø > ʲ /#C_($)E",
+      "context": ""
+    },
+    {
+      "number": "SOI12a",
+      "law": "á > ā",
+      "context": ""
+    },
+    {
+      "number": "SOI12b",
+      "law": "ó > ō",
+      "context": ""
+    },
+    {
+      "number": "SOI12c",
+      "law": "ú > ū",
+      "context": ""
+    },
+    {
+      "number": "SOI12d",
+      "law": "í > ī",
+      "context": ""
+    },
+    {
+      "number": "SOI12e",
+      "law": "é > ē",
+      "context": ""
+    },
+    {
+      "number": "SOI13a",
+      "law": "Ø > ʲ /⁊C_",
+      "context": "Palatalization solving chaos"
+    },
+    {
+      "number": "SOI13b",
+      "law": "Ø > ʲ /CʲC_",
+      "context": "Palatalization solving chaos"
+    },
+    {
+      "number": "SOI13bREP",
+      "law": "Ø > ʲ /CʲC_",
+      "context": "Palatalization solving chaos"
+    },
+    {
+      "number": "SOI13c",
+      "law": "⁊ > Ø",
+      "context": "Palatalization solving chaos"
+    },
+    {
+      "number": "SOI13d",
+      "law": "ʲʲ,ʲʲʲ > ʲ",
+      "context": "Palatalization solving chaos"
+    }
+  ]
+}

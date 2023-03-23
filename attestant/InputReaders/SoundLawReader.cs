@@ -17,21 +17,32 @@ public static class SoundLawReader
     public static List<LanguageDevelopment> GetLanguageDevelopments()
     {
         List<LanguageDevelopment> languageDevelopments = new();
+
+        languageDevelopments.Add(FetchDevelopment("OldIrishLaws.json"));
+        languageDevelopments.Add(FetchDevelopment("MiddleWelshLaws.json"));
+
+        return languageDevelopments;
+    }
+
+    public static List<LanguageDevelopment> GetSpelling()
+    {
+        List<LanguageDevelopment> spellings = new();
+
+        spellings.Add(FetchDevelopment("OldIrishSpelling.json"));
+        spellings.Add(FetchDevelopment("MiddleWelshSpelling.json"));
+
+        return spellings;
+    }
+
+    private static LanguageDevelopment FetchDevelopment(string fileName)
+    {
         var currentDirectoryPath = Directory.GetCurrentDirectory();
 
-        var fileName = "OldIrishLaws.json";
-        var filePath = 
-            Path.GetFullPath(Path.Combine(currentDirectoryPath, "..", "..", "..", "..", "Resources", fileName)); 
-        var jsonString = File.ReadAllText(filePath);
-        languageDevelopments.Add(JsonSerializer.Deserialize<LanguageDevelopment>(jsonString)!);
-            
-        fileName = "WelshLaws.json";
-        filePath = 
+        var filePath =
             Path.GetFullPath(Path.Combine(currentDirectoryPath, "..", "..", "..", "..", "Resources", fileName));
-        jsonString = File.ReadAllText(filePath);
-        languageDevelopments.Add(JsonSerializer.Deserialize<LanguageDevelopment>(jsonString)!);
-            
-        return languageDevelopments;
+        var jsonString = File.ReadAllText(filePath);
+
+        return JsonSerializer.Deserialize<LanguageDevelopment>(jsonString)!;
     }
 }
 

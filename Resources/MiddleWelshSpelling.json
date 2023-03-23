@@ -1,0 +1,90 @@
+﻿{
+  "language": "Old Irish",
+  "soundLawRepresentations": [
+    {
+      "number": "SMW1a",
+      "law": "ph > ɸ",
+      "context": ""
+    },
+    {
+      "number": "SMW1b",
+      "law": "th > θ",
+      "context": ""
+    },
+    {
+      "number": "SMW1c",
+      "law": "ch > x",
+      "context": ""
+    },
+    {
+      "number": "SMW2",
+      "law": "ng > ŋ",
+      "context": ""
+    },
+    {
+      "number": "SMW3a",
+      "law": "mh > m̥",
+      "context": ""
+    },
+    {
+      "number": "SMW3b",
+      "law": "nh > n̥",
+      "context": ""
+    },
+    {
+      "number": "SMW3c",
+      "law": "ŋh > ŋ̊",
+      "context": ""
+    },
+    {
+      "number": "SMW4a",
+      "law": "f > v",
+      "context": ""
+    },
+    {
+      "number": "SMW4b",
+      "law": "vv > f",
+      "context": ""
+    },
+    {
+      "number": "SMW5",
+      "law": "dd > ð",
+      "context": ""
+    },
+    {
+      "number": "SMW6a",
+      "law": "rh > r̥",
+      "context": ""
+    },
+    {
+      "number": "SMW6b",
+      "law": "ll > ɬ",
+      "context": ""
+    },
+    {
+      "number": "SMW7a",
+      "law": "y > ɨ /#C($)_",
+      "context": ""
+    },
+    {
+      "number": "SMW7b",
+      "law": "y > ə",
+      "context": ""
+    },
+    {
+      "number": "SMW8",
+      "law": "u > ʉ",
+      "context": ""
+    },
+    {
+      "number": "SMW9",
+      "law": "w > u /_C",
+      "context": ""
+    },
+    {
+      "number": "SMW10",
+      "law": "c > k",
+      "context": ""
+    }
+  ]
+}
