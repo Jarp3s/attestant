@@ -26,7 +26,7 @@ public class SoundLaw
     ///     Applies the sound law on the given word,
     ///     possibly transforming it into new word(s).
     /// </summary>
-    public Word Apply(Word word) 
+    public string Apply(Word word)
         => new (_antecedent.Replace(word.CharacterizedPhonemes, _consequent));
     
     /// <summary>
@@ -59,23 +59,23 @@ public class SoundLaw
         normalizedLaw = Regex.Replace(normalizedLaw, @"[\s*]", @"");
         var lawSegments = Regex.Split(normalizedLaw, @"[.>/]");
 
-        return new SoundLaw(GetAntecedent(), GetConsequent(), inputLaw);
+        return new SoundLaw(GetTarget(), GetReplacement(), inputLaw);
         
         
         // Creates a RegEx pattern-string (antecedent) by grouping the environment with the sound
-        string GetAntecedent()
+        string GetTarget()
         {
-            var replacedSound = Regex.Replace(lawSegments[1], @",", @"|");
+            var targetSound = Regex.Replace(lawSegments[1], @",", @"|");
             // TODO: convert special symbols to RegEx
-            replacedSound = Regex.Replace(replacedSound, @"[A-Z]", match
+            targetSound = Regex.Replace(targetSound, @"[A-Z]", match
                 => CoverSymbol.ToRegexString(char.Parse(match.Value)));
 
             var environment = Regex.Split(GetEnvironment(), @"_");
-            return $"({environment[0]})({replacedSound})({environment[1]})";
+            return $"({environment[0]})({targetSound})({environment[1]})";
         }
 
         // Create RegEx replacement-strings (consequents) by processing each symbol individually
-        string GetConsequent()
+        string GetReplacement()
         {
             var replacingSound = lawSegments[2];
             // TODO: convert special symbols to RegEx

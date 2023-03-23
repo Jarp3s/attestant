@@ -26,8 +26,6 @@ public class WordSet
         return new WordSet(cognates[1].TrimStart(), cognates[2].TrimStart(), cognates[0]);
     }
 
-    public string Print()
-    {
-        return ProtoCeltic + "| " + OldIrish + "; " + ConstructedIrish.Value.Print() + "; " + ConstructedIrish.Value.EditDistance(new Word(OldIrish)) + "| " + MiddleWelsh + "; " + ConstructedWelsh.Value.Print() + "; " + ConstructedWelsh.Value.EditDistance(new Word(MiddleWelsh));
-    }
+    public override string ToString()
+        => ProtoCeltic + "| " + OldIrish + "; " + ConstructedIrish.Value + "; " + ConstructedIrish.Value.EditDistance(new Word(OldIrish)) + "| " + MiddleWelsh + "; " + ConstructedWelsh.Value + "; " + ConstructedWelsh.Value.EditDistance(new Word(MiddleWelsh));
 }

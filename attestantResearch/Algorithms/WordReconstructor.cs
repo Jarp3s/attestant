@@ -20,14 +20,14 @@ public class WordReconstructor
     /// <summary>
     ///     Foreach language, applies all given laws in order to transform the word.
     /// </summary>
-    public List<UNode<Word, SoundLaw>> Develop(string phonemes)
+    public List<UNode<Word, SoundLaw>> Develop(string word)
     {
         List<UNode<Word, SoundLaw>> wordDevelopments = new();
         
         foreach (var lanDev in _languageDevelopments)
         {
             var transformer = new WordTransformer(lanDev.SoundLaws);
-            wordDevelopments.Add(transformer.Transform(phonemes));
+            wordDevelopments.Add(transformer.Transform(word));
         }
         
         return wordDevelopments;

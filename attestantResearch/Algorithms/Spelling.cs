@@ -1,4 +1,4 @@
-﻿namespace attestant.Utilities;
+﻿namespace attestantResearch.Algorithms;
 
 
 public class Spelling

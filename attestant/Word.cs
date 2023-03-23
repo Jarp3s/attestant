@@ -4,46 +4,41 @@ using attestant.Utilities;
 
 namespace attestant;
 
+
 /// <summary>
 ///     IPA-encoded word, containing several representations in order to comply with different functionality.
 /// </summary>
-public class Word : IEquatable<Word>
+public class Word
 {
     /// <summary>
     ///     A word represented as an array of phonemes.
     /// </summary>
-    public string Phonemes { get; }
+    private readonly string _value;
 
     /// <summary>
     ///     A word represented as an array of binary feature embeddings.
     /// </summary>
-    internal uint[] EmbeddedPhonemes
+    public uint[] EmbeddedPhonemes
         => CharacterizedPhonemes.Select(phoneme 
             => Phoneme.Embedding.Forward[Phoneme.Characterization.Reverse[phoneme]]).ToArray();
 
     /// <summary>
     ///     A word represented as an array of characterized phonemes.
     /// </summary>
-    internal string CharacterizedPhonemes 
-        => Regex.Replace(Phonemes, @"\P{M}\p{M}+", match 
+    public string CharacterizedPhonemes 
+        => Regex.Replace(_value, @"\P{M}\p{M}+", match 
             => Phoneme.Characterization.Forward[match.Value].ToString());
 
-    public Word(string phonemes)
+    public Word(string value)
     {
-        Phonemes = phonemes.Normalize(NormalizationForm.FormC);
+        _value = value.Normalize(NormalizationForm.FormC);
     }
 
-    public string Print()
-    {
-        string print = "";
-        foreach (uint phoneme in EmbeddedPhonemes)
-        {
-            print += Phoneme.Embedding.Reverse[phoneme];
-        }
-        return print;
-    }
+    public override string ToString() => _value;
 
-    public bool Equals(Word? other) => Phonemes == other?.Phonemes;
+    public static implicit operator string(Word wrd) => wrd._value;
+
+    public static implicit operator Word(string str) => new(str);
 
     // Memoization Matrix
     private static int[,] _table = null!;
