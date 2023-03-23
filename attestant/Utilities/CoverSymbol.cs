@@ -99,7 +99,13 @@ internal static class CoverSymbol
         { 
             'r', 'Ⅴ', 'ρ', 'l', 'ɬ', 'λ'
         },
-     
+
+
+        'K' => new HashSet<char> // Velar
+        {
+            'k', 'g'
+        },
+
         _ => throw new ArgumentOutOfRangeException(nameof(coverSymbol), coverSymbol, null)
     };
 }
