@@ -132,8 +132,23 @@
       "context": ""
     },
     {
-      "number": "PI2ab",
-      "law": "mp, nt, nk, nkʷ > bb, dd, gg, gʷgʷ /V_",
+      "number": "PI2aba",
+      "law": "mp > bb /V_",
+      "context": ""
+    },
+    {
+      "number": "PI2abb",
+      "law": "nt > dd /V_",
+      "context": ""
+    },
+    {
+      "number": "PI2abc",
+      "law": "nk > gg /V_",
+      "context": ""
+    },
+    {
+      "number": "PI2ad",
+      "law": "nkʷ > gʷgʷ /V_",
       "context": ""
     },
     {
