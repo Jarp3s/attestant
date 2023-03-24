@@ -1,14 +1,13 @@
 ﻿using attestant.DataStructures;
-using System.Runtime.CompilerServices;
 
 namespace attestantResearch;
 
 
 public class WordSet
 {
-    public string OldIrish; 
-    public string MiddleWelsh; 
-    public string ProtoCeltic;
+    public string OldIrish { get; set; }
+    public string MiddleWelsh { get; set; }
+    public string ProtoCeltic { get; set; }
 
     public UNode<Word, SoundLaw> ConstructedIrish; // The Old Irish form that will be made using the laws
     public UNode<Word, SoundLaw> ConstructedWelsh; // The Middle Welsh form that will be made using the laws

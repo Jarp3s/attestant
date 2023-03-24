@@ -1,10 +1,7 @@
 ﻿global using attestant;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using attestant.Algorithms;
 using attestant.InputReaders;
 using attestantResearch;
-using attestantResearch.Algorithms;
 using attestantResearch.InputReaders;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;

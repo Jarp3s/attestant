@@ -16,20 +16,22 @@ public static class SoundLawReader
     /// </summary>
     public static List<LanguageDevelopment> GetLanguageDevelopments()
     {
-        List<LanguageDevelopment> languageDevelopments = new();
-
-        languageDevelopments.Add(FetchDevelopment("OldIrishLaws.json"));
-        languageDevelopments.Add(FetchDevelopment("MiddleWelshLaws.json"));
+        List<LanguageDevelopment> languageDevelopments = new()
+        {
+            FetchDevelopment("OldIrishLaws.json"),
+            FetchDevelopment("MiddleWelshLaws.json")
+        };
 
         return languageDevelopments;
     }
 
     public static List<LanguageDevelopment> GetSpelling()
     {
-        List<LanguageDevelopment> spellings = new();
-
-        spellings.Add(FetchDevelopment("OldIrishSpelling.json"));
-        spellings.Add(FetchDevelopment("MiddleWelshSpelling.json"));
+        List<LanguageDevelopment> spellings = new()
+        {
+            FetchDevelopment("OldIrishSpelling.json"),
+            FetchDevelopment("MiddleWelshSpelling.json")
+        };
 
         return spellings;
     }
