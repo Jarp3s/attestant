@@ -30,7 +30,8 @@ public static class SoundLawReader
         List<LanguageDevelopment> spellings = new()
         {
             FetchDevelopment("OldIrishSpelling.json"),
-            FetchDevelopment("MiddleWelshSpelling.json")
+            FetchDevelopment("MiddleWelshSpelling.json"),
+            FetchDevelopment("ProtoCelticSpelling.json")
         };
 
         return spellings;

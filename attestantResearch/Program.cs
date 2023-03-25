@@ -17,14 +17,16 @@ WordTransformer welshTransformer = new(welshDevelopment.SoundLaws);
 List<LanguageDevelopment> spellingDevs = SoundLawReader.GetSpelling();
 LanguageDevelopment irishSpelling = spellingDevs[0];
 LanguageDevelopment welshSpelling = spellingDevs[1];
+LanguageDevelopment protoCelticSpelling = spellingDevs[2];
 WordTransformer irishPhoneticizer = new(irishSpelling.SoundLaws);
 WordTransformer welshPhoneticizer = new(welshSpelling.SoundLaws);
+WordTransformer protoCelticPhoneticizer = new(protoCelticSpelling.SoundLaws);
 
 foreach (var wordSet in wordSets)
 {
     wordSet.OldIrish = irishPhoneticizer.Transform(wordSet.OldIrishSpelling).Value;
     wordSet.MiddleWelsh = welshPhoneticizer.Transform(wordSet.MiddleWelshSpelling).Value;
-    wordSet.ProtoCeltic = wordSet.ProtoCelticSpelling;
+    wordSet.ProtoCeltic = protoCelticPhoneticizer.Transform(wordSet.ProtoCelticSpelling).Value;
 }
 
 int i = 0;

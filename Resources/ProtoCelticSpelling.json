@@ -1,0 +1,10 @@
+﻿{
+  "language": "Proto Celtic",
+  "soundLawRepresentations": [
+    {
+      "number": "SPC1",
+      "law": "y > j",
+      "context": ""
+    }
+  ]
+}
