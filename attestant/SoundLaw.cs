@@ -96,7 +96,7 @@ public class SoundLaw
             var environmentSound = Regex.Replace(lawSegments[3], @",", @"|");
 
             // Parse non-literals (i.e. operator-symbols) to their RegEx equivalent
-            environmentSound = Regex.Replace(environmentSound, @"$", @"C*");
+            environmentSound = Regex.Replace(environmentSound, @"\$", @"C*");
             environmentSound = Regex.Replace(environmentSound, @"^#", @"^");
             environmentSound = Regex.Replace(environmentSound, @"#$", @"$");
             environmentSound = Regex.Replace(environmentSound, @"(\()(.+)(\))", @"($2)?");

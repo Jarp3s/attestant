@@ -78,22 +78,22 @@
     },
     {
       "number": "SOI6a",
-      "law": "a,o > ə /VC($)_",
+      "law": "a,o > ə /VC$_",
       "context": ""
     },
     {
       "number": "SOI6b",
-      "law": "ai > ə⁊ /VC($)_",
+      "law": "ai > ə⁊ /VC$_",
       "context": ""
     },
     {
       "number": "SOI6c",
-      "law": "e > ʲə /VC($)_",
+      "law": "e > ʲə /VC$_",
       "context": ""
     },
     {
       "number": "SOI6d",
-      "law": "i > ʲə⁊ /VC($)_",
+      "law": "i > ʲə⁊ /VC$_",
       "context": "(includes temporary pre-palatalization ⁊)"
     },
     {
