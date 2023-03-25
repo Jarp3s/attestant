@@ -20,7 +20,8 @@ public class Word
     /// </summary>
     public uint[] EmbeddedPhonemes
         => CharacterizedPhonemes.Select(phoneme 
-            => Phoneme.Embedding.Forward[Phoneme.Characterization.Reverse[phoneme]]).ToArray();
+            => Phoneme.Embedding.Forward[Regex.Replace(phoneme.ToString(), @"[Ⅰ-Ⅹ]", match 
+                => Phoneme.Characterization.Reverse[char.Parse(match.Value)])]).ToArray();
 
     /// <summary>
     ///     A word represented as an array of characterized phonemes.
@@ -50,10 +51,10 @@ public class Word
     public int EditDistance(Word other)
     {
         var otherEmbeddedPhonemes = other.EmbeddedPhonemes;
-        _table = new int[otherEmbeddedPhonemes.Length + 1, otherEmbeddedPhonemes.Length + 1];
+        _table = new int[EmbeddedPhonemes.Length + 1, otherEmbeddedPhonemes.Length + 1];
 
-        for (var i = 0; i <= otherEmbeddedPhonemes.Length; i++)
-            for (var j = 0; j <= otherEmbeddedPhonemes.Length; j++)
+        for (var i = 0; i < otherEmbeddedPhonemes.Length; i++)
+            for (var j = 0; j < otherEmbeddedPhonemes.Length; j++)
                 _table[i, j] = -1; // Allows to check if the value has not been set yet
             
         return CalculateDistance(EmbeddedPhonemes, otherEmbeddedPhonemes, EmbeddedPhonemes.Length, otherEmbeddedPhonemes.Length);

@@ -21,14 +21,18 @@ public class SoundLaw
         _consequent = consequent;
         _soundLaw = soundLaw;
     }
-    
+
     /// <summary>
     ///     Applies the sound law on the given word,
     ///     possibly transforming it into new word(s).
     /// </summary>
     public string Apply(Word word)
-        => new (_antecedent.Replace(word.CharacterizedPhonemes, _consequent));
-    
+    {
+        var result = _antecedent.Replace(word.CharacterizedPhonemes, _consequent);
+        return Regex.Replace(result, @"[Ⅰ-Ⅹ]", match
+            => Phoneme.Characterization.Reverse[char.Parse(match.Value)]);
+    }
+
     /// <summary>
     ///     Converts a SoundLaw to a string-representation.
     /// </summary>
