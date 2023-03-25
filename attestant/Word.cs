@@ -18,7 +18,7 @@ public class Word
     /// <summary>
     ///     A word represented as an array of binary feature embeddings.
     /// </summary>
-    public long[] EmbeddedPhonemes
+    public ulong[] EmbeddedPhonemes
         => CharacterizedPhonemes.Select(phoneme 
             => Phoneme.Embedding.Forward[Regex.Replace(phoneme.ToString(), @"[Ⅰ-Ⅹ]", match 
                 => Phoneme.Characterization.Reverse[char.Parse(match.Value)])]).ToArray();
@@ -42,63 +42,66 @@ public class Word
     public static implicit operator Word(string str) => new(str);
 
     // Memoization Matrix
-    private static int[,] _table = null!;
+    private static float[,] _table = null!;
 
     /// <summary>
     ///     Dynamic programming algorithm that calculates the Levenshtein distance, where
     ///     the substitution cost between 2 phonemes varies, depending on the similarity reflected in their encoding.
     /// </summary>
-    public int EditDistance(Word other)
+    public float EditDistance(Word other)
     {
         var otherEmbeddedPhonemes = other.EmbeddedPhonemes;
-        _table = new int[EmbeddedPhonemes.Length + 1, otherEmbeddedPhonemes.Length + 1];
+        _table = new float[EmbeddedPhonemes.Length + 1, otherEmbeddedPhonemes.Length + 1];
 
-        for (var i = 0; i < EmbeddedPhonemes.Length; i++)
-            for (var j = 0; j < otherEmbeddedPhonemes.Length; j++)
+        for (var i = 0; i <= EmbeddedPhonemes.Length; i++)
+            for (var j = 0; j <= otherEmbeddedPhonemes.Length; j++)
                 _table[i, j] = -1; // Allows to check if the value has not been set yet
             
         return CalculateDistance(EmbeddedPhonemes, otherEmbeddedPhonemes, EmbeddedPhonemes.Length, otherEmbeddedPhonemes.Length);
     }
 
-    private static int CalculateDistance(long[] word1, long[] word2, int i, int j)
+    private static float CalculateDistance(ulong[] word1, ulong[] word2, int i, int j)
     {
         if (i is 0)
-            return j;
+            return (float)j;
         if (j is 0)
-            return i;
+            return (float)i;
         if (_table[i, j] is not -1)
             return _table[i, j];
 
         if (word1[i - 1] == word2[j - 1])
             return CalculateDistance(word1, word2, i - 1, j - 1);
 
-        var insertionCost = CalculateDistance(word1, word2, i, j - 1) + 1;
-        var deletionCost = CalculateDistance(word1, word2, i - 1, j) + 1;
-        var substitutionCost = CalculateDistance(word1, word2, i - 1, j - 1) + CalculateSubstitutionCost(word1, word2, i-1, j-1);
-            
-        var distance = Math.Min(Math.Min(deletionCost, insertionCost), substitutionCost);
+        float insertionCost = CalculateDistance(word1, word2, i, j - 1) + 1;
+        float deletionCost = CalculateDistance(word1, word2, i - 1, j) + 1;
+        float substitutionCost = CalculateDistance(word1, word2, i - 1, j - 1) + CalculateSubstitutionCost(word1, word2, i-1, j-1);
+
+        if (CalculateSubstitutionCost(word1, word2, i - 1, j - 1) > 1)
+            throw new Exception();
+
+        float distance = Math.Min(Math.Min(deletionCost, insertionCost), substitutionCost);
 
         _table[i, j] = distance;
         return distance;
     }
 
-    private static int CalculateSubstitutionCost(long[] word1, long[] word2, int i, int j)
+    private static float CalculateSubstitutionCost(ulong[] word1, ulong[] word2, int i, int j)
     {
 
         var phoneme1 = word1[i]; // To get the bit array of the sound
         var phoneme2 = word2[j];
 
-        var isConsonant1 = phoneme1 >> 31 == 1; // To see if the sound is a consonant
-        var isConsonant2 = phoneme2 >> 31 == 1;
+        var isConsonant1 = phoneme1 >> 63 == 1; // To see if the sound is a consonant
+        var isConsonant2 = phoneme2 >> 63 == 1;
 
         if (isConsonant1 && isConsonant2)
-            return CalculateBitSum(phoneme1 ^ phoneme2) / 18; // 19 bits used for consonants. One simply marks it as consonant.
+            return CalculateBitSum(phoneme1 ^ phoneme2) / 12f; // Maximally 12 bits difference for consonants.
         if (!isConsonant1 && !isConsonant2)
-            return CalculateBitSum(phoneme1 ^ phoneme2) / 14; // 15 bits used for vowels. One simply marks it as vowel.
+            return CalculateBitSum(phoneme1 ^ phoneme2) / 8f; // Maximally 8 bits difference for vowels.
         return 1; // If a vowel and consonant, the difference is max
     }
 
-    private static int CalculateBitSum(long difference)
+    private static int CalculateBitSum(ulong difference)
     {
         var count = 0;
         while (difference > 0) // Each iteration, get the first bit, then bitshift
