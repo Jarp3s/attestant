@@ -2,6 +2,61 @@
   "language": "Old Irish",
   "soundLawRepresentations": [
     {
+      "number": "SOI9a",
+      "law": "aí > ai⁊",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI9b",
+      "law": "áe > ai",
+      "context": ""
+    },
+    {
+      "number": "SOI9c",
+      "law": "oí > oi⁊",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI9d",
+      "law": "óe > oi",
+      "context": ""
+    },
+    {
+      "number": "SOI9e",
+      "law": "uí > ui",
+      "context": ""
+    },
+    {
+      "number": "SOI10",
+      "law": "o > u /a,e_",
+      "context": ""
+    },
+    {
+      "number": "SOI12a",
+      "law": "á > ā",
+      "context": ""
+    },
+    {
+      "number": "SOI12b",
+      "law": "ó > ō",
+      "context": ""
+    },
+    {
+      "number": "SOI12c",
+      "law": "ú > ū",
+      "context": ""
+    },
+    {
+      "number": "SOI12d",
+      "law": "í > ī",
+      "context": ""
+    },
+    {
+      "number": "SOI12e",
+      "law": "é > ē",
+      "context": ""
+    },
+    {
       "number": "SOI1a",
       "law": "b > β /V_V,R,#",
       "context": ""
@@ -78,22 +133,22 @@
     },
     {
       "number": "SOI6a",
-      "law": "a,o > ə /VC$_",
+      "law": "a,o > ə /VC$_C$",
       "context": ""
     },
     {
       "number": "SOI6b",
-      "law": "ai > ə⁊ /VC$_",
+      "law": "ai > ə⁊ /VC$_C$",
       "context": ""
     },
     {
       "number": "SOI6c",
-      "law": "e > ʲə /VC$_",
+      "law": "e > ʲə /VC$_C$",
       "context": ""
     },
     {
       "number": "SOI6d",
-      "law": "i > ʲə⁊ /VC$_",
+      "law": "i > ʲə⁊ /VC$_C$",
       "context": "(includes temporary pre-palatalization ⁊)"
     },
     {
@@ -108,7 +163,7 @@
     },
     {
       "number": "SOI8a",
-      "law": "e > ʲe /_#",
+      "law": "e > ʲe /C_#",
       "context": ""
     },
     {
@@ -118,7 +173,7 @@
     },
     {
       "number": "SOI8c",
-      "law": "i > ʲi /_#",
+      "law": "i > ʲi /C_#",
       "context": ""
     },
     {
@@ -128,77 +183,22 @@
     },
     {
       "number": "SOI8e",
-      "law": "iu > ʲu /_#",
+      "law": "iu > ʲu /C_#",
       "context": ""
     },
     {
       "number": "SOI8f",
-      "law": "eo > ʲo /_#",
+      "law": "eo > ʲo /C_#",
       "context": ""
     },
     {
       "number": "SOI8g",
-      "law": "ea > ʲa /_#",
-      "context": ""
-    },
-    {
-      "number": "SOI9a",
-      "law": "aí > ai⁊",
-      "context": "(includes temporary pre-palatalization ⁊)"
-    },
-    {
-      "number": "SOI9b",
-      "law": "áe > ai",
-      "context": ""
-    },
-    {
-      "number": "SOI9c",
-      "law": "oí > oi⁊",
-      "context": "(includes temporary pre-palatalization ⁊)"
-    },
-    {
-      "number": "SOI9d",
-      "law": "óe > oi",
-      "context": ""
-    },
-    {
-      "number": "SOI9e",
-      "law": "uí > ui",
-      "context": ""
-    },
-    {
-      "number": "SOI10",
-      "law": "o > u /a,e_",
+      "law": "ea > ʲa /C_#",
       "context": ""
     },
     {
       "number": "SOI11",
       "law": "Ø > ʲ /#C_($)E",
-      "context": ""
-    },
-    {
-      "number": "SOI12a",
-      "law": "á > ā",
-      "context": ""
-    },
-    {
-      "number": "SOI12b",
-      "law": "ó > ō",
-      "context": ""
-    },
-    {
-      "number": "SOI12c",
-      "law": "ú > ū",
-      "context": ""
-    },
-    {
-      "number": "SOI12d",
-      "law": "í > ī",
-      "context": ""
-    },
-    {
-      "number": "SOI12e",
-      "law": "é > ē",
       "context": ""
     },
     {

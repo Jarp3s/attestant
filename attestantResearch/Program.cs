@@ -27,9 +27,12 @@ foreach (var wordSet in wordSets)
     wordSet.ProtoCeltic = wordSet.ProtoCelticSpelling;
 }
 
+int i = 0;
+
 foreach (var wordSet in wordSets)
 {
+    i++;
     wordSet.ConstructedIrish = irishTransformer.Transform(wordSet.ProtoCeltic);
     wordSet.ConstructedWelsh = welshTransformer.Transform(wordSet.ProtoCeltic);
-    Console.WriteLine(wordSet.ToString());
+    Console.WriteLine($"[{i}]" + wordSet.ToString());
 }

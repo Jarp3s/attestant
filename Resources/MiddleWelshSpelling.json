@@ -85,6 +85,11 @@
       "number": "SMW10",
       "law": "c > k",
       "context": ""
+    },
+    {
+      "number": "SMW11",
+      "law": "- > Ø",
+      "context": "Dash removal"
     }
   ]
 }
