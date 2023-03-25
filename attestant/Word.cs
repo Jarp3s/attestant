@@ -18,7 +18,7 @@ public class Word
     /// <summary>
     ///     A word represented as an array of binary feature embeddings.
     /// </summary>
-    public uint[] EmbeddedPhonemes
+    public long[] EmbeddedPhonemes
         => CharacterizedPhonemes.Select(phoneme 
             => Phoneme.Embedding.Forward[Regex.Replace(phoneme.ToString(), @"[Ⅰ-Ⅹ]", match 
                 => Phoneme.Characterization.Reverse[char.Parse(match.Value)])]).ToArray();
@@ -53,14 +53,14 @@ public class Word
         var otherEmbeddedPhonemes = other.EmbeddedPhonemes;
         _table = new int[EmbeddedPhonemes.Length + 1, otherEmbeddedPhonemes.Length + 1];
 
-        for (var i = 0; i < otherEmbeddedPhonemes.Length; i++)
+        for (var i = 0; i < EmbeddedPhonemes.Length; i++)
             for (var j = 0; j < otherEmbeddedPhonemes.Length; j++)
                 _table[i, j] = -1; // Allows to check if the value has not been set yet
             
         return CalculateDistance(EmbeddedPhonemes, otherEmbeddedPhonemes, EmbeddedPhonemes.Length, otherEmbeddedPhonemes.Length);
     }
 
-    private static int CalculateDistance(uint[] word1, uint[] word2, int i, int j)
+    private static int CalculateDistance(long[] word1, long[] word2, int i, int j)
     {
         if (i is 0)
             return j;
@@ -82,7 +82,7 @@ public class Word
         return distance;
     }
 
-    private static int CalculateSubstitutionCost(uint[] word1, uint[] word2, int i, int j)
+    private static int CalculateSubstitutionCost(long[] word1, long[] word2, int i, int j)
     {
 
         var phoneme1 = word1[i]; // To get the bit array of the sound
@@ -92,13 +92,13 @@ public class Word
         var isConsonant2 = phoneme2 >> 31 == 1;
 
         if (isConsonant1 && isConsonant2)
-            return CalculateBitSum(phoneme1 ^ phoneme2) / 16; // 17 bits used for consonants. One simply marks it as consonant.
+            return CalculateBitSum(phoneme1 ^ phoneme2) / 18; // 19 bits used for consonants. One simply marks it as consonant.
         if (!isConsonant1 && !isConsonant2)
-            return CalculateBitSum(phoneme1 ^ phoneme2) / 12; // 13 bits used for vowels. One simply marks it as vowel.
+            return CalculateBitSum(phoneme1 ^ phoneme2) / 14; // 15 bits used for vowels. One simply marks it as vowel.
         return 1; // If a vowel and consonant, the difference is max
     }
 
-    private static int CalculateBitSum(uint difference)
+    private static int CalculateBitSum(long difference)
     {
         var count = 0;
         while (difference > 0) // Each iteration, get the first bit, then bitshift

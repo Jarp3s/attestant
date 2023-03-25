@@ -225,6 +225,11 @@
       "number": "SOI13d",
       "law": "ʲʲ,ʲʲʲ > ʲ",
       "context": "Palatalization solving chaos"
+    },
+    {
+      "number": "SOI14",
+      "law": "- > Ø",
+      "context": "Dash removal"
     }
   ]
 }

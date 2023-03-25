@@ -28,7 +28,7 @@
     },
     {
       "number": "NC16",
-      "law": "e, i > Ø /t, s _#",
+      "law": "e, i > Ø /t,s_#",
       "context": "Early i-apocope"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "number": "NC18a",
-      "law": "a > æ /_NT, Ns, nn, N#",
+      "law": "a > æ /_NT,Ns,nn,N#",
       "context": ""
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "number": "NC20a",
-      "law": "stm tst < ts / V_",
+      "law": "st, tst > ts /V_",
       "context": ""
     },
     {
@@ -183,32 +183,17 @@
     },
     {
       "number": "B32a",
-      "law": "i > e /_$a(C)#",
+      "law": "i > e /_C$a$#,C$ā$#",
       "context": "a-affection"
     },
     {
       "number": "B32b",
-      "law": "u > o /_$a(C)#",
+      "law": "u > o /_C$a$#,C$ā$#",
       "context": "a-affection"
     },
     {
       "number": "B32c",
-      "law": "i > e /_$ā(C)#",
-      "context": "a-affection"
-    },
-    {
-      "number": "B32d",
-      "law": "u > o /_$ā(C)#",
-      "context": "a-affection"
-    },
-    {
-      "number": "B32e",
-      "law": "j > Ø /C_a(C)#",
-      "context": "a-affection"
-    },
-    {
-      "number": "B32f",
-      "law": "j > Ø /C_ā(C)#",
+      "law": "j > Ø /C$_a$#,ā$#",
       "context": "a-affection"
     },
     {
@@ -243,7 +228,7 @@
     },
     {
       "number": "B35b",
-      "law": "h > j /V,C_i,ī",
+      "law": "h > j /_i,ī",
       "context": ""
     },
     {
@@ -258,42 +243,42 @@
     },
     {
       "number": "B37a",
-      "law": "u > y /_$ī(C)#",
+      "law": "u > y /_C$ī#",
       "context": "final i-affection"
     },
     {
       "number": "B37b",
-      "law": "u > y /_$jV(C)#",
+      "law": "u > y /_C$jV$#",
       "context": "final i-affection"
     },
     {
       "number": "B37c",
-      "law": "e > i /_$ī,i(C)#",
+      "law": "e > i /_C$ī#,C$i$#",
       "context": "final i-affection"
     },
     {
       "number": "B37d",
-      "law": "e > i /_$jV(C)#",
+      "law": "e > i /_C$jV$#",
       "context": "final i-affection"
     },
     {
       "number": "B37e",
-      "law": "o > ø /_$ī(C)#",
+      "law": "o > ø /_C$ī$#",
       "context": "final i-affection"
     },
     {
       "number": "B37f",
-      "law": "o > ø /_$jV(C)#",
+      "law": "o > ø /_C$jV$#",
       "context": "final i-affection"
     },
     {
       "number": "B37g",
-      "law": "a > ẹ /_$ī(C)#",
+      "law": "a > ẹ /_C$ī$#",
       "context": "final i-affection"
     },
     {
       "number": "B37h",
-      "law": "a > ẹ /_$jV(C)#",
+      "law": "a > ẹ /_C$jV$#",
       "context": "final i-affection"
     },
     {
@@ -333,32 +318,32 @@
     },
     {
       "number": "B39",
-      "law": "(j)V(C)(C)(C) > Ø /V$_#",
+      "law": "(j)V(C)(C)(C) > Ø /VC$_#",
       "context": "Apocope"
     },
     {
       "number": "B40",
-      "law": "V > Ø /V$_$V($)#",
+      "law": "V > Ø /VC$_C$V$#",
       "context": "Syncope"
     },
     {
       "number": "B41a",
-      "law": "u > y /_$ī,$i,$y,$ø,$ẹ,$j",
+      "law": "u > y /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
       "context": "Internal i-affection"
     },
     {
       "number": "B41b",
-      "law": "o > ø /_$ī,$i,$y,$ø,$ẹ,$j",
+      "law": "o > ø /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
       "context": "Internal i-affection"
     },
     {
       "number": "B41c",
-      "law": "a > ẹ /_$ī,$i,$y,$ø,$ẹ,$j",
+      "law": "a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
       "context": "Internal i-affection"
     },
     {
       "number": "B41d",
-      "law": "ē > ī /_$ī,$i,$y,$ø,$ẹ,$j",
+      "law": "ē > ī /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
       "context": "Internal i-affection"
     },
     {
@@ -553,17 +538,17 @@
     },
     {
       "number": "B48a",
-      "law": "i,u > ə /_C$V$#,$V$V",
+      "law": "i,u > ə /_CC$V$#,C$VC$V$#",
       "context": ""
     },
     {
       "number": "B48b",
-      "law": "ē > i /_C$V$#,$V$V",
+      "law": "ē > i /_CC$V$#,C$VC$V$#",
       "context": ""
     },
     {
       "number": "B48c",
-      "law": "ɔ̄ > o /_C$V$#,$V$V",
+      "law": "ɔ̄ > o /_CC$V$#,C$VC$V$#",
       "context": ""
     },
     {
@@ -593,7 +578,7 @@
     },
     {
       "number": "B49f",
-      "law": "ɔ̄ > au /_($)#",
+      "law": "ɔ̄ > au /_$#",
       "context": ""
     },
     {
@@ -623,12 +608,12 @@
     },
     {
       "number": "W50",
-      "law": "ɨ > e /_$i,ẹ",
+      "law": "ɨ > e /_C$i,C$ẹ",
       "context": ""
     },
     {
       "number": "W51",
-      "law": "ɨ,u,y > ə /_$V($)#",
+      "law": "ɨ,u,y > ə /_C$V$#",
       "context": ""
     },
     {
@@ -638,12 +623,12 @@
     },
     {
       "number": "W52b",
-      "law": "ẹ,ø > ɨ /_($)#",
+      "law": "ẹ,ø > ɨ /_$#",
       "context": ""
     },
     {
       "number": "W52c",
-      "law": "ẹ,ø > ei /_$jV",
+      "law": "ẹ,ø > ei /_C$jV",
       "context": ""
     },
     {
@@ -683,17 +668,17 @@
     },
     {
       "number": "W55d",
-      "law": "mp > mh /_($)V",
+      "law": "mp > mh /_$V",
       "context": ""
     },
     {
       "number": "W55e",
-      "law": "nt > nh /_($)V",
+      "law": "nt > nh /_$V",
       "context": ""
     },
     {
       "number": "W55f",
-      "law": "ŋk > ŋh /_($)V",
+      "law": "ŋk > ŋh /_$V",
       "context": ""
     },
     {

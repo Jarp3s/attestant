@@ -5,9 +5,9 @@ namespace attestantResearch.InputReaders;
 
 public static class WordReader
 {
-    private static readonly Spelling WelshSpelling = new(new List<SoundLaw>()); // TODO
-    private static readonly Spelling IrishSpelling = new(new List<SoundLaw>()); // TODO
-    private static readonly Spelling ProtoCelticSpelling = new(new List<SoundLaw>()); // TODO
+    private static readonly Spelling WelshSpelling = new(new List<SoundLaw>());
+    private static readonly Spelling IrishSpelling = new(new List<SoundLaw>());
+    private static readonly Spelling ProtoCelticSpelling = new(new List<SoundLaw>());
 
     public static List<WordSet> ReadWords()
     {

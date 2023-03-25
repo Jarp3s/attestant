@@ -28,7 +28,7 @@
     },
     {
       "number": "NC16",
-      "law": "e, i > Ø /t, s _#",
+      "law": "e, i > Ø /t,s_#",
       "context": "Early i-apocope"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "number": "NC18a",
-      "law": "a > æ /_NT, Ns, nn, N#",
+      "law": "a > æ /_NT,Ns,nn,N#",
       "context": ""
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "number": "NC20a",
-      "law": "stm tst < ts / V_",
+      "law": "st, tst > ts /V_",
       "context": ""
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "number": "PI2aa",
-      "law": "i, e, æ > ε̄ /_ NP, ns",
+      "law": "i, e, æ > ε̄ /_NP,ns",
       "context": ""
     },
     {
@@ -188,22 +188,22 @@
     },
     {
       "number": "PI5a",
-      "law": "e > i /_$U",
+      "law": "e > i /_C$U",
       "context": "Raising of e"
     },
     {
       "number": "PI5b",
-      "law": "o > u /_$U",
+      "law": "o > u /_C$U",
       "context": "Raising of o"
     },
     {
       "number": "PI6a",
-      "law": "a > o /Kʷ(L)_",
+      "law": "a > o /G(L)_",
       "context": ""
     },
     {
       "number": "PI6b",
-      "law": "i > u /Kʷ(L)_",
+      "law": "i > u /G(L)_",
       "context": ""
     },
     {
@@ -218,57 +218,57 @@
     },
     {
       "number": "PI7",
-      "law": "i > e /_$a,ā,o,ō",
+      "law": "i > e /_C$a,C$ā,C$o,C$ō",
       "context": "Lowering of i"
     },
     {
       "number": "PI7",
-      "law": "u > o /_$a,ā,o,ō",
+      "law": "u > o /_C$a,C$ā,C$o,C$ō",
       "context": "Lowering of u"
     },
     {
       "number": "PI8a",
-      "law": "ī > i /V$_\",",
+      "law": "ī > i /VC$_",
       "context": ""
     },
     {
       "number": "PI8b",
-      "law": "ū > u /V$_\",",
+      "law": "ū > u /VC$_",
       "context": ""
     },
     {
       "number": "PI8c",
-      "law": "ē > e /V$_\",",
+      "law": "ē > e /VC$_",
       "context": ""
     },
     {
       "number": "PI8d",
-      "law": "ō > o /V$_\",",
+      "law": "ō > o /VC$_",
       "context": ""
     },
     {
       "number": "PI8e",
-      "law": "ε̄ > ɛ /V$_\",",
+      "law": "ε̄ > ɛ /VC$_",
       "context": ""
     },
     {
       "number": "PI8f",
-      "law": "ǣ > æ /V$_\",",
+      "law": "ǣ > æ /VC$_",
       "context": ""
     },
     {
       "number": "PI8g",
-      "law": "ā > a /V$_\",",
+      "law": "ā > a /VC$_",
       "context": ""
     },
     {
       "number": "PI9",
-      "law": "Ø > ʲ /C_E(C)#",
+      "law": "Ø > ʲ /_E$#",
       "context": "Second Palatalisation"
     },
     {
       "number": "PI10",
-      "law": "V(C)# > Ø",
+      "law": "V(C) > Ø /_#",
       "context": "Apocope"
     },
     {
@@ -323,27 +323,27 @@
     },
     {
       "number": "PI12a",
-      "law": "ou, eu, iu > u /V$_",
+      "law": "ou, eu, iu > u /VC$_",
       "context": ""
     },
     {
       "number": "PI12b",
-      "law": "oi, ai > i /V$_",
+      "law": "oi, ai > i /VC$_",
       "context": ""
     },
     {
       "number": "PI13",
-      "law": "u > i /V$_Cʲ",
+      "law": "u > i /VC$_Cʲ",
       "context": ""
     },
     {
       "number": "PI14",
-      "law": "Ø > ʲ /#$V$_E$V",
+      "law": "Ø > ʲ /#C$VC$_EC$V",
       "context": "Third Palatalisation"
     },
     {
       "number": "PI15",
-      "law": "V > Ø /#$V$_$V",
+      "law": "V > Ø /#C$VC$_C$V",
       "context": "Syncope"
     },
     {
@@ -373,17 +373,17 @@
     },
     {
       "number": "OIr1",
-      "law": "i,e,a,o > ə /V$_C",
+      "law": "i,e,a,o > ə /VC$_C",
       "context": ""
     },
     {
       "number": "OIr2",
-      "law": "t > d /V$V_",
+      "law": "t > d /VC$V_",
       "context": ""
     },
     {
       "number": "OIr3a",
-      "law": "ē > ia",
+      "law": "ē > ia /_X",
       "context": ""
     },
     {
@@ -393,12 +393,12 @@
     },
     {
       "number": "OIr5a",
-      "law": "θ > ð /_#",
+      "law": "θ > ð /VC$_#",
       "context": ""
     },
     {
       "number": "OIr5b",
-      "law": "x > ɣ /_ʲ",
+      "law": "xʲ > ɣʲ /VC$_#",
       "context": ""
     }
   ]

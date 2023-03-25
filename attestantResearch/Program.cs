@@ -6,8 +6,6 @@ using attestantResearch.InputReaders;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-Console.WriteLine((long)0b_0000_0000_0000_0000_0000_0000_0000_0001);
-
 List<WordSet> wordSets = WordReader.ReadWords();
 
 List<LanguageDevelopment> langDevs = SoundLawReader.GetLanguageDevelopments();
@@ -24,8 +22,9 @@ WordTransformer welshPhoneticizer = new(welshSpelling.SoundLaws);
 
 foreach (var wordSet in wordSets)
 {
-    wordSet.OldIrish = irishPhoneticizer.Transform(wordSet.OldIrish).Value;
-    wordSet.MiddleWelsh = welshPhoneticizer.Transform(wordSet.MiddleWelsh).Value;
+    wordSet.OldIrish = irishPhoneticizer.Transform(wordSet.OldIrishSpelling).Value;
+    wordSet.MiddleWelsh = welshPhoneticizer.Transform(wordSet.MiddleWelshSpelling).Value;
+    wordSet.ProtoCeltic = wordSet.ProtoCelticSpelling;
 }
 
 foreach (var wordSet in wordSets)
