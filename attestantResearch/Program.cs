@@ -3,6 +3,7 @@ using attestant.Algorithms;
 using attestant.InputReaders;
 using attestantResearch;
 using attestantResearch.InputReaders;
+using System.Text.RegularExpressions;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
