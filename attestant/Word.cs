@@ -34,21 +34,7 @@ public class Word
                     => Phoneme.Characterization.Reverse[char.Parse(match.Value)])]).ToArray();
         }
     }
-    /*
-    normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+", match 
-    => match.Value.EndsWith("ʲ") 
-        ? Regex.Replace(match.Value.Replace("ʲ", ""), @"\P{M}\p{M}+", subMatch 
-    => Phoneme.Characterization.Forward[subMatch.Value].ToString()) + "ʲ"
-        : Phoneme.Characterization.Forward[match.Value].ToString());
-        
-        Regex.Replace(_value, @"\P{M}\p{M}+", match 
-            => Phoneme.Characterization.Forward[match.Value].ToString());
-            
-        Regex.Replace(normalizedLaw, @"\P{M}\p{M}+?", match 
-            => Phoneme.Characterization.Forward[match.Value].ToString());
-        normalizedLaw = Regex.Replace(normalizedLaw, @".ʷ", match
-            => Phoneme.Characterization.Forward[match.Value].ToString());
-    */
+    
     /// <summary>
     ///     A word represented as an array of characterized phonemes.
     /// </summary>
@@ -67,7 +53,7 @@ public class Word
         }
     }
 
-    public int Length => _value.Length;
+    public int Length => EmbeddedPhonemes.Length;
 
     public Word(string value)
     {
@@ -83,6 +69,9 @@ public class Word
     // Memoization Matrix
     private static float[,] _table = null!;
 
+    public float NormalizedEditDistance(Word other)
+        => EditDistance(other) / Math.Max(Length, other.Length);
+
     /// <summary>
     ///     Dynamic programming algorithm that calculates the Levenshtein distance, where
     ///     the substitution cost between 2 phonemes varies, depending on the similarity reflected in their encoding.
@@ -96,9 +85,7 @@ public class Word
             for (var j = 0; j <= otherEmbeddedPhonemes.Length; j++)
                 _table[i, j] = -1; // Allows to check if the value has not been set yet
             
-        var distance = CalculateDistance(EmbeddedPhonemes, otherEmbeddedPhonemes, EmbeddedPhonemes.Length, otherEmbeddedPhonemes.Length);
-
-        return (float)Math.Round(distance * 100f) / 100f;
+        return CalculateDistance(EmbeddedPhonemes, otherEmbeddedPhonemes, EmbeddedPhonemes.Length, otherEmbeddedPhonemes.Length);
     }
 
     private static float CalculateDistance(ulong[] word1, ulong[] word2, int i, int j)
