@@ -10,8 +10,8 @@ namespace attestant;
 /// </summary>
 public class SoundLaw
 {
-    private readonly Regex _antecedent;
-    private readonly string _consequent;
+    public readonly Regex _antecedent;
+    public readonly string _consequent;
     
     private readonly string _soundLaw;
 
@@ -57,7 +57,12 @@ public class SoundLaw
     public static SoundLaw Parse(string inputLaw) // Example input: i,u > e /_C$a$#
     {                                             // Example input: o > ø /_C$ī, C$i, C$ü, C$ö, C$ẹ, C$j
         var normalizedLaw = inputLaw.Normalize(NormalizationForm.FormC);
-        normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+", match 
+        
+        // Charactarize combined code points
+        Console.WriteLine(inputLaw);
+        normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+?", match 
+            => Phoneme.Characterization.Forward[match.Value].ToString());
+        normalizedLaw = Regex.Replace(normalizedLaw, @".ʷ", match
             => Phoneme.Characterization.Forward[match.Value].ToString());
         
         normalizedLaw = Regex.Replace(normalizedLaw, @"[\s*]", @"");

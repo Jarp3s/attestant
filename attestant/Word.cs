@@ -19,17 +19,48 @@ public class Word
     ///     A word represented as an array of binary feature embeddings.
     /// </summary>
     public ulong[] EmbeddedPhonemes
-        => CharacterizedPhonemes.Select(phoneme 
-            => Phoneme.Embedding.Forward[Regex.Replace(phoneme.ToString(), @"[Ⅰ-Ⅹ]", match 
-                => Phoneme.Characterization.Reverse[char.Parse(match.Value)])]).ToArray();
-
+    {
+        get
+        {
+            var completeReplaced = Regex.Replace(_value, @"\P{M}\p{M}+?", match 
+                => Phoneme.Characterization.Forward[match.Value].ToString());
+            completeReplaced = Regex.Replace(completeReplaced, @".[ʷʲ]+", match
+                => Phoneme.Characterization.Forward[match.Value].ToString());
+            
+            return completeReplaced.Select(phoneme 
+                => Phoneme.Embedding.Forward[Regex.Replace(phoneme.ToString(), @"[Ⅰ-Ⅹᚠ-ᛪ]", match 
+                    => Phoneme.Characterization.Reverse[char.Parse(match.Value)])]).ToArray();
+        }
+    }
+    /*
+    normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+", match 
+    => match.Value.EndsWith("ʲ") 
+        ? Regex.Replace(match.Value.Replace("ʲ", ""), @"\P{M}\p{M}+", subMatch 
+    => Phoneme.Characterization.Forward[subMatch.Value].ToString()) + "ʲ"
+        : Phoneme.Characterization.Forward[match.Value].ToString());
+        
+        Regex.Replace(_value, @"\P{M}\p{M}+", match 
+            => Phoneme.Characterization.Forward[match.Value].ToString());
+            
+        Regex.Replace(normalizedLaw, @"\P{M}\p{M}+?", match 
+            => Phoneme.Characterization.Forward[match.Value].ToString());
+        normalizedLaw = Regex.Replace(normalizedLaw, @".ʷ", match
+            => Phoneme.Characterization.Forward[match.Value].ToString());
+    */
     /// <summary>
     ///     A word represented as an array of characterized phonemes.
     /// </summary>
-    public string CharacterizedPhonemes 
-        => Regex.Replace(_value, @"\P{M}\p{M}+", match 
-            => Phoneme.Characterization.Forward[match.Value].ToString());
-    
+    public string CharacterizedPhonemes
+    {
+        get
+        {
+            var partialReplaced = Regex.Replace(_value, @"\P{M}\p{M}+?", match 
+                => Phoneme.Characterization.Forward[match.Value].ToString());
+            return Regex.Replace(partialReplaced, @".ʷ", match
+                => Phoneme.Characterization.Forward[match.Value].ToString());
+        }
+    }
+
     public int Length => _value.Length;
 
     public Word(string value)
@@ -65,9 +96,9 @@ public class Word
     private static float CalculateDistance(ulong[] word1, ulong[] word2, int i, int j)
     {
         if (i is 0)
-            return (float)j;
+            return j;
         if (j is 0)
-            return (float)i;
+            return i;
         if (_table[i, j] is not -1)
             return _table[i, j];
 
@@ -79,7 +110,7 @@ public class Word
         float substitutionCost = CalculateDistance(word1, word2, i - 1, j - 1) + CalculateSubstitutionCost(word1, word2, i-1, j-1);
 
         if (CalculateSubstitutionCost(word1, word2, i - 1, j - 1) > 1)
-            throw new Exception();
+            throw new ArgumentOutOfRangeException();
 
         float distance = Math.Min(Math.Min(deletionCost, insertionCost), substitutionCost);
 
@@ -89,7 +120,6 @@ public class Word
 
     private static float CalculateSubstitutionCost(ulong[] word1, ulong[] word2, int i, int j)
     {
-
         var phoneme1 = word1[i]; // To get the bit array of the sound
         var phoneme2 = word2[j];
 

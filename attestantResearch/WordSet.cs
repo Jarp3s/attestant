@@ -50,9 +50,9 @@ public class WordSet
     public override string ToString()
     {
         return
-            "--------------------------------------------" +
-            $"\n{ProtoCeltic}:" +
-            "--------------------------------------------" +
+            "======================================================" +
+            $"\n {ProtoCeltic} " +
+            "======================================================" +
             $"\n{OldIrish} => {ConstructedIrish.Value} : ({ConstructedIrish.Value.EditDistance(OldIrish)})" + 
             $"\n{MiddleWelsh} => {ConstructedWelsh.Value} : ({ConstructedWelsh.Value.EditDistance(MiddleWelsh)})";
     }
@@ -65,15 +65,25 @@ public class WordSet
         Console.WriteLine("======================================================");
         Console.WriteLine();
 
+        var baseLength = Math.Max(ConstructedIrish.Value.Length, ConstructedWelsh.Value.Length) + 4;
+        
         void Trace(Word wrd, SoundLaw law)
             => Console.WriteLine(
-                $" {wrd} {(law == default! ? "" : new string(' ', Math.Max(ConstructedIrish.Value.Length, ConstructedWelsh.Value.Length) + 4 - wrd.Length) + $"<-| {law}")}");
+                $" {wrd} {(law == default! ? "" : new string(' ',  baseLength - wrd.Length) + $"<-| {law}")}");
 
         Console.ForegroundColor = ConsoleColor.White;
-        ConstructedIrish.First.TraverseDown(Trace);
+        UNode<Word, SoundLaw> constructedIrish = ConstructedIrish;
+        constructedIrish.First.TraverseDown(Trace);
+        var editDistance = $"ED: {constructedIrish.Value.EditDistance(OldIrish)}";
+        Console.WriteLine($" {editDistance} {new string(' ', baseLength - editDistance.Length)}" 
+                          + $"<-| {constructedIrish.Value} > {OldIrish}");
         Console.WriteLine();
-        
-        ConstructedWelsh.First.TraverseDown(Trace);
+
+        UNode<Word, SoundLaw> constructedWelsh = ConstructedWelsh;
+        constructedWelsh.First.TraverseDown(Trace);
+        editDistance = $"ED: {constructedWelsh.Value.EditDistance(MiddleWelsh)}";
+        Console.WriteLine($" {editDistance} {new string(' ', baseLength - editDistance.Length)}" 
+                          + $"<-| {constructedWelsh.Value} > {MiddleWelsh}");
         Console.WriteLine();
         Console.ResetColor();
     }
