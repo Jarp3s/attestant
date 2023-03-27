@@ -100,7 +100,7 @@ public class SoundLaw
             str = Regex.Replace(str, @"\$", @"C*");
             str = Regex.Replace(str, @"^#", @"^");
             str = Regex.Replace(str, @"#$", @"$");
-            str = Regex.Replace(str, @"(\()(.+)(\))", @"($2)?");
+            str = Regex.Replace(str, @"\)", @")?");
             str = Regex.Replace(str, @"Ø", @"");
             str = Regex.Replace(str, @"[A-Z]", match
                 => CoverSymbol.ToRegexString(char.Parse(match.Value)));

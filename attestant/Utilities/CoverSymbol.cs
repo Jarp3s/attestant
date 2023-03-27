@@ -68,17 +68,30 @@ internal static class CoverSymbol
         { 
             'p', 'b', 't', 'd', 'k', 'g', 'Ⅸ', 'Ⅹ', 'ᚠ', 'ᚢ', 'ᚹ', 'ᚺ', 'ᛊ', 'ᛏ', 'ᛚ', 'ᛜ'
         },
+
         'B' => new HashSet<char> // Voiced Plosive
         {
             'b', 'd', 'g', 'Ⅹ', 'ᚢ', 'ᚺ', 'ᛏ', 'ᛜ'
         },
+
         'P' => new HashSet<char> // Voiceless Plosive
         {
             'p', 't', 'k', 'Ⅸ', 'ᚠ', 'ᚹ', 'ᛊ', 'ᛚ'
         },
+
         'D' => new HashSet<char> // Dental
         {
             't', 'd', 'n', 'Ⅳ', 'ν', 'r', 'Ⅴ', 'ρ', 'θ', 'ð', 's', 'z', 'l', 'ɬ', 'λ', 'ᚹ', 'ᚺ', 'ᚾ', 'ᛁ', 'ᛃ', 'ᛇ', 'ᛈ'
+        },
+
+        'Ð' => new HashSet<char> // Neutral Dental
+        {
+            't', 'd', 'n', 'Ⅳ', 'ν', 'r', 'Ⅴ', 'ρ', 'θ', 'ð', 's', 'z', 'l', 'ɬ'
+        },
+
+        'Þ' => new HashSet<char> // Neutral Dental Stops and Fricatives, excluding Sibilants
+        {
+            't', 'd', 'θ', 'ð'
         },
 
         'N' => new HashSet<char> // Nasal
@@ -94,6 +107,11 @@ internal static class CoverSymbol
         'R' => new HashSet<char> // Resonant
         { 
             'm', 'Ⅲ', 'μ', 'n', 'Ⅳ', 'ν', 'r', 'Ⅴ', 'ρ', 'l', 'ɬ', 'λ', 'j', 'ŋ', 'Ⅵ', 'w', 'ᛁ', 'ᛉ', 'ᛒ', 'ᚦ', 'ᚾ', 'ᚡ', 'ᚲ'
+        },
+
+        'Q' => new HashSet<char> // Palatal Resonant
+        {
+             'ᛁ', 'ᛉ', 'ᛒ', 'ᚦ', 'ᚾ', 'ᚡ', 'ᚲ'
         },
     
         'L' => new HashSet<char> // Liquid

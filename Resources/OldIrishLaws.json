@@ -168,22 +168,22 @@
     },
     {
       "number": "PI4a",
-      "law": "Ø > ʲ /#C_E",
+      "law": "Ø > ʲ /#X_E",
       "context": "First Palatalization"
     },
     {
       "number": "PI4b",
-      "law": "Ø > ʲ /EC_E",
+      "law": "Ø > ʲ /EX_E",
       "context": "First Palatalization"
     },
     {
       "number": "PI4c",
-      "law": "Ø > ʲ /aC_i,ī",
+      "law": "Ø > ʲ /aX_i,ī",
       "context": "First Palatalization"
     },
     {
       "number": "PI4d",
-      "law": "Ø > ʲ /VD_i,ī",
+      "law": "Ø > ʲ /VÐ_i,ī",
       "context": "First Palatalization"
     },
     {
@@ -263,12 +263,12 @@
     },
     {
       "number": "PI9",
-      "law": "Ø > ʲ /_E$#",
+      "law": "Ø > ʲ /X_E$#",
       "context": "Second Palatalisation"
     },
     {
       "number": "PI10",
-      "law": "V(C) > Ø /_#",
+      "law": "V(C) > Ø /VC$_#",
       "context": "Apocope"
     },
     {
@@ -288,22 +288,22 @@
     },
     {
       "number": "PI11a",
-      "law": "iF > īu /_Rʲ",
+      "law": "iF > īu /_Q",
       "context": ""
     },
     {
       "number": "PI11b",
-      "law": "eF > ēu /_Rʲ",
+      "law": "eF > ēu /_Q",
       "context": ""
     },
     {
       "number": "PI11c",
-      "law": "iF > ī /_Rʲ",
+      "law": "iF > ī /_Q",
       "context": ""
     },
     {
       "number": "PI11d",
-      "law": "eF > ē /_Rʲ",
+      "law": "eF > ē /_Q",
       "context": ""
     },
     {
@@ -333,12 +333,12 @@
     },
     {
       "number": "PI13",
-      "law": "u > i /VC$_Cʲ",
+      "law": "u > i /VC$_J",
       "context": ""
     },
     {
       "number": "PI14",
-      "law": "Ø > ʲ /#C$VC$_EC$V",
+      "law": "Ø > ʲ /#C$VX(X)(X)_EC$V",
       "context": "Third Palatalisation"
     },
     {
@@ -400,6 +400,11 @@
       "number": "OIr5b",
       "law": "xʲ > ɣʲ /VC$_#",
       "context": ""
+    },
+    {
+      "number": "OIr6",
+      "law": "ε̄ > ē",
+      "context": "A dummy law that solves a lack of distinction in Old Irish spelling."
     }
   ]
 }

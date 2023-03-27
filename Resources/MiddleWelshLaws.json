@@ -438,17 +438,32 @@
     },
     {
       "number": "B45a",
-      "law": "t,tt,ðd > θ /V,L_",
+      "law": "tt,ðd > θ /V,L_",
       "context": "Spirantisation"
     },
     {
       "number": "B45b",
-      "law": "p,pp > f /V,L_",
+      "law": "pp > f /V,L_",
       "context": "Spirantisation"
     },
     {
       "number": "B45c",
-      "law": "k,kk > x /V,L_",
+      "law": "kk > x /V,L_",
+      "context": "Spirantisation"
+    },
+    {
+      "number": "B45d",
+      "law": "t > θ /V,L_",
+      "context": "Spirantisation"
+    },
+    {
+      "number": "B45e",
+      "law": "p > f /V,L_",
+      "context": "Spirantisation"
+    },
+    {
+      "number": "B45f",
+      "law": "k > x /V,L_",
       "context": "Spirantisation"
     },
     {
@@ -498,7 +513,7 @@
     },
     {
       "number": "B46d",
-      "law": "DD > t",
+      "law": "ÞÞ > t",
       "context": "Provection"
     },
     {
