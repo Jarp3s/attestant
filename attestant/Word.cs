@@ -29,6 +29,8 @@ public class Word
     public string CharacterizedPhonemes 
         => Regex.Replace(_value, @"\P{M}\p{M}+", match 
             => Phoneme.Characterization.Forward[match.Value].ToString());
+    
+    public int Length => _value.Length;
 
     public Word(string value)
     {

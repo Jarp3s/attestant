@@ -69,31 +69,18 @@ public class SoundLaw
         // Creates a RegEx pattern-string (antecedent) by grouping the environment with the sound
         string GetTarget()
         {
-            var targetSound = ToRegex(lawSegments[1]);
-
+            var targetSound = Regexify(lawSegments[1]);
             var environment = Regex.Split(GetEnvironment(), @"_");
-
-            var target = $"(?<={environment[0]})({targetSound})(?={environment[1]})";
-
-            return target;
+            return $"(?<={environment[0]})({targetSound})(?={environment[1]})";
         }
 
         // Create RegEx replacement-strings (consequents) by processing each symbol individually
-        string GetReplacement()
-        {
-            return ToRegex(lawSegments[2]);
-        }
-        
+        string GetReplacement() => Regexify(lawSegments[2]);
+
         // Create a RegEx pattern-string (sound-context) by parsing non-literal law-symbols
-        string GetEnvironment()
-        {
-            if (lawSegments.Length < 4)
-                return "_";
+        string GetEnvironment() => lawSegments.Length < 4 ? "_" : Regexify(lawSegments[3]);
 
-            return ToRegex(lawSegments[3]);
-        }
-
-        string ToRegex(string str)
+        string Regexify(string str)
         {
             // Parse non-literals (i.e. operator-symbols) to their RegEx equivalent
             str = Regex.Replace(str, @",", @"|");

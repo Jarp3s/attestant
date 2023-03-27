@@ -10,34 +10,9 @@ namespace attestant.InputReaders;
 public static class SoundLawReader
 {
     /// <summary>
-    ///     Reads JSON from specified files, parses it to language-developments;
-    ///     which are used to store information about the development within a language.
-    ///     Returns these language-developments.
+    ///     Reads and returns language developments from a given JSON-file with a specific structure.
     /// </summary>
-    public static List<LanguageDevelopment> GetLanguageDevelopments()
-    {
-        List<LanguageDevelopment> languageDevelopments = new()
-        {
-            FetchDevelopment("OldIrishLaws.json"),
-            FetchDevelopment("MiddleWelshLaws.json")
-        };
-
-        return languageDevelopments;
-    }
-
-    public static List<LanguageDevelopment> GetSpelling()
-    {
-        List<LanguageDevelopment> spellings = new()
-        {
-            FetchDevelopment("OldIrishSpelling.json"),
-            FetchDevelopment("MiddleWelshSpelling.json"),
-            FetchDevelopment("ProtoCelticSpelling.json")
-        };
-
-        return spellings;
-    }
-
-    private static LanguageDevelopment FetchDevelopment(string fileName)
+    public static LanguageDevelopment FetchDevelopment(string fileName)
     {
         var currentDirectoryPath = Directory.GetCurrentDirectory();
 
