@@ -56,7 +56,11 @@ public class Word
     {
         get
         {
-            var partialReplaced = Regex.Replace(_value, @"\P{M}\p{M}+?", match 
+            var partialReplaced = Regex.Replace(_value, @"\P{M}\p{M}+?", match
+                => Phoneme.Characterization.Forward[match.Value].ToString());
+            partialReplaced = Regex.Replace(partialReplaced, @".ʷʲ+", match
+                => Phoneme.Characterization.Forward[match.Value].ToString());
+            partialReplaced = Regex.Replace(partialReplaced, @".[ʷʲ]+", match
                 => Phoneme.Characterization.Forward[match.Value].ToString());
             return Regex.Replace(partialReplaced, @".ʷ", match
                 => Phoneme.Characterization.Forward[match.Value].ToString());

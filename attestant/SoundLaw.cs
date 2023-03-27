@@ -29,8 +29,11 @@ public class SoundLaw
     public string Apply(Word word)
     {
         var result = _antecedent.Replace(word.CharacterizedPhonemes, _consequent);
-        return Regex.Replace(result, @"[Ⅰ-Ⅹ]", match
+        var result2 = Regex.Replace(result, @"[Ⅰ-Ⅹ,ᚠ-ᛪ]", match
             => Phoneme.Characterization.Reverse[char.Parse(match.Value)]);
+        if (Regex.IsMatch(result2, "ʲʲ")) 
+            throw new Exception();
+        return result2;
     }
 
     /// <summary>
