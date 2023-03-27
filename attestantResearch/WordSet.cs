@@ -65,7 +65,7 @@ public class WordSet
         Console.WriteLine("======================================================");
         Console.WriteLine();
 
-        var baseLength = Math.Max(ConstructedIrish.Value.Length, ConstructedWelsh.Value.Length) + 4;
+        var baseLength = 20;
         
         void Trace(Word wrd, SoundLaw law)
             => Console.WriteLine(

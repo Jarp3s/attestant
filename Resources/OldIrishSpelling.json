@@ -153,12 +153,12 @@
     },
     {
       "number": "SOI6c",
-      "law": "e > ʲə /VC$_C$",
+      "law": "e > ʲə /VX(X)(X)_C$",
       "context": ""
     },
     {
       "number": "SOI6d",
-      "law": "i > ʲə⁊ /VC$_C$",
+      "law": "i > ʲə⁊ /VX(X)(X)_C$",
       "context": "(includes temporary pre-palatalization ⁊)"
     },
     {
@@ -173,7 +173,7 @@
     },
     {
       "number": "SOI8a",
-      "law": "e > ʲe /C_#",
+      "law": "e > ʲe /X_#",
       "context": ""
     },
     {
@@ -183,7 +183,7 @@
     },
     {
       "number": "SOI8c",
-      "law": "i > ʲi /C_#",
+      "law": "i > ʲi /X_#",
       "context": ""
     },
     {
@@ -193,47 +193,42 @@
     },
     {
       "number": "SOI8e",
-      "law": "iu > ʲu /C_#",
+      "law": "iu > ʲu /X_#",
       "context": ""
     },
     {
       "number": "SOI8f",
-      "law": "eo > ʲo /C_#",
+      "law": "eo > ʲo /X_#",
       "context": ""
     },
     {
       "number": "SOI8g",
-      "law": "ea > ʲa /C_#",
+      "law": "ea > ʲa /X_#",
       "context": ""
     },
     {
       "number": "SOI11",
-      "law": "Ø > ʲ /#C_($)E",
+      "law": "Ø > ʲ /#X_($)E",
       "context": ""
     },
     {
       "number": "SOI13a",
-      "law": "Ø > ʲ /⁊C_",
+      "law": "Ø > ʲ /⁊X_",
       "context": "Palatalization solving chaos"
     },
     {
       "number": "SOI13b",
-      "law": "Ø > ʲ /CʲC_",
+      "law": "Ø > ʲ /JX_",
       "context": "Palatalization solving chaos"
     },
     {
       "number": "SOI13bREP",
-      "law": "Ø > ʲ /CʲC_",
+      "law": "Ø > ʲ /JX_",
       "context": "Palatalization solving chaos"
     },
     {
       "number": "SOI13c",
       "law": "⁊ > Ø",
-      "context": "Palatalization solving chaos"
-    },
-    {
-      "number": "SOI13d",
-      "law": "ʲʲ,ʲʲʲ > ʲ",
       "context": "Palatalization solving chaos"
     },
     {

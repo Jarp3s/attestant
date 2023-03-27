@@ -24,6 +24,8 @@ public class Word
         {
             var completeReplaced = Regex.Replace(_value, @"\P{M}\p{M}+?", match 
                 => Phoneme.Characterization.Forward[match.Value].ToString());
+            completeReplaced = Regex.Replace(completeReplaced, @".ʷʲ+", match
+                => Phoneme.Characterization.Forward[match.Value].ToString());
             completeReplaced = Regex.Replace(completeReplaced, @".[ʷʲ]+", match
                 => Phoneme.Characterization.Forward[match.Value].ToString());
             
@@ -90,7 +92,9 @@ public class Word
             for (var j = 0; j <= otherEmbeddedPhonemes.Length; j++)
                 _table[i, j] = -1; // Allows to check if the value has not been set yet
             
-        return CalculateDistance(EmbeddedPhonemes, otherEmbeddedPhonemes, EmbeddedPhonemes.Length, otherEmbeddedPhonemes.Length);
+        var distance = CalculateDistance(EmbeddedPhonemes, otherEmbeddedPhonemes, EmbeddedPhonemes.Length, otherEmbeddedPhonemes.Length);
+
+        return (float)Math.Round(distance * 100f) / 100f;
     }
 
     private static float CalculateDistance(ulong[] word1, ulong[] word2, int i, int j)
@@ -127,9 +131,19 @@ public class Word
         var isConsonant2 = phoneme2 >> 63 == 1;
 
         if (isConsonant1 && isConsonant2)
-            return CalculateBitSum(phoneme1 ^ phoneme2) / 12f; // Maximally 12 bits difference for consonants.
+        {
+            float bitsum = CalculateBitSum(phoneme1 ^ phoneme2);
+            if (bitsum > 12)
+                throw new ArgumentOutOfRangeException();
+            return bitsum / 12f; // Maximally 12 bits difference for consonants.
+        }
         if (!isConsonant1 && !isConsonant2)
-            return CalculateBitSum(phoneme1 ^ phoneme2) / 8f; // Maximally 8 bits difference for vowels.
+        {
+            float bitsum = CalculateBitSum(phoneme1 ^ phoneme2);
+            if (bitsum > 8)
+                throw new ArgumentOutOfRangeException();
+            return bitsum / 8f; // Maximally 8 bits difference for vowels.
+        }
         return 1; // If a vowel and consonant, the difference is max
     }
 

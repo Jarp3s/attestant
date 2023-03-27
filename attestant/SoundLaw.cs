@@ -59,7 +59,8 @@ public class SoundLaw
         var normalizedLaw = inputLaw.Normalize(NormalizationForm.FormC);
         
         // Charactarize combined code points
-        Console.WriteLine(inputLaw);
+        normalizedLaw = Regex.Replace(normalizedLaw, @"[kgxɣ]ʷ", match
+            => Phoneme.Characterization.Forward[match.Value].ToString());
         normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+?", match 
             => Phoneme.Characterization.Forward[match.Value].ToString());
         normalizedLaw = Regex.Replace(normalizedLaw, @".ʷ", match

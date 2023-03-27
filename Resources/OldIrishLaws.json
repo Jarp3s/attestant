@@ -207,8 +207,23 @@
       "context": ""
     },
     {
-      "number": "PI6c",
-      "law": "ʷ > Ø",
+      "number": "PI6ca",
+      "law": "kʷ > k",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "PI6cb",
+      "law": "gʷ > g",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "PI6cc",
+      "law": "xʷ > x",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "PI6cd",
+      "law": "ɣʷ > ɣ",
       "context": "Loss of labialisation"
     },
     {
