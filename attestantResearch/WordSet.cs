@@ -1,4 +1,5 @@
-﻿using attestant.Algorithms;
+﻿using System.Text.Json;
+using attestant.Algorithms;
 using attestant.DataStructures;
 using attestant.InputReaders;
 
@@ -86,5 +87,32 @@ public class WordSet
                           $"{new string(' ', baseLength - 7)}<-| {constructedWelsh.Value} > {MiddleWelsh}");
         Console.WriteLine();
         Console.ResetColor();
+    }
+
+    public string SerializeTrace()
+    {
+        List<string> irishDevelopments = new();
+        UNode<Word, SoundLaw> wordDevelopment = ConstructedIrish.First;
+        while (wordDevelopment.Next is not null)
+        {
+            wordDevelopment = wordDevelopment.Next;
+            irishDevelopments.Add($"{wordDevelopment.Value} - {wordDevelopment.Label}");
+        }
+        var irishEd = wordDevelopment.Value.NormalizedEditDistance(OldIrish);
+
+        List<string> welshDevelopments = new();
+        wordDevelopment = ConstructedWelsh.First;
+        while (wordDevelopment.Next is not null)
+        {
+            wordDevelopment = wordDevelopment.Next;
+            welshDevelopments.Add($"{wordDevelopment.Value} - {wordDevelopment.Label}");
+        }
+        var welshEd = wordDevelopment.Value.NormalizedEditDistance(MiddleWelsh);
+
+        var constructedSet = new { protoCeltic = ProtoCeltic
+            , irishTrace = irishDevelopments, irishED = irishEd, oldIrish = OldIrish
+            , welshTrace = welshDevelopments, welshED = welshEd, middleWelsh = MiddleWelsh };
+
+        return JsonSerializer.Serialize(constructedSet);
     }
 }

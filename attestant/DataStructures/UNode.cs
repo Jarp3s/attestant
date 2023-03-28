@@ -14,7 +14,7 @@ public class UNode<T1, T2>
     /// <summary>
     ///     The context-information assigned to the node.
     /// </summary>
-    private T2 Label { get; }
+    public T2 Label { get; }
 
     /// <summary>
     ///     The previous node
