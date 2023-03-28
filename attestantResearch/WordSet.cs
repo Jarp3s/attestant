@@ -89,7 +89,7 @@ public class WordSet
         Console.ResetColor();
     }
 
-    public string SerializeTrace()
+    public object ToTrace()
     {
         List<string> irishDevelopments = new();
         UNode<Word, SoundLaw> wordDevelopment = ConstructedIrish.First;
@@ -110,9 +110,9 @@ public class WordSet
         var welshEd = wordDevelopment.Value.NormalizedEditDistance(MiddleWelsh);
 
         var constructedSet = new { protoCeltic = ProtoCeltic
-            , irishTrace = irishDevelopments, irishED = irishEd, oldIrish = OldIrish
-            , welshTrace = welshDevelopments, welshED = welshEd, middleWelsh = MiddleWelsh };
+            , irishTrace = irishDevelopments, oldIrish = OldIrish, irishED = irishEd 
+            , welshTrace = welshDevelopments, middleWelsh = MiddleWelsh, welshED = welshEd };
 
-        return JsonSerializer.Serialize(constructedSet);
+        return constructedSet;
     }
 }
