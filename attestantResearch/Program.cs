@@ -10,7 +10,7 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 List<WordSet> wordSets = WordReader.FetchWords("cognates.txt");
 
-var path = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "Resources", "results");
+var path = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "Resources", "results.json");
 List<object> traces = new();
 foreach (var wordSet in wordSets)
 {
