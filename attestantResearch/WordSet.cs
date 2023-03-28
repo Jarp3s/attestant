@@ -76,14 +76,14 @@ public class WordSet
         UNode<Word, SoundLaw> constructedIrish = ConstructedIrish;
         constructedIrish.First.TraverseDown(Trace);
         var editDistance = $"{Math.Round(constructedIrish.Value.NormalizedEditDistance(OldIrish), 2)}";
-        Console.WriteLine($" ED: {editDistance}{editDistance.Length switch { 4 => "", 3 => "0", _ => ",00"}}" +
+        Console.WriteLine($" ED: {editDistance}{editDistance.Length switch { 4 => "", 3 => "0", _ => ".00"}}" +
                           $"{new string(' ', baseLength - 7)}<-| {constructedIrish.Value} > {OldIrish}");
         Console.WriteLine();
 
         UNode<Word, SoundLaw> constructedWelsh = ConstructedWelsh;
         constructedWelsh.First.TraverseDown(Trace);
         editDistance = $"{Math.Round(constructedWelsh.Value.NormalizedEditDistance(MiddleWelsh), 2)}";
-        Console.WriteLine($" ED: {editDistance}{editDistance.Length switch { 4 => "", 3 => "0", _ => ",00"}}" +
+        Console.WriteLine($" ED: {editDistance}{editDistance.Length switch { 4 => "", 3 => "0", _ => ".00"}}" +
                           $"{new string(' ', baseLength - 7)}<-| {constructedWelsh.Value} > {MiddleWelsh}");
         Console.WriteLine();
         Console.ResetColor();

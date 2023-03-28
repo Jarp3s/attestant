@@ -127,6 +127,11 @@
       "context": ""
     },
     {
+      "number": "PI1e",
+      "law": "xs > ss",
+      "context": ""
+    },
+    {
       "number": "PI2aa",
       "law": "i, e, æ > ε̄ /_NP,ns",
       "context": ""
@@ -282,7 +287,7 @@
       "context": "Second Palatalisation"
     },
     {
-      "number": "PI10",
+      "number": "PI10a",
       "law": "V(C) > Ø /VC$_#",
       "context": "Apocope"
     },
@@ -368,7 +373,7 @@
     },
     {
       "number": "PI16b",
-      "law": "w > β /L,n_",
+      "law": "w > β /L_",
       "context": ""
     },
     {
@@ -383,7 +388,12 @@
     },
     {
       "number": "PI18",
-      "law": "w > f",
+      "law": "w > f /#_",
+      "context": ""
+    },
+    {
+      "number": "PI19",
+      "law": "w > Ø",
       "context": ""
     },
     {
@@ -408,12 +418,12 @@
     },
     {
       "number": "OIr5a",
-      "law": "θ > ð /VC$_#",
+      "law": "θ > ð /V_#",
       "context": ""
     },
     {
       "number": "OIr5b",
-      "law": "xʲ > ɣʲ /VC$_#",
+      "law": "xʲ > ɣʲ /V_#",
       "context": ""
     },
     {

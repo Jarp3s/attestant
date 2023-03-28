@@ -63,13 +63,13 @@
     },
     {
       "number": "SMW7a",
-      "law": "y > ɨ /#C($)_",
-      "context": ""
+      "law": "y > ɨ /_$#",
+      "context": "y in final syllable"
     },
     {
       "number": "SMW7b",
       "law": "y > ə",
-      "context": ""
+      "context": "y in non-final syllable"
     },
     {
       "number": "SMW8",
