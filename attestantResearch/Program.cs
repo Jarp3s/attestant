@@ -11,11 +11,13 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 List<WordSet> wordSets = WordReader.FetchWords("cognates.txt");
 
 var path = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "Resources", "results.json");
-List<object> traces = new();
+List<object> wordList = new();
 foreach (var wordSet in wordSets)
 {
     wordSet.GenerateTrace();
-    traces.Add(wordSet.ToTrace());
+    wordList.Add(wordSet.ToTrace());
 }
+
+var exportableWordList = new { wordSets = wordList };
 File.WriteAllText(path, 
-    JsonConvert.SerializeObject(traces, (Newtonsoft.Json.Formatting)Formatting.Indented));
+    JsonConvert.SerializeObject(exportableWordList, (Newtonsoft.Json.Formatting)Formatting.Indented));
