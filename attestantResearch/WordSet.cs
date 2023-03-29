@@ -96,7 +96,7 @@ public class WordSet
         while (wordDevelopment.Next is not null)
         {
             wordDevelopment = wordDevelopment.Next;
-            irishDevelopments.Add($"{wordDevelopment.Value} - {wordDevelopment.Label}");
+            irishDevelopments.Add($"{wordDevelopment.Label}");
         }
         var irishEd = wordDevelopment.Value.NormalizedEditDistance(OldIrish);
 
@@ -105,7 +105,7 @@ public class WordSet
         while (wordDevelopment.Next is not null)
         {
             wordDevelopment = wordDevelopment.Next;
-            welshDevelopments.Add($"{wordDevelopment.Value} - {wordDevelopment.Label}");
+            welshDevelopments.Add($"{wordDevelopment.Label}");
         }
         var welshEd = wordDevelopment.Value.NormalizedEditDistance(MiddleWelsh);
 
