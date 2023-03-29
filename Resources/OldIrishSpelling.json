@@ -2,46 +2,6 @@
   "language": "Old Irish",
   "soundLawRepresentations": [
     {
-      "number": "SOI9a",
-      "law": "aí > ai⁊",
-      "context": "(includes temporary pre-palatalization ⁊)"
-    },
-    {
-      "number": "SOI9b",
-      "law": "áe > ai",
-      "context": ""
-    },
-    {
-      "number": "SOI9c",
-      "law": "oí > oi⁊",
-      "context": "(includes temporary pre-palatalization ⁊)"
-    },
-    {
-      "number": "SOI9d",
-      "law": "óe > oi",
-      "context": ""
-    },
-    {
-      "number": "SOI9e",
-      "law": "uí > ui",
-      "context": ""
-    },
-    {
-      "number": "SOI9f",
-      "law": "ía > ia",
-      "context": ""
-    },
-    {
-      "number": "SOI9g",
-      "law": "úa > ua",
-      "context": ""
-    },
-    {
-      "number": "SOI10",
-      "law": "o > u /a,e_",
-      "context": ""
-    },
-    {
       "number": "SOI12a",
       "law": "á > ā",
       "context": ""
@@ -64,6 +24,51 @@
     {
       "number": "SOI12e",
       "law": "é > ē",
+      "context": ""
+    },
+    {
+      "number": "SOI7",
+      "law": "i > ⁊ /#$V_",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI9a",
+      "law": "aī > ai⁊",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI9b",
+      "law": "āe > ai",
+      "context": ""
+    },
+    {
+      "number": "SOI9c",
+      "law": "oī > oi⁊",
+      "context": "(includes temporary pre-palatalization ⁊)"
+    },
+    {
+      "number": "SOI9d",
+      "law": "ōe > oi",
+      "context": ""
+    },
+    {
+      "number": "SOI9e",
+      "law": "uī > ui",
+      "context": ""
+    },
+    {
+      "number": "SOI9f",
+      "law": "īa > ia",
+      "context": ""
+    },
+    {
+      "number": "SOI9g",
+      "law": "ūa > ua",
+      "context": ""
+    },
+    {
+      "number": "SOI10",
+      "law": "o > u /a,e_",
       "context": ""
     },
     {
@@ -143,32 +148,32 @@
     },
     {
       "number": "SOI6a",
-      "law": "a,o > ə /VC$_C$",
+      "law": "a,o > ə /V(⁊)C$_C$",
       "context": ""
     },
     {
       "number": "SOI6b",
-      "law": "ai > ə⁊ /VC$_C$",
+      "law": "ai > ə⁊ /V(⁊)C$_C$",
       "context": ""
     },
     {
       "number": "SOI6c",
-      "law": "e > ʲə /VX(X)(X)_C$",
+      "law": "e > ʲə /V(⁊)X(X)(X)_C$",
       "context": ""
     },
     {
       "number": "SOI6d",
-      "law": "i > ʲə⁊ /VX(X)(X)_C$",
+      "law": "i > ʲə⁊ /V(⁊)X(X)(X)_C$",
       "context": "(includes temporary pre-palatalization ⁊)"
     },
     {
-      "number": "SOI7",
-      "law": "i > ⁊ /$V_",
-      "context": "(includes temporary pre-palatalization ⁊)"
+      "number": "SOI6e",
+      "law": "e > ə /V(⁊)C$_C$",
+      "context": ""
     },
     {
-      "number": "SOI7",
-      "law": "i > ⁊ /#$V_",
+      "number": "SOI6f",
+      "law": "i > ə⁊ /V(⁊)C$_C$",
       "context": "(includes temporary pre-palatalization ⁊)"
     },
     {

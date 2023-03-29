@@ -22,6 +22,16 @@
       "context": "Lenition"
     },
     {
+      "number": "PC13",
+      "law": "sf > h /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "PC14",
+      "law": "f > Ø",
+      "context": ""
+    },
+    {
       "number": "NC15",
       "law": "ð > Ø /_#",
       "context": "Loss of word-final ð"
@@ -105,6 +115,11 @@
       "number": "NC25b",
       "law": "s > h /V_V,R,#",
       "context": ""
+    },
+    {
+      "number": "B26z",
+      "law": "s > h /#_V,w",
+      "context": "I have no clue where this is supposed to go chronologically, but I know it exists."
     },
     {
       "number": "B26a",
@@ -418,81 +433,76 @@
     },
     {
       "number": "B44d",
-      "law": "w > gw /#_",
+      "law": "w > gʷ /#_",
       "context": "Phonemic lenition"
     },
     {
       "number": "B44e",
-      "law": "n > nn /#_",
-      "context": "Phonemic lenition"
-    },
-    {
-      "number": "B44f",
       "law": "l > ll /#_",
       "context": "Phonemic lenition"
     },
     {
-      "number": "B44g",
+      "number": "B44f",
       "law": "r > rr /#_",
       "context": "Phonemic lenition"
     },
     {
       "number": "B45a",
-      "law": "tt,ðd > θ /V,L_",
+      "law": "tt,ðd > θ /V,R_",
       "context": "Spirantisation"
     },
     {
       "number": "B45b",
-      "law": "pp > f /V,L_",
+      "law": "pp > f /V,R_",
       "context": "Spirantisation"
     },
     {
       "number": "B45c",
-      "law": "kk > x /V,L_",
+      "law": "kk > x /V,R_",
       "context": "Spirantisation"
     },
     {
       "number": "B45d",
-      "law": "t > θ /V,L_",
+      "law": "t > θ /V,R_",
       "context": "Spirantisation"
     },
     {
       "number": "B45e",
-      "law": "p > f /V,L_",
+      "law": "p > f /V,R_",
       "context": "Spirantisation"
     },
     {
       "number": "B45f",
-      "law": "k > x /V,L_",
+      "law": "k > x /V,R_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45d",
+      "number": "B45g",
       "law": "b > β /L,ð_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45e",
+      "number": "B45h",
       "law": "d > ð /L,ð_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45f",
+      "number": "B45i",
       "law": "g > ɣ /L,ð_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45h",
+      "number": "B45j",
       "law": "m > μ /L,ð_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45i",
+      "number": "B45k",
       "law": "nm > nμ",
       "context": "Spirantisation"
     },
     {
-      "number": "B45j",
+      "number": "B45l",
       "law": "nμ > nw",
       "context": "Spirantisation"
     },

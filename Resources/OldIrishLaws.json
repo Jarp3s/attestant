@@ -12,9 +12,19 @@
       "context": "Lenition"
     },
     {
+      "number": "PC13",
+      "law": "sf > h /V_V,R,#",
+      "context": ""
+    },
+    {
       "number": "PC10c",
       "law": "d > ð /V_V,R,#",
       "context": "Lenition"
+    },
+    {
+      "number": "PC14",
+      "law": "f > Ø",
+      "context": ""
     },
     {
       "number": "PC10d",
@@ -48,7 +58,7 @@
     },
     {
       "number": "NC20a",
-      "law": "st, tst > ts /V_",
+      "law": "st,tst > ts /V_",
       "context": ""
     },
     {
@@ -88,7 +98,7 @@
     },
     {
       "number": "NC23",
-      "law": "ou > ō",
+      "law": "ou,ow > ō",
       "context": ""
     },
     {
@@ -152,18 +162,28 @@
       "context": ""
     },
     {
-      "number": "PI2ad",
+      "number": "PI2abd",
       "law": "nkʷ > gʷgʷ /V_",
       "context": ""
     },
     {
-      "number": "PI2ac",
+      "number": "PI2aca",
       "law": "on > ō /_s",
       "context": ""
     },
     {
-      "number": "PI2ad",
+      "number": "PI2acb",
       "law": "un > ū /_s",
+      "context": ""
+    },
+    {
+      "number": "PI2acc",
+      "law": "an > ā /_s",
+      "context": ""
+    },
+    {
+      "number": "PI2acd",
+      "law": "n > Ø /ε̄_s",
       "context": ""
     },
     {
@@ -229,6 +249,16 @@
     {
       "number": "PI6cd",
       "law": "ɣʷ > ɣ",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "PI6ce",
+      "law": "kʷʲ > kʲ",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "PI6cf",
+      "law": "gʷʲ > gʲ",
       "context": "Loss of labialisation"
     },
     {
@@ -313,17 +343,17 @@
     },
     {
       "number": "PI11b",
-      "law": "eF > ēu /_Q",
+      "law": "eF > ε̄u /_Q",
       "context": ""
     },
     {
       "number": "PI11c",
-      "law": "iF > ī /_Q",
+      "law": "iF > ī /_R",
       "context": ""
     },
     {
       "number": "PI11d",
-      "law": "eF > ē /_Q",
+      "law": "eF > ε̄ /_R",
       "context": ""
     },
     {
@@ -368,7 +398,7 @@
     },
     {
       "number": "PI16a",
-      "law": "w,h,j > Ø /V_V",
+      "law": "w,wʲ,h,j > Ø /V_V",
       "context": ""
     },
     {
@@ -378,7 +408,12 @@
     },
     {
       "number": "PI16c",
-      "law": "w > Ø /C_",
+      "law": "wʲ > βʲ /L_",
+      "context": ""
+    },
+    {
+      "number": "PI16d",
+      "law": "w,wʲ > Ø /C_",
       "context": ""
     },
     {
@@ -387,13 +422,18 @@
       "context": ""
     },
     {
-      "number": "PI18",
+      "number": "PI18a",
       "law": "w > f /#_",
       "context": ""
     },
     {
+      "number": "PI18b",
+      "law": "wʲ > fʲ /#_",
+      "context": ""
+    },
+    {
       "number": "PI19",
-      "law": "w > Ø",
+      "law": "w,wʲ > Ø",
       "context": ""
     },
     {
@@ -418,12 +458,12 @@
     },
     {
       "number": "OIr5a",
-      "law": "θ > ð /V_#",
+      "law": "θ > ð /VC$V_#",
       "context": ""
     },
     {
       "number": "OIr5b",
-      "law": "xʲ > ɣʲ /V_#",
+      "law": "xʲ > ɣʲ /VC$V_#",
       "context": ""
     },
     {

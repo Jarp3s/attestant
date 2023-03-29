@@ -22,6 +22,16 @@
       "context": "Lenition"
     },
     {
+      "number": "PC13",
+      "law": "sf > h /V_V,R,#",
+      "context": ""
+    },
+    {
+      "number": "PC14",
+      "law": "f > Ø",
+      "context": ""
+    },
+    {
       "number": "NC15",
       "law": "ð > Ø /_#",
       "context": "Loss of word-final ð"

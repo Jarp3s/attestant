@@ -77,8 +77,18 @@
       "context": ""
     },
     {
-      "number": "SMW9",
+      "number": "SMW9a",
+      "law": "gw > gʷ",
+      "context": ""
+    },
+    {
+      "number": "SMW9b",
       "law": "w > u",
+      "context": ""
+    },
+    {
+      "number": "SMW9c",
+      "law": "u > w /x_V",
       "context": ""
     },
     {
@@ -90,6 +100,31 @@
       "number": "SMW11",
       "law": "- > Ø",
       "context": "Dash removal"
+    },
+    {
+      "number": "SMW12",
+      "law": "gn > ɣn",
+      "context": ""
+    },
+    {
+      "number": "SMW13a",
+      "law": "sg > sk",
+      "context": ""
+    },
+    {
+      "number": "SMW13b",
+      "law": "sd > st",
+      "context": ""
+    },
+    {
+      "number": "SMW13c",
+      "law": "sb > sp",
+      "context": ""
+    },
+    {
+      "number": "SMW14",
+      "law": "i > j /#_V",
+      "context": ""
     }
   ]
 }

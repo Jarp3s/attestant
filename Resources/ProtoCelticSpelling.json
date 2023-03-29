@@ -2,8 +2,23 @@
   "language": "Proto Celtic",
   "soundLawRepresentations": [
     {
-      "number": "SPC1",
+      "number": "SPC1a",
+      "law": "y > i /V_C",
+      "context": ""
+    },
+    {
+      "number": "SPC1b",
       "law": "y > j",
+      "context": ""
+    },
+    {
+      "number": "SPC2a",
+      "law": "gw > gʷ",
+      "context": ""
+    },
+    {
+      "number": "SPC2b",
+      "law": "kw > kʷ",
       "context": ""
     }
   ]
