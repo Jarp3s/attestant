@@ -2,34 +2,49 @@
   "language": "Old Irish",
   "soundLawRepresentations": [
     {
+      "number": "PC0a",
+      "law": "aw > au /C_C",
+      "context": ""
+    },
+    {
+      "number": "PC0b",
+      "law": "ow > ou /C_C",
+      "context": ""
+    },
+    {
       "number": "PC10a",
-      "law": "b > β /V_V,R,#",
+      "law": "b > β /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
       "number": "PC10b",
-      "law": "g > ɣ /V_V,R,#",
+      "law": "g > ɣ /V,Vw_V,R,#",
+      "context": "Lenition"
+    },
+    {
+      "number": "PC10c",
+      "law": "d > ð /V,Vw_V,R,#",
+      "context": "Lenition"
+    },
+    {
+      "number": "PC10d",
+      "law": "m > μ /V,Vw_V,R",
       "context": "Lenition"
     },
     {
       "number": "PC13",
-      "law": "sf > h /V_V,R,#",
+      "law": "sf > h /V,Vw_V,R,#",
       "context": ""
     },
     {
-      "number": "PC10c",
-      "law": "d > ð /V_V,R,#",
-      "context": "Lenition"
-    },
-    {
-      "number": "PC14",
+      "number": "PC14a",
       "law": "f > Ø",
       "context": ""
     },
     {
-      "number": "PC10d",
-      "law": "m > μ /V_V,R",
-      "context": "Lenition"
+      "number": "PC14b",
+      "law": "β > μ /_n",
+      "context": ""
     },
     {
       "number": "NC15",
@@ -58,7 +73,7 @@
     },
     {
       "number": "NC20a",
-      "law": "st,tst > ts /V_",
+      "law": "st,tst > ts /V,Vw_",
       "context": ""
     },
     {
@@ -98,7 +113,7 @@
     },
     {
       "number": "NC23",
-      "law": "ou,ow > ō",
+      "law": "ou,ow > ō /_C,#",
       "context": ""
     },
     {
@@ -113,7 +128,7 @@
     },
     {
       "number": "NC25b",
-      "law": "s > h /V_V,R,#",
+      "law": "s > h /V,Vw_V,R,#",
       "context": ""
     },
     {
@@ -192,8 +207,13 @@
       "context": ""
     },
     {
-      "number": "PI4a",
-      "law": "Ø > ʲ /#X_E",
+      "number": "PI4aa",
+      "law": "Ø > ʲ /#X(X)_E",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "PI4ab",
+      "law": "Ø > ʲ /#X_(J)E",
       "context": "First Palatalization"
     },
     {
@@ -262,8 +282,13 @@
       "context": "Loss of labialisation"
     },
     {
-      "number": "PI6d",
+      "number": "PI6da",
       "law": "Ø > u /S_Cu",
+      "context": "u-infection"
+    },
+    {
+      "number": "PI6db",
+      "law": "uu > u /_Cu",
       "context": "u-infection"
     },
     {
@@ -322,17 +347,27 @@
       "context": "Apocope"
     },
     {
-      "number": "PI10b",
+      "number": "PI10ba",
+      "law": "j > e /C_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "PI10bc",
+      "law": "j > Ø /V_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "PI10c",
       "law": "t > θ /V_V,R,#",
       "context": "Phonetic Lenition"
     },
     {
-      "number": "PI10c",
+      "number": "PI10d",
       "law": "p > ɸ /V_V,R,#",
       "context": "Phonetic Lenition"
     },
     {
-      "number": "PI10d",
+      "number": "PI10e",
       "law": "k > x /V_V,R,#",
       "context": "Phonetic Lenition"
     },
@@ -418,7 +453,7 @@
     },
     {
       "number": "PI17",
-      "law": "Ø > ə /C_L#",
+      "law": "Ø > ə /C_R#",
       "context": ""
     },
     {
@@ -435,6 +470,31 @@
       "number": "PI19",
       "law": "w,wʲ > Ø",
       "context": ""
+    },
+    {
+      "number": "PI20a",
+      "law": "a > ā /#$_#",
+      "context": "Lengthening in monosyllabic words"
+    },
+    {
+      "number": "PI20b",
+      "law": "e > ē /#$_#",
+      "context": "Lengthening in monosyllabic words"
+    },
+    {
+      "number": "PI20c",
+      "law": "i > ī /#$_#",
+      "context": "Lengthening in monosyllabic words"
+    },
+    {
+      "number": "PI20d",
+      "law": "o > ō /#$_#",
+      "context": "Lengthening in monosyllabic words"
+    },
+    {
+      "number": "PI20e",
+      "law": "u > ū /#$_#",
+      "context": "Lengthening in monosyllabic words"
     },
     {
       "number": "OIr1",
@@ -469,7 +529,7 @@
     {
       "number": "OIr6",
       "law": "ε̄ > ē",
-      "context": "A dummy law that solves a lack of distinction in Old Irish spelling."
+      "context": ""
     }
   ]
 }

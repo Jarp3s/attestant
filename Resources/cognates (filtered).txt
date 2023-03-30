@@ -1,39 +1,29 @@
 adrīmo; áram; eirif
-ago; agid; a
 akino; ; egin
 anamī; anim; anaf
 anawo; anae; anaw
 aramo; ; araf
 argo; arg; 
 arto; art; arth
-atilino; ad-len; edlynu
 axtīno; aitten; eithin
 banowessā; banais; 
-barna; ; barnu
-bego; do-beig; 
 bēto; bíad; bwyd
-bina; benaid;; kymynu
 biyatli; biáil; bwell
 blātu; bláth; blawd
 borro; ; bwrr
 bostā; bos; bos
 bow; bó; bu
-bowdro; ; budyr
-brig; ; bre
 bristi; ; brys
 brixtu; bricht; -brith
 brokko; ; broch
 brugno; brón; brwyn
 bruson; brú; bron
 budaro; bodar; byddar
-buyo; biid; 
-dā; -tartat; 
 damniyo; damnae; defnydd
 dīko; ; dic
 dina; denaid; dynu
 dīreyo; díre; dirwy
 dowyo; dóe; 
-dringo; dringid; dringo
 drūxtu; drúcht; 
 dwīyot; dé; 
 exs; ess-; ech
@@ -45,27 +35,22 @@ ferko; erc; erch
 fētu; íath; 
 flikkā; lecc; llech
 fotlo; ól; 
-frato; rath; rat
+frato; rath; 
 frēmo; ; rwyf
-friyo; ; ryd
 fowlwo; ; ulw
 gweltā; geilt; gwellt
-ganyo; gainidir; geni;
-gato; ; gadu
 glasto; glas; glas
 gliwo; ; glew
-gloydo; ; glud
 gloysto; glésse; 
-gnāto; gnáth; gnawt
+gnāto; gnáth; 
 gnūsti; gnúis; gnis
 gowstā; gúas; 
-gritu; grith; gryt
+gritu; grith; 
 gustu; guss; 
 kwākwo; cách; pawb
 kwenkwekont; cóica; pymmwnt
 kallī; caill; celli
 kani; cain; cein
-kartā; cartaid; 
 kato; cath; 
 kēro; cíar; 
 klamo; clam; claf
@@ -75,9 +60,7 @@ klitro; clithar; cledr
 kliyaro; ; claear
 knidā; cned; 
 komrūno; ; cyfrin
-krid; ; cryddu
 ladano; ladan; 
-lamyo; ro-laimethar; llafasu
 lēko; líach; 
 lesko; lesc; 
 lessu; les; lles
@@ -87,11 +70,8 @@ loferno; ; llewyrn
 losko; losc; 
 lustā; ; llost
 lutā; loth; 
-mako; do-formaig; magu
-marna; marnaid; 
 mati; maith; mad
-medo; midithir; meddu
-mero; mer; meredig
+mero; mer; 
 messu; mess; mes
 meto; ; medi
 mēto; méth; 
@@ -108,28 +88,21 @@ omo; om;
 ono; on; 
 oxtū; ocht; wyth
 razdo; ; rathu
-rēdo; réidid; 
 rendi; rind; 
 rentu; rét; 
 rinno; ; rin
-rowtro; ; ruthyr
-sādī; sáidid; gwahawd
 sati; saithe; heyd
-sekwo; ; hebu
 sferā; ; ffer
 skwetlo; scél; chwedl
 skāto; scáth; ysgawd
-skīto; scíth; escud
+skīto; scíth; 
 skoltā; ; hollt
-sligo; sligid; 
 slimno; slemon; llyfn
-slunko; slucaid; llyncu
 snīs; sní; ni
 stlondo; slond; 
 sukko; socc; hwch
-swanna; seinnid; 
 swekru; ; chwegr
-swerwo; serb; chwerw
+swerwo; ; chwerw
 swīs; sí; chwi
 tawso; tó; taw
 tegu; ; tew
