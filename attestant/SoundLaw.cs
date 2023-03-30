@@ -31,8 +31,6 @@ public class SoundLaw
         var result = _antecedent.Replace(word.CharacterizedPhonemes, _consequent);
         var result2 = Regex.Replace(result, @"[Ⅰ-Ⅹ,ᚠ-ᛪ]", match
             => Phoneme.Characterization.Reverse[char.Parse(match.Value)]);
-        if (Regex.IsMatch(result2, "ʲʲ")) 
-            throw new Exception();
         return result2;
     }
 
@@ -62,11 +60,7 @@ public class SoundLaw
         var normalizedLaw = inputLaw.Normalize(NormalizationForm.FormC);
         
         // Charactarize combined code points
-        normalizedLaw = Regex.Replace(normalizedLaw, @"[kgxɣ]ʷ", match
-            => Phoneme.Characterization.Forward[match.Value].ToString());
         normalizedLaw = Regex.Replace(normalizedLaw, @"\P{M}\p{M}+?", match 
-            => Phoneme.Characterization.Forward[match.Value].ToString());
-        normalizedLaw = Regex.Replace(normalizedLaw, @".ʷ", match
             => Phoneme.Characterization.Forward[match.Value].ToString());
         
         normalizedLaw = Regex.Replace(normalizedLaw, @"[\s*]", @"");
@@ -78,7 +72,7 @@ public class SoundLaw
         // Creates a RegEx pattern-string (antecedent) by grouping the environment with the sound
         string GetTarget()
         {
-            var targetSound = Regexify(lawSegments[1]);
+            var targetSound = StrongRegexify(Regexify(lawSegments[1]));
             var environment = Regex.Split(GetEnvironment(), @"_");
             return $"(?<={environment[0]})({targetSound})(?={environment[1]})";
         }
@@ -87,7 +81,7 @@ public class SoundLaw
         string GetReplacement() => Regexify(lawSegments[2]);
 
         // Create a RegEx pattern-string (sound-context) by parsing non-literal law-symbols
-        string GetEnvironment() => lawSegments.Length < 4 ? "_" : Regexify(lawSegments[3]);
+        string GetEnvironment() => lawSegments.Length < 4 ? "_" : StrongRegexify(Regexify(lawSegments[3]));
 
         string Regexify(string str)
         {
@@ -101,6 +95,16 @@ public class SoundLaw
             str = Regex.Replace(str, @"[A-Z]", match
                 => CoverSymbol.ToRegexString(char.Parse(match.Value)));
 
+            return str;
+        }
+
+        // Serves as an addition to Regexify, also parsing palatal and labial elements
+        string StrongRegexify(string str)
+        {
+            str = Regex.Replace(str, @".ʷʲ", match
+                => Phoneme.Characterization.Forward[match.Value].ToString());
+            str = Regex.Replace(str, @".[ʲʷ]", match
+                => Phoneme.Characterization.Forward[match.Value].ToString());
             return str;
         }
     }

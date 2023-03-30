@@ -2,6 +2,11 @@
   "language": "Old Irish",
   "soundLawRepresentations": [
     {
+      "number": "SOI5",
+      "law": "c > k",
+      "context": ""
+    },
+    {
       "number": "SOI12a",
       "law": "á > ā",
       "context": ""
@@ -103,7 +108,7 @@
     },
     {
       "number": "SOI1g",
-      "law": "c > g /V_V,R,#",
+      "law": "k > g /V_V,R,#",
       "context": ""
     },
     {
@@ -123,7 +128,7 @@
     },
     {
       "number": "SOI3c",
-      "law": "ch > x",
+      "law": "kh > x",
       "context": ""
     },
     {
@@ -138,12 +143,7 @@
     },
     {
       "number": "SOI4c",
-      "law": "cc > c",
-      "context": ""
-    },
-    {
-      "number": "SOI5",
-      "law": "c > k",
+      "law": "kk > k",
       "context": ""
     },
     {

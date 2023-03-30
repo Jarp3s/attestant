@@ -58,6 +58,11 @@
     },
     {
       "number": "SMW6b",
+      "law": "r > r̥ /#_",
+      "context": ""
+    },
+    {
+      "number": "SMW6c",
       "law": "ll > ɬ",
       "context": ""
     },
@@ -108,17 +113,17 @@
     },
     {
       "number": "SMW13a",
-      "law": "sg > sk",
+      "law": "sk > sg",
       "context": ""
     },
     {
       "number": "SMW13b",
-      "law": "sd > st",
+      "law": "st > sd",
       "context": ""
     },
     {
       "number": "SMW13c",
-      "law": "sb > sp",
+      "law": "sp > sb",
       "context": ""
     },
     {

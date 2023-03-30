@@ -48,8 +48,9 @@ public class Word
                 => Phoneme.Characterization.Forward[match.Value].ToString());
             partialReplaced = Regex.Replace(partialReplaced, @".[ʷʲ]+", match
                 => Phoneme.Characterization.Forward[match.Value].ToString());
-            return Regex.Replace(partialReplaced, @".ʷ", match
-                => Phoneme.Characterization.Forward[match.Value].ToString());
+            if (Regex.IsMatch(partialReplaced, "ʷ|ʲ"))
+                throw new Exception();
+            return partialReplaced;
         }
     }
 
