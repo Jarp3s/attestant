@@ -74,7 +74,7 @@ public class SoundLaw
         {
             var targetSound = StrongRegexify(Regexify(lawSegments[1]));
             var environment = Regex.Split(GetEnvironment(), @"_");
-            return $"(?<={environment[0]})({targetSound})(?={environment[1]})";
+            return $"(?<=({environment[0]}))({targetSound})(?=({environment[1]}))";
         }
 
         // Create RegEx replacement-strings (consequents) by processing each symbol individually
