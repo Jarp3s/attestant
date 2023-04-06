@@ -2,23 +2,58 @@
   "language": "Proto Celtic",
   "soundLawRepresentations": [
     {
-      "number": "SPC1a",
+      "number": "SPC2a",
       "law": "y > i /V_C",
       "context": ""
     },
     {
-      "number": "SPC1b",
+      "number": "SPC2b",
       "law": "y > j",
       "context": ""
     },
     {
-      "number": "SPC2a",
+      "number": "SPC3a",
       "law": "gw > gʷ",
       "context": ""
     },
     {
-      "number": "SPC2b",
+      "number": "SPC3b",
       "law": "kw > kʷ",
+      "context": ""
+    },
+    {
+      "number": "SP4a",
+      "law": "aw > au /C_C",
+      "context": ""
+    },
+    {
+      "number": "SP4b",
+      "law": "ow > ou /C_C",
+      "context": ""
+    },
+    {
+      "number": "SP5a",
+      "law": "b > β /V,Vw_V,R,#",
+      "context": "Lenition"
+    },
+    {
+      "number": "SP5b",
+      "law": "g > ɣ /V,Vw_V,R,#",
+      "context": "Lenition"
+    },
+    {
+      "number": "SP5c",
+      "law": "d > ð /V,Vw_V,R,#",
+      "context": "Lenition"
+    },
+    {
+      "number": "SP5d",
+      "law": "m > μ /V,Vw_V,R",
+      "context": "Lenition"
+    },
+    {
+      "number": "SP6",
+      "law": "n > ŋ /_K",
       "context": ""
     }
   ]

@@ -37,8 +37,13 @@
       "context": ""
     },
     {
-      "number": "PC14a",
+      "number": "PC14aa",
       "law": "f > Ø",
+      "context": ""
+    },
+    {
+      "number": "PC14ab",
+      "law": "u > w /#_V",
       "context": ""
     },
     {
@@ -83,7 +88,7 @@
     },
     {
       "number": "NC21a",
-      "law": "s > θ / #_r",
+      "law": "s > θ /#_r",
       "context": ""
     },
     {
@@ -98,7 +103,7 @@
     },
     {
       "number": "NC21d",
-      "law": "s > ð /_B",
+      "law": "s,z > ð /_B",
       "context": ""
     },
     {
@@ -134,7 +139,7 @@
     {
       "number": "B26z",
       "law": "s > h /#_V,w",
-      "context": "I have no clue where this is supposed to go chronologically, but I know it exists."
+      "context": ""
     },
     {
       "number": "B26a",
@@ -337,6 +342,21 @@
       "context": "Rise of new diphthongs"
     },
     {
+      "number": "B45d",
+      "law": "t > θ /Vi_",
+      "context": "Spirantisation"
+    },
+    {
+      "number": "B45e",
+      "law": "p > f /Vi_",
+      "context": "Spirantisation"
+    },
+    {
+      "number": "B45f",
+      "law": "k > x /Vi_",
+      "context": "Spirantisation"
+    },
+    {
       "number": "B38f",
       "law": "ii > ī",
       "context": "Rise of new diphthongs"
@@ -353,7 +373,7 @@
     },
     {
       "number": "B39b",
-      "law": "w > u /C_#",
+      "law": "w > u /_#",
       "context": "Apocope"
     },
     {
@@ -388,12 +408,12 @@
     },
     {
       "number": "B42b",
-      "law": "ə(j)a > uɨ /m,b_",
+      "law": "ə(j)a > uɨa /m,b_",
       "context": ""
     },
     {
       "number": "B42c",
-      "law": "iə(j)a > aɨ",
+      "law": "ə(j)a > aɨa",
       "context": ""
     },
     {
@@ -437,63 +457,33 @@
       "context": ""
     },
     {
-      "number": "B44a",
-      "law": "p > b /V_V,R,#",
-      "context": "Phonemic lenition"
-    },
-    {
-      "number": "B44b",
-      "law": "t > d /V_V,R,#",
-      "context": "Phonemic lenition"
-    },
-    {
-      "number": "B44c",
-      "law": "k > g /V_V,R,#",
-      "context": "Phonemic lenition"
-    },
-    {
-      "number": "B44d",
-      "law": "w > gʷ /#_",
-      "context": "Phonemic lenition"
-    },
-    {
-      "number": "B44e",
-      "law": "l > ll /#_",
-      "context": "Phonemic lenition"
-    },
-    {
-      "number": "B44f",
-      "law": "r > rr /#_",
-      "context": "Phonemic lenition"
-    },
-    {
       "number": "B45a",
-      "law": "tt,ðd > θ /V,R_",
+      "law": "tt,ðd > θ",
       "context": "Spirantisation"
     },
     {
       "number": "B45b",
-      "law": "pp > f /V,R_",
+      "law": "pp > f",
       "context": "Spirantisation"
     },
     {
       "number": "B45c",
-      "law": "kk > x /V,R_",
+      "law": "kk > x",
       "context": "Spirantisation"
     },
     {
       "number": "B45d",
-      "law": "t > θ /V,R_",
+      "law": "t > θ /R_",
       "context": "Spirantisation"
     },
     {
       "number": "B45e",
-      "law": "p > f /V,R_",
+      "law": "p > f /R_",
       "context": "Spirantisation"
     },
     {
       "number": "B45f",
-      "law": "k > x /V,R_",
+      "law": "k > x /R_",
       "context": "Spirantisation"
     },
     {
@@ -524,6 +514,51 @@
     {
       "number": "B45l",
       "law": "nμ > nw",
+      "context": "Spirantisation"
+    },
+    {
+      "number": "B44a",
+      "law": "p > b /V_V,R,#",
+      "context": "Phonemic lenition"
+    },
+    {
+      "number": "B44b",
+      "law": "t > d /V_V,R,#",
+      "context": "Phonemic lenition"
+    },
+    {
+      "number": "B44c",
+      "law": "k > g /V_V,R,#",
+      "context": "Phonemic lenition"
+    },
+    {
+      "number": "B44d",
+      "law": "w > gʷ /#_",
+      "context": "Phonemic lenition"
+    },
+    {
+      "number": "B44e",
+      "law": "l > ll /#_",
+      "context": "Phonemic lenition"
+    },
+    {
+      "number": "B44f",
+      "law": "r > rr /#_",
+      "context": "Phonemic lenition"
+    },
+    {
+      "number": "B45m",
+      "law": "t > θ /V_",
+      "context": "Spirantisation"
+    },
+    {
+      "number": "B45n",
+      "law": "p > f /V_",
+      "context": "Spirantisation"
+    },
+    {
+      "number": "B45o",
+      "law": "k > x /V_",
       "context": "Spirantisation"
     },
     {
@@ -758,12 +793,12 @@
     },
     {
       "number": "W60a",
-      "law": "lt > ɬ /V_V",
+      "law": "lθ > ɬ /V_V",
       "context": ""
     },
     {
       "number": "W60b",
-      "law": "lt > ɬt",
+      "law": "lθ > ɬt",
       "context": ""
     },
     {
@@ -784,6 +819,16 @@
     {
       "number": "W64",
       "law": "μ > v",
+      "context": ""
+    },
+    {
+      "number": "W65",
+      "law": "ss > s /_#",
+      "context": ""
+    },
+    {
+      "number": "W66",
+      "law": "ɔ > o",
       "context": ""
     }
   ]

@@ -28,6 +28,9 @@ public class SoundLaw
     /// </summary>
     public string Apply(Word word)
     {
+        int i = 0;
+        if (word.CharacterizedPhonemes == "olīnā")
+            i = 1;
         var result = _antecedent.Replace(word.CharacterizedPhonemes, _consequent);
         var result2 = Regex.Replace(result, @"[Ⅰ-Ⅹ,ᚠ-ᛪ]", match
             => Phoneme.Characterization.Reverse[char.Parse(match.Value)]);
@@ -90,9 +93,10 @@ public class SoundLaw
             str = Regex.Replace(str, @"\$", @"C*");
             str = Regex.Replace(str, @"^#", @"^");
             str = Regex.Replace(str, @"#$", @"$");
+            str = Regex.Replace(str, @"#", @"$"); // Assuming any other # is at the end. No particular reason.
             str = Regex.Replace(str, @"\)", @")?");
             str = Regex.Replace(str, @"Ø", @"");
-            str = Regex.Replace(str, @"[A-Z]", match
+            str = Regex.Replace(str, @"[A-Z]|Ð|Þ", match
                 => CoverSymbol.ToRegexString(char.Parse(match.Value)));
 
             return str;

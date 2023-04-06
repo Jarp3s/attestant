@@ -37,8 +37,13 @@
       "context": ""
     },
     {
-      "number": "PC14a",
+      "number": "PC14aa",
       "law": "f > Ø",
+      "context": ""
+    },
+    {
+      "number": "PC14ab",
+      "law": "u > w /#_V",
       "context": ""
     },
     {
@@ -98,7 +103,7 @@
     },
     {
       "number": "NC21d",
-      "law": "s > ð /_B",
+      "law": "s,z > ð /_B",
       "context": ""
     },
     {
@@ -152,13 +157,8 @@
       "context": ""
     },
     {
-      "number": "PI1e",
-      "law": "xs > ss",
-      "context": ""
-    },
-    {
       "number": "PI2aa",
-      "law": "i, e, æ > ε̄ /_NP,ns",
+      "law": "i,e,æ > ε̄ /_NP,ns",
       "context": ""
     },
     {
@@ -202,6 +202,11 @@
       "context": ""
     },
     {
+      "number": "PI2ad",
+      "law": "æ > e /_N",
+      "context": ""
+    },
+    {
       "number": "PI3",
       "law": "e > i /_(h)O",
       "context": ""
@@ -233,12 +238,12 @@
     },
     {
       "number": "PI5a",
-      "law": "e > i /_C$U",
+      "law": "e > i /_CU",
       "context": "Raising of e"
     },
     {
       "number": "PI5b",
-      "law": "o > u /_C$U",
+      "law": "o > u /_CU",
       "context": "Raising of o"
     },
     {
@@ -293,12 +298,12 @@
     },
     {
       "number": "PI7",
-      "law": "i > e /_C$a,C$ā,C$o,C$ō",
+      "law": "i > e /C_Ca,Cā,Co,Cō",
       "context": "Lowering of i"
     },
     {
       "number": "PI7",
-      "law": "u > o /_C$a,C$ā,C$o,C$ō",
+      "law": "u > o /C_Ca,Cā,Co,Cō",
       "context": "Lowering of u"
     },
     {
@@ -352,9 +357,49 @@
       "context": "Apocope"
     },
     {
+      "number": "PI10bb",
+      "law": "j > Ø /e,i_#",
+      "context": "Apocope"
+    },
+    {
       "number": "PI10bc",
+      "law": "j > i /O_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "PI10bd",
       "law": "j > Ø /V_#",
       "context": "Apocope"
+    },
+    {
+      "number": "PI10be",
+      "law": "ā > a /C_i#",
+      "context": "Apocope"
+    },
+    {
+      "number": "PI10bf",
+      "law": "ō > o /C_i#",
+      "context": "Apocope"
+    },
+    {
+      "number": "PI10bg",
+      "law": "ū > u /C_i#",
+      "context": "Apocope"
+    },
+    {
+      "number": "PI10bh",
+      "law": "h > Ø /V_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "PI10bh",
+      "law": "ss > s /_#",
+      "context": ""
+    },
+    {
+      "number": "PI1e",
+      "law": "xs > ss",
+      "context": ""
     },
     {
       "number": "PI10c",
@@ -498,7 +543,7 @@
     },
     {
       "number": "OIr1",
-      "law": "i,e,a,o > ə /VC$_C",
+      "law": "i,e,a,o,u > ə /VC$_C",
       "context": ""
     },
     {
@@ -507,13 +552,8 @@
       "context": ""
     },
     {
-      "number": "OIr3a",
+      "number": "OIr3",
       "law": "ē > ia /_X",
-      "context": ""
-    },
-    {
-      "number": "OIr3b",
-      "law": "ō > ua",
       "context": ""
     },
     {
@@ -530,6 +570,36 @@
       "number": "OIr6",
       "law": "ε̄ > ē",
       "context": ""
+    },
+    {
+      "number": "OIr7a",
+      "law": "dd > d /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "OIr7b",
+      "law": "gg > g /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "OIr7c",
+      "law": "bb > b /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "OIr7d",
+      "law": "tt > t /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "OIr7e",
+      "law": "kk > k /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "OIr7f",
+      "law": "pp > p /_#",
+      "context": "elimination of final geminates"
     }
   ]
 }

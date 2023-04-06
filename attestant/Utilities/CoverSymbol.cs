@@ -56,7 +56,13 @@ internal static class CoverSymbol
             'u','o', 'ɔ', 'a',
             'ū', 'ō', 'Ⅱ', 'ā'
         },
-        
+
+        'Y' => new HashSet<char> // Round vowel
+        {
+            'u','o', 'ɔ', 'y',
+            'ū', 'ō', 'Ⅱ', 'ȳ'
+        },
+
         'C' => new HashSet<char> // Consonant
         { 
             'p', 'b', 'm', 'Ⅲ', 'ɸ', 'β', 'μ', 'f', 'v', 't', 'd', 'n', 'Ⅳ', 'ν', 'r', 'Ⅴ', 'ρ', 'θ', 'ð', 

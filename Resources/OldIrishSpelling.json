@@ -7,6 +7,11 @@
       "context": ""
     },
     {
+      "number": "SOI15",
+      "law": "n > ŋ /_k,g",
+      "context": ""
+    },
+    {
       "number": "SOI12a",
       "law": "á > ā",
       "context": ""
@@ -148,7 +153,7 @@
     },
     {
       "number": "SOI6a",
-      "law": "a,o > ə /V(⁊)C$_C$",
+      "law": "a,o,u > ə /V(⁊)C$_C$",
       "context": ""
     },
     {
@@ -235,6 +240,36 @@
       "number": "SOI14",
       "law": "- > Ø",
       "context": "Dash removal"
+    },
+    {
+      "number": "SOI15a",
+      "law": "dd > d /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "SOI15b",
+      "law": "gg > g /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "SOI15c",
+      "law": "bb > b /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "SOI15d",
+      "law": "tt > t /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "SOI15e",
+      "law": "kk > k /_#",
+      "context": "elimination of final geminates"
+    },
+    {
+      "number": "SOI15f",
+      "law": "pp > p /_#",
+      "context": "elimination of final geminates"
     }
   ]
 }
