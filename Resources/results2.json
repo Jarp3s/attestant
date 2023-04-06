@@ -1,69 +1,64 @@
 {
   "wordSets": [
     {
-      "protoCeltic": "adrīmo",
+      "protoCeltic": "aðrīμo",
       "irishTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI8a. ī > i /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI11e. aF > ā /_R",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 16a. ī > i /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 22e. aF > ā /_R",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "ārəμ",
       "irishED": 0.0,
       "welshTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "PC10d. m > μ /V,Vw_V,R",
-        "B38c. ɣ,ð,θ > i /S_R",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49a. i > ɨ",
-        "B49b. ī > i",
-        "W50y. aɨ > ae",
-        "W64. μ > v"
+        "IC-B 25a. ɣ,ð,θ > i /S_R",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ",
+        "B-OW 1b. ī > i",
+        "B-OW 6. aɨ > ae",
+        "OW-MW 14. μ,β > v"
       ],
-      "middleWelsh": "eiriv",
-      "welshED": 0.1
+      "middleWelsh": "eɨriv",
+      "welshED": 0.15
     },
     {
       "protoCeltic": "akino",
       "irishTrace": [
-        "PI4c. Ø > ʲ /aX_i,ī",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 10e. Ø > ʲ /aX_i,ī",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20f. kʲ > xʲ /V_V,R,#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B41c. a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
-        "B44c. k > g /V_V,R,#",
-        "B49a. i > ɨ",
-        "W52d. ẹ,ø > e"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 31c. a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
+        "IC-B 43c. k > g /V_V,R,#",
+        "B-OW 1a. i > ɨ",
+        "B-OW 12c. ẹ,ø > e"
       ],
       "middleWelsh": "egin",
       "welshED": 0.0625
     },
     {
-      "protoCeltic": "anamī",
+      "protoCeltic": "anaμī",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI4c. Ø > ʲ /aX_i,ī",
-        "PI8a. ī > i /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 10e. Ø > ʲ /aX_i,ī",
+        "IC-PI 16a. ī > i /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "anʲəμʲ",
       "irishED": 0.041666668,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "B37g. a > ẹ /_C$ī$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B41c. a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
-        "W52b. ẹ,ø > ɨ /_$#",
-        "W52d. ẹ,ø > e",
-        "W64. μ > v"
+        "IC-B 23g. a > ẹ /_C$ī$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 31c. a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
+        "B-OW 12a. ẹ,ø > ɨ /_$#",
+        "B-OW 12c. ẹ,ø > e",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "anav",
       "welshED": 0.1875
@@ -71,31 +66,29 @@
     {
       "protoCeltic": "anawo",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI19. w,wʲ > Ø"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 3. w,wʲ,j > Ø"
       ],
       "oldIrish": "ane",
       "irishED": 0.083333336,
       "welshTrace": [
-        "B28a. o > a /w_",
-        "B30. awa > au"
+        "IC-B 7. o > a /w_",
+        "IC-B 11. awa > au"
       ],
       "middleWelsh": "anau",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "aramo",
+      "protoCeltic": "araμo",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W64. μ > v"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "arav",
       "welshED": 0.0
@@ -103,14 +96,14 @@
     {
       "protoCeltic": "argo",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "arg",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B45i. g > ɣ /L,ð_",
-        "W53b. ɣ > j /L_"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41i. g > ɣ /L,ð_",
+        "OW-MW 2. ɣ > j /L_"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -118,13 +111,13 @@
     {
       "protoCeltic": "arto",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "art",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B45d. t > θ /V,R_"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41d. t > θ /R_"
       ],
       "middleWelsh": "arθ",
       "welshED": 0.0
@@ -132,37 +125,39 @@
     {
       "protoCeltic": "axtīno",
       "irishTrace": [
-        "PI8a. ī > i /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 16a. ī > i /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "atʲən",
       "irishED": 0.23333332,
       "welshTrace": [
-        "B38e. xt > it",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49a. i > ɨ",
-        "B49b. ī > i",
-        "W50y. aɨ > ae"
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ",
+        "B-OW 1b. ī > i",
+        "B-OW 6. aɨ > ae"
       ],
-      "middleWelsh": "eiθin",
-      "welshED": 0.18333332
+      "middleWelsh": "eɨθin",
+      "welshED": 0.15
     },
     {
       "protoCeltic": "banowessā",
       "irishTrace": [
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI15. V > Ø /#C$VC$_C$V",
-        "PI16d. w,wʲ > Ø /C_",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 19. ss > s /_#",
+        "IC-PI 27. V > Ø /#C$VC$_C$V",
+        "IC-PI 30. w,wʲ > Ø /C_",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "banəsʲ",
-      "irishED": 0.19444443,
+      "irishED": 0.033333335,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B40. V > Ø /VC$_C$V$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 30. V > Ø /VC$_C$V$#",
+        "MW-W 1. ss > s /_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -170,17 +165,17 @@
     {
       "protoCeltic": "bēto",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "OIr3a. ē > ia /_X"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "OI-MI 3. ē > ia /_X"
       ],
       "oldIrish": "bʲiað",
       "irishED": 0.041666668,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49c. ē > uɨ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "B-OW 2a. ē > uɨ"
       ],
       "middleWelsh": "buɨd",
       "welshED": 0.0
@@ -188,39 +183,39 @@
     {
       "protoCeltic": "bijatli",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI9. Ø > ʲ /X_E$#",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "PI11e. aF > ā /_R",
-        "PI16a. w,wʲ,h,j > Ø /V_V"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 17. Ø > ʲ /X_E$#",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "IC-PI 22e. aF > ā /_R",
+        "IC-PI 28. w,wʲ,h,j > Ø /V_V"
       ],
       "oldIrish": "bʲiāil",
       "irishED": 0.28333333,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B42a. i,ī > ə /_(j)a$#",
-        "B42b. ə(j)a > uɨ /m,b_",
-        "B44b. t > d /V_V,R,#",
-        "B47. d > ð /V_l,n"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 32. i,ī > ə /_(j)a$#",
+        "IC-B 33. ə(j)a > uɨa /m,b_",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 46. d > ð /V_l,n"
       ],
       "middleWelsh": "bueɬ",
-      "welshED": 0.3333333
+      "welshED": 0.4027778
     },
     {
       "protoCeltic": "blātu",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "blāθ",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#"
       ],
       "middleWelsh": "blaud",
       "welshED": 0.0
@@ -228,13 +223,13 @@
     {
       "protoCeltic": "borro",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI17. Ø > ə /C_R#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 1. Ø > ə /C_R#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#"
       ],
       "middleWelsh": "burr",
       "welshED": 0.0625
@@ -242,17 +237,17 @@
     {
       "protoCeltic": "bostā",
       "irishTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "bos",
       "irishED": 0.0,
       "welshTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43e. t > Ø /V_s"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s"
       ],
       "middleWelsh": "bos",
       "welshED": 0.0
@@ -260,36 +255,68 @@
     {
       "protoCeltic": "bow",
       "irishTrace": [
-        "NC23. ou,ow > ō /_C,#",
-        "OIr3b. ō > ua"
+        "PC-IC 12. ou,ow > ō /_C,#"
       ],
       "oldIrish": "bō",
-      "irishED": 0.5,
+      "irishED": 0.0,
       "welshTrace": [
-        "NC23. ou,ow > ō /_C,#",
-        "B34a. ō > ū",
-        "B34b. ū > ȳ",
-        "B49e. ȳ > ʉ"
+        "PC-IC 12. ou,ow > ō /_C,#",
+        "IC-B 17. ō > ū",
+        "IC-B 18. ū > ȳ",
+        "B-OW 3. ȳ > ʉ"
       ],
       "middleWelsh": "bʉ",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "bristi",
+      "protoCeltic": "briɣ",
       "irishTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "NC20a. st,tst > ts /V,Vw_",
-        "B43e. t > Ø /V_s",
-        "B49a. i > ɨ"
+        "B-OW 1a. i > ɨ",
+        "OW-MW 1. ɣ > Ø /V_"
+      ],
+      "middleWelsh": "bre",
+      "welshED": 0.16666667
+    },
+    {
+      "protoCeltic": "brīɣo",
+      "irishTrace": [
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
+      ],
+      "oldIrish": "bʲrʲīɣ",
+      "irishED": 0.0,
+      "welshTrace": [
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1b. ī > i",
+        "OW-MW 1. ɣ > Ø /V_"
+      ],
+      "middleWelsh": "bri",
+      "welshED": 0.0
+    },
+    {
+      "protoCeltic": "bristi",
+      "irishTrace": [
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 10c. Ø > ʲ /EX_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
+      ],
+      "oldIrish": "",
+      "irishED": 1.0,
+      "welshTrace": [
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s",
+        "B-OW 1a. i > ɨ"
       ],
       "middleWelsh": "brɨs",
       "welshED": 0.0
@@ -297,52 +324,62 @@
     {
       "protoCeltic": "brixtu",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "bʲrʲixt",
       "irishED": 0.0,
       "welshTrace": [
-        "B38e. xt > it",
-        "B38f. ii > ī",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49b. ī > i"
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 27. ii > ī",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1b. ī > i"
       ],
       "middleWelsh": "briθ",
-      "welshED": 0.104166664
+      "welshED": 0.0
     },
     {
       "protoCeltic": "brokko",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 6e. kk > k /_#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B45c. kk > x /V,R_"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41c. kk > x"
       ],
       "middleWelsh": "brox",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "brugno",
+      "protoCeltic": "brū",
+      "irishTrace": [],
+      "oldIrish": "brū",
+      "irishED": 0.0,
+      "welshTrace": [
+        "IC-B 14. ū > ȳ",
+        "IC-B 15. ȳ > ī",
+        "B-OW 1b. ī > i"
+      ],
+      "middleWelsh": "",
+      "welshED": 1.0
+    },
+    {
+      "protoCeltic": "bruɣno",
       "irishTrace": [
-        "PC10b. g > ɣ /V,Vw_V,R,#",
-        "PI7. u > o /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI11f. oF > ō /_R",
-        "OIr3b. ō > ua"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 22g. uF > ū /_R"
       ],
       "oldIrish": "brōn",
-      "irishED": 0.3,
+      "irishED": 0.0625,
       "welshTrace": [
-        "PC10b. g > ɣ /V,Vw_V,R,#",
-        "B38c. ɣ,ð,θ > i /S_R",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49a. i > ɨ"
+        "IC-B 25a. ɣ,ð,θ > i /S_R",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ"
       ],
       "middleWelsh": "bruɨn",
       "welshED": 0.0
@@ -350,107 +387,72 @@
     {
       "protoCeltic": "bruson",
       "irishTrace": [
-        "NC25b. s > h /V,Vw_V,R,#",
-        "PI7. u > o /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-PI 15b. u > o /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18i. h > Ø /V_#",
+        "PI-OI 4d. o > ō /#$_#"
       ],
       "oldIrish": "brū",
-      "irishED": 0.375,
+      "irishED": 0.083333336,
       "welshTrace": [
-        "NC25b. s > h /V,Vw_V,R,#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W59a. h > x /_#"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "OW-MW 8. h > x /_#"
       ],
       "middleWelsh": "bron",
       "welshED": 0.20833333
     },
     {
-      "protoCeltic": "budaro",
+      "protoCeltic": "buðaro",
       "irishTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "PI7. u > o /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 15b. u > o /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "boðər",
       "irishED": 0.0,
       "welshTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W51. ɨ,u,y > ə /_C$V$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 10. ɨ,u,y > ə /_C$V$#"
       ],
       "middleWelsh": "bəðar",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "damnijo",
+      "protoCeltic": "daμnijo",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10bc. j > Ø /V_#"
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18c. j > Ø /e,i_#"
       ],
       "oldIrish": "daμne",
       "irishED": 0.0,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "B36. j > ð /E_V(V)$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B41c. a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
-        "B49a. i > ɨ",
-        "W52d. ẹ,ø > e",
-        "W64. μ > v"
+        "IC-B 22. j > ð /E_V(V)$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 31c. a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
+        "B-OW 1a. i > ɨ",
+        "B-OW 12c. ẹ,ø > e",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "devnɨð",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "dīko",
-      "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10e. k > x /V_V,R,#"
-      ],
-      "oldIrish": "",
-      "irishED": 1.0,
-      "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44c. k > g /V_V,R,#",
-        "B49b. ī > i"
-      ],
-      "middleWelsh": "dik",
-      "welshED": 0.055555556
-    },
-    {
-      "protoCeltic": "dina",
-      "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#"
-      ],
-      "oldIrish": "dʲenəðʲ",
-      "irishED": 0.4,
-      "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49a. i > ɨ"
-      ],
-      "middleWelsh": "dənʉ",
-      "welshED": 0.3125
-    },
-    {
       "protoCeltic": "dīrejo",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4b. Ø > ʲ /EX_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10bc. j > Ø /V_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10c. Ø > ʲ /EX_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18c. j > Ø /e,i_#"
       ],
       "oldIrish": "dʲīrʲe",
       "irishED": 0.0,
       "welshTrace": [
-        "B36. j > ð /E_V(V)$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49b. ī > i"
+        "IC-B 22. j > ð /E_V(V)$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1b. ī > i"
       ],
       "middleWelsh": "diruɨ",
       "welshED": 0.35
@@ -458,22 +460,22 @@
     {
       "protoCeltic": "dowjo",
       "irishTrace": [
-        "PC0b. ow > ou /C_C",
-        "NC23. ou,ow > ō /_C,#",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10bc. j > Ø /V_#",
-        "OIr3b. ō > ua"
+        "PRC-PC 1b. ow > ou /C_C",
+        "PC-IC 12. ou,ow > ō /_C,#",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18d. j > i /O_#",
+        "IC-PI 18g. ō > o /C_i#"
       ],
       "oldIrish": "doi",
-      "irishED": 0.16666667,
+      "irishED": 0.0,
       "welshTrace": [
-        "PC0b. ow > ou /C_C",
-        "NC23. ou,ow > ō /_C,#",
-        "B34a. ō > ū",
-        "B34b. ū > ȳ",
-        "B36. j > ð /E_V(V)$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49e. ȳ > ʉ"
+        "PRC-PC 1b. ow > ou /C_C",
+        "PC-IC 12. ou,ow > ō /_C,#",
+        "IC-B 17. ō > ū",
+        "IC-B 18. ū > ȳ",
+        "IC-B 22. j > ð /E_V(V)$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 3. ȳ > ʉ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -481,18 +483,18 @@
     {
       "protoCeltic": "drūxtu",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "drūxt",
       "irishED": 0.0,
       "welshTrace": [
-        "B33a. ū > ȳ",
-        "B33b. ȳ > ī",
-        "B38e. xt > it",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49a. i > ɨ",
-        "B49b. ī > i"
+        "IC-B 14. ū > ȳ",
+        "IC-B 15. ȳ > ī",
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ",
+        "B-OW 1b. ī > i"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -500,19 +502,19 @@
     {
       "protoCeltic": "dwījot",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10bc. j > Ø /V_#",
-        "PI16d. w,wʲ > Ø /C_"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18e. j > Ø /V_#",
+        "IC-PI 30. w,wʲ > Ø /C_"
       ],
       "oldIrish": "dʲē",
       "irishED": 0.125,
       "welshTrace": [
-        "B33c. ī > i /_jV",
-        "B36. j > ð /E_V(V)$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49a. i > ɨ"
+        "IC-B 16. ī > i /_jV",
+        "IC-B 22. j > ð /E_V(V)$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -520,12 +522,13 @@
     {
       "protoCeltic": "exs",
       "irishTrace": [
-        "PI1e. xs > ss"
+        "IC-PI 5. xs > ss",
+        "IC-PI 19. ss > s /_#"
       ],
-      "oldIrish": "ess",
+      "oldIrish": "es",
       "irishED": 0.0,
       "welshTrace": [
-        "B43d. sk,xs > x /V_"
+        "IC-B 36c. sk,xs > x /V_"
       ],
       "middleWelsh": "ex",
       "welshED": 0.0
@@ -533,48 +536,48 @@
     {
       "protoCeltic": "fanssā",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "NC18a. a > æ /_NT,Ns,nn,N#",
-        "PI2aa. i, e, æ > ε̄ /_NP,ns",
-        "PI2acd. n > Ø /ε̄_s",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr6. ε̄ > ē"
+        "PRC-PC 4. f > Ø",
+        "PC-IC 3. a > æ /_NT,Ns,nn,N#",
+        "IC-PI 6. i,e,æ > ε̄ /_NP,ns",
+        "IC-PI 7c. n > Ø /ε̄_s",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 19. ss > s /_#",
+        "OI-MI 5. ε̄ > ē"
       ],
       "oldIrish": "ēs",
-      "irishED": 0.33333334,
+      "irishED": 0.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "NC18a. a > æ /_NT,Ns,nn,N#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B48y. æ > a"
+        "PRC-PC 4. f > Ø",
+        "PC-IC 3. a > æ /_NT,Ns,nn,N#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 48. æ > a",
+        "MW-W 1. ss > s /_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
-      "protoCeltic": "farawsjo",
+      "protoCeltic": "farausjo",
       "irishTrace": [
-        "PC0a. aw > au /C_C",
-        "PC14a. f > Ø",
-        "NC25b. s > h /V,Vw_V,R,#",
-        "PI1a. au > ō",
-        "PI8d. ō > o /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10ba. j > e /C_#",
-        "PI16a. w,wʲ,h,j > Ø /V_V"
+        "PRC-PC 4. f > Ø",
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-PI 1. au > ō",
+        "IC-PI 16d. ō > o /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18b. j > e /C_#",
+        "IC-PI 28. w,wʲ,h,j > Ø /V_V"
       ],
       "oldIrish": "ara",
       "irishED": 0.3125,
       "welshTrace": [
-        "PC0a. aw > au /C_C",
-        "PC14a. f > Ø",
-        "NC25b. s > h /V,Vw_V,R,#",
-        "B26c. au > ā",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#",
-        "W59a. h > x /_#"
+        "PRC-PC 4. f > Ø",
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-B 2c. au > ā",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#",
+        "OW-MW 8. h > x /_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -582,15 +585,15 @@
     {
       "protoCeltic": "fare",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI9. Ø > ʲ /X_E$#",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 17. Ø > ʲ /X_E$#",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "arʲ",
       "irishED": 0.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "PRC-PC 4. f > Ø",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#"
       ],
       "middleWelsh": "ar",
       "welshED": 0.0
@@ -598,20 +601,21 @@
     {
       "protoCeltic": "ferissā",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI4b. Ø > ʲ /EX_E",
-        "PI5a. e > i /_C$U",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 10c. Ø > ʲ /EX_E",
+        "IC-PI 11a. e > i /_CU,NTU",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 19. ss > s /_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
-      "oldIrish": "irʲəss",
+      "oldIrish": "irʲəs",
       "irishED": 0.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B32a. i > e /_C$a$#,C$ā$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "PRC-PC 4. f > Ø",
+        "IC-B 13a. i > e /_C$a$#,C$ā$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "MW-W 1. ss > s /_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -619,15 +623,15 @@
     {
       "protoCeltic": "ferko",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "erk",
       "irishED": 0.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B45f. k > x /V,R_"
+        "PRC-PC 4. f > Ø",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41f. k > x /R_"
       ],
       "middleWelsh": "erx",
       "welshED": 0.0
@@ -635,18 +639,18 @@
     {
       "protoCeltic": "fētu",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "OIr3a. ē > ia /_X"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "OI-MI 3. ē > ia /_X"
       ],
       "oldIrish": "iaθ",
       "irishED": 0.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49c. ē > uɨ"
+        "PRC-PC 4. f > Ø",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "B-OW 2a. ē > uɨ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -654,21 +658,21 @@
     {
       "protoCeltic": "flikkā",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 6e. kk > k /_#"
       ],
       "oldIrish": "lʲek",
-      "irishED": 0.25,
+      "irishED": 0.083333336,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B32a. i > e /_C$a$#,C$ā$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44e. l > ll /#_",
-        "B45c. kk > x /V,R_",
-        "W57a. ll > ɬ"
+        "PRC-PC 4. f > Ø",
+        "IC-B 13a. i > e /_C$a$#,C$ā$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41c. kk > x",
+        "IC-B 43e. l > ll /#_",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "ɬex",
       "welshED": 0.0
@@ -676,19 +680,18 @@
     {
       "protoCeltic": "fotlo",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "PI11f. oF > ō /_R",
-        "OIr3b. ō > ua"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "IC-PI 22f. oF > ō /_R"
       ],
       "oldIrish": "ōl",
-      "irishED": 0.5,
+      "irishED": 0.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B47. d > ð /V_l,n"
+        "PRC-PC 4. f > Ø",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 46. d > ð /V_l,n"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -696,67 +699,85 @@
     {
       "protoCeltic": "frato",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "raθ",
       "irishED": 0.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B44f. r > rr /#_",
-        "W57b. rr > r̥ /#_"
+        "PRC-PC 4. f > Ø",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 43f. r > rr /#_",
+        "OW-MW 6b. rr > r̥ /#_"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
-      "protoCeltic": "frēmo",
+      "protoCeltic": "frēμo",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PC14a. f > Ø",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr3a. ē > ia /_X"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 3. ē > ia /_X"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PC14a. f > Ø",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44f. r > rr /#_",
-        "B49c. ē > uɨ",
-        "W57b. rr > r̥ /#_",
-        "W64. μ > v"
+        "PRC-PC 4. f > Ø",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43f. r > rr /#_",
+        "B-OW 2a. ē > uɨ",
+        "OW-MW 6b. rr > r̥ /#_",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "r̥uɨv",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "fowlwo",
+      "protoCeltic": "frijo",
       "irishTrace": [
-        "PC0b. ow > ou /C_C",
-        "PC14a. f > Ø",
-        "NC23. ou,ow > ō /_C,#",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI16b. w > β /L_",
-        "OIr3b. ō > ua"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18c. j > Ø /e,i_#",
+        "PI-OI 4b. e > ē /#$_#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "PC0b. ow > ou /C_C",
-        "PC14a. f > Ø",
-        "NC23. ou,ow > ō /_C,#",
-        "B28a. o > a /w_",
-        "B34a. ō > ū",
-        "B34b. ū > ȳ",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B39b. w > u /C_#",
-        "B49e. ȳ > ʉ"
+        "PRC-PC 4. f > Ø",
+        "IC-B 22. j > ð /E_V(V)$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43f. r > rr /#_",
+        "B-OW 1a. i > ɨ",
+        "OW-MW 6b. rr > r̥ /#_"
+      ],
+      "middleWelsh": "r̥ɨð",
+      "welshED": 0.0
+    },
+    {
+      "protoCeltic": "foulwo",
+      "irishTrace": [
+        "PRC-PC 4. f > Ø",
+        "PC-IC 12. ou,ow > ō /_C,#",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 29a. w > β /L_"
+      ],
+      "oldIrish": "",
+      "irishED": 1.0,
+      "welshTrace": [
+        "PRC-PC 4. f > Ø",
+        "PC-IC 12. ou,ow > ō /_C,#",
+        "IC-B 7. o > a /w_",
+        "IC-B 17. ō > ū",
+        "IC-B 18. ū > ȳ",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 29b. w > u /_#",
+        "B-OW 3. ȳ > ʉ"
       ],
       "middleWelsh": "ʉlu",
       "welshED": 0.0
@@ -764,33 +785,49 @@
     {
       "protoCeltic": "gʷeltā",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI6cf. gʷʲ > gʲ",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 13f. gʷʲ > gʲ",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "gʲelʲtʲ",
       "irishED": 0.083333336,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B45d. t > θ /V,R_"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41d. t > θ /R_",
+        "OW-MW 10b. lθ > ɬt"
       ],
       "middleWelsh": "gʷeɬt",
-      "welshED": 0.10416667
+      "welshED": 0.0
+    },
+    {
+      "protoCeltic": "gato",
+      "irishTrace": [
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
+      ],
+      "oldIrish": "",
+      "irishED": 1.0,
+      "welshTrace": [
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#"
+      ],
+      "middleWelsh": "gadʉ",
+      "welshED": 0.25
     },
     {
       "protoCeltic": "glasto",
       "irishTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "glas",
       "irishED": 0.0,
       "welshTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43e. t > Ø /V_s"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s"
       ],
       "middleWelsh": "glas",
       "welshED": 0.0
@@ -798,41 +835,41 @@
     {
       "protoCeltic": "gliwo",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI19. w,wʲ > Ø",
-        "PI20b. e > ē /#$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 3. w,wʲ,j > Ø",
+        "PI-OI 4b. e > ē /#$_#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B28a. o > a /w_",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49a. i > ɨ"
+        "IC-B 7. o > a /w_",
+        "IC-B 13a. i > e /_C$a$#,C$ā$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 29b. w > u /_#"
       ],
       "middleWelsh": "gleu",
-      "welshED": 0.375
+      "welshED": 0.0
     },
     {
       "protoCeltic": "gloisto",
       "irishTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "gʲlʲēssʲe",
       "irishED": 0.5416667,
       "welshTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "B26b. oi > ō",
-        "B34a. ō > ū",
-        "B34b. ū > ȳ",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43e. t > Ø /V_s",
-        "B49e. ȳ > ʉ"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 2b. oi > ō",
+        "IC-B 17. ō > ū",
+        "IC-B 18. ū > ȳ",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s",
+        "B-OW 3. ȳ > ʉ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -840,17 +877,17 @@
     {
       "protoCeltic": "gnāto",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "gnāθ",
       "irishED": 0.0,
       "welshTrace": [
-        "B38b. g > ɣ /_n",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#"
+        "IC-B 24b. g > ɣ /_n",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -858,84 +895,79 @@
     {
       "protoCeltic": "gnūsti",
       "irishTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 10h. Ø > ʲ /VÐ_i,ī",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "gnūsʲ",
-      "irishED": 0.041666668,
+      "irishED": 0.0,
       "welshTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "NC20a. st,tst > ts /V,Vw_",
-        "B33a. ū > ȳ",
-        "B33b. ȳ > ī",
-        "B38b. g > ɣ /_n",
-        "B43e. t > Ø /V_s",
-        "B49b. ī > i"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 14. ū > ȳ",
+        "IC-B 15. ȳ > ī",
+        "IC-B 24b. g > ɣ /_n",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s",
+        "B-OW 1b. ī > i"
       ],
       "middleWelsh": "ɣnis",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "gowstā",
-      "irishTrace": [
-        "PC0b. ow > ou /C_C",
-        "NC20a. st,tst > ts /V,Vw_",
-        "NC23. ou,ow > ō /_C,#",
-        "PI1d. ts > s",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr3b. ō > ua"
-      ],
-      "oldIrish": "guas",
-      "irishED": 0.0,
-      "welshTrace": [
-        "PC0b. ow > ou /C_C",
-        "NC20a. st,tst > ts /V,Vw_",
-        "NC23. ou,ow > ō /_C,#",
-        "B34a. ō > ū",
-        "B34b. ū > ȳ",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43e. t > Ø /V_s",
-        "B49e. ȳ > ʉ"
-      ],
-      "middleWelsh": "",
-      "welshED": 1.0
-    },
-    {
       "protoCeltic": "gritu",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI6da. Ø > u /S_Cu",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 14a. Ø > u /S_Cu",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "gʲrʲiθ",
       "irishED": 0.2,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49a. i > ɨ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "B-OW 1a. i > ɨ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
+      "protoCeltic": "gulbīno",
+      "irishTrace": [
+        "IC-PI 16a. ī > i /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
+      ],
+      "oldIrish": "gulbən",
+      "irishED": 0.0,
+      "welshTrace": [
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 31a. u > y /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
+        "IC-B 41g. b > β /L,ð_",
+        "B-OW 1b. ī > i",
+        "B-OW 10. ɨ,u,y > ə /_C$V$#",
+        "OW-MW 14. μ,β > v"
+      ],
+      "middleWelsh": "gəlvin",
+      "welshED": 0.0
+    },
+    {
       "protoCeltic": "gustu",
       "irishTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s",
-        "PI6da. Ø > u /S_Cu",
-        "PI6db. uu > u /_Cu",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 14a. Ø > u /S_Cu",
+        "IC-PI 14b. uu > u /_Cu",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
-      "oldIrish": "guss",
-      "irishED": 0.25,
+      "oldIrish": "gus",
+      "irishED": 0.0,
       "welshTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43e. t > Ø /V_s"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -943,67 +975,66 @@
     {
       "protoCeltic": "kʷākʷo",
       "irishTrace": [
-        "PI6ca. kʷ > k",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10e. k > x /V_V,R,#"
+        "IC-PI 13a. kʷ > k",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20c. k > x /V_V,R,#"
       ],
       "oldIrish": "kāx",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43a. kʷ > p",
-        "B44a. p > b /V_V,R,#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 35. kʷ > p",
+        "IC-B 43a. p > b /V_V,R,#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#"
       ],
       "middleWelsh": "paub",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "kʷenkʷekont",
+      "protoCeltic": "kʷeŋkʷekont",
       "irishTrace": [
-        "PI2aa. i, e, æ > ε̄ /_NP,ns",
-        "PI2abb. nt > dd /V_",
-        "PI2abd. nkʷ > gʷgʷ /V_",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI6cb. gʷ > g",
-        "PI6ce. kʷʲ > kʲ",
-        "PI10e. k > x /V_V,R,#",
-        "PI14. Ø > ʲ /#C$VX(X)(X)_EC$V",
-        "PI15. V > Ø /#C$VC$_C$V",
-        "OIr1. i,e,a,o > ə /VC$_C",
-        "OIr6. ε̄ > ē"
+        "IC-PI 6. i,e,æ > ε̄ /_NP,ns",
+        "IC-PI 7ab. nt > dd /V_",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 13a. kʷ > k",
+        "IC-PI 13e. kʷʲ > kʲ",
+        "IC-PI 20c. k > x /V_V,R,#",
+        "IC-PI 26. Ø > ʲ /#C$VX(X)(X)_EC$V",
+        "IC-PI 27. V > Ø /#C$VC$_C$V",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C",
+        "OI-MI 5. ε̄ > ē",
+        "OI-MI 6a. dd > d /_#"
       ],
       "oldIrish": "kōgʲa",
-      "irishED": 0.6458334,
+      "irishED": 0.61904764,
       "welshTrace": [
-        "B27a. e > i /_NT",
-        "B27c. o > u /_NT",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43a. kʷ > p",
-        "B44c. k > g /V_V,R,#",
-        "B45e. p > f /V,R_",
-        "B49a. i > ɨ",
-        "W51. ɨ,u,y > ə /_C$V$#"
+        "IC-B 3a. e > i /_NT",
+        "IC-B 3b. o > u /_NT",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 35. kʷ > p",
+        "IC-B 41e. p > f /R_",
+        "IC-B 43c. k > g /V_V,R,#",
+        "IC-B 49a. i,u > ə /_CC$V$#,C$VC$V$#"
       ],
       "middleWelsh": "pɨmmunt",
-      "welshED": 0.45238096
+      "welshED": 0.4404762
     },
     {
       "protoCeltic": "kallī",
       "irishTrace": [
-        "PI8a. ī > i /VC$_",
-        "PI9. Ø > ʲ /X_E$#",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI17. Ø > ə /C_R#"
+        "IC-PI 16a. ī > i /VC$_",
+        "IC-PI 17. Ø > ʲ /X_E$#",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 1. Ø > ə /C_R#"
       ],
-      "oldIrish": "kalʲlʲ",
-      "irishED": 0.23333332,
+      "oldIrish": "",
+      "irishED": 1.0,
       "welshTrace": [
-        "B37g. a > ẹ /_C$ī$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W52b. ẹ,ø > ɨ /_$#",
-        "W57a. ll > ɬ"
+        "IC-B 23g. a > ẹ /_C$ī$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 12a. ẹ,ø > ɨ /_$#",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "keɬi",
       "welshED": 0.375
@@ -1011,28 +1042,28 @@
     {
       "protoCeltic": "kani",
       "irishTrace": [
-        "PI4c. Ø > ʲ /aX_i,ī",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10e. Ø > ʲ /aX_i,ī",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "kanʲ",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#"
       ],
-      "middleWelsh": "kein",
+      "middleWelsh": "keɨn",
       "welshED": 0.3125
     },
     {
       "protoCeltic": "kato",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "kaθ",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1040,31 +1071,29 @@
     {
       "protoCeltic": "kēro",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr3a. ē > ia /_X"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 3. ē > ia /_X"
       ],
       "oldIrish": "kʲiar",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49c. ē > uɨ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 2a. ē > uɨ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
-      "protoCeltic": "klamo",
+      "protoCeltic": "klaμo",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "klaμ",
       "irishED": 0.0,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W64. μ > v"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "klav",
       "welshED": 0.0
@@ -1072,16 +1101,17 @@
     {
       "protoCeltic": "klisso",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 19. ss > s /_#"
       ],
       "oldIrish": "kʲlʲes",
-      "irishED": 0.2,
+      "irishED": 0.0625,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49a. i > ɨ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ",
+        "MW-W 1. ss > s /_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1089,18 +1119,18 @@
     {
       "protoCeltic": "klito",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49a. i > ɨ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "B-OW 1a. i > ɨ"
       ],
       "middleWelsh": "klɨd",
       "welshED": 0.0
@@ -1108,20 +1138,18 @@
     {
       "protoCeltic": "klitro",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "PI11d. eF > ε̄ /_R",
-        "OIr6. ε̄ > ē"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "IC-PI 22c. iF > ī /_R"
       ],
-      "oldIrish": "kʲlʲiθər",
-      "irishED": 0.41666666,
+      "oldIrish": "",
+      "irishED": 1.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49a. i > ɨ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "B-OW 1a. i > ɨ"
       ],
       "middleWelsh": "kledr",
       "welshED": 0.1
@@ -1129,80 +1157,76 @@
     {
       "protoCeltic": "klijaro",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI16a. w,wʲ,h,j > Ø /V_V"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 28. w,wʲ,h,j > Ø /V_V"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B42a. i,ī > ə /_(j)a$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 32. i,ī > ə /_(j)a$#",
+        "IC-B 34. ə(j)a > aɨa",
+        "B-OW 6. aɨ > ae"
       ],
       "middleWelsh": "klaear",
-      "welshED": 0.25
+      "welshED": 0.0
     },
     {
-      "protoCeltic": "knidā",
+      "protoCeltic": "kniðā",
       "irishTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "kʲnʲeð",
       "irishED": 0.0,
       "welshTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "B32a. i > e /_C$a$#,C$ā$#",
-        "B38a. k > g /_n",
-        "B38b. g > ɣ /_n",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "IC-B 13a. i > e /_C$a$#,C$ā$#",
+        "IC-B 24a. k > g /_n",
+        "IC-B 24b. g > ɣ /_n",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
-      "protoCeltic": "komrūno",
+      "protoCeltic": "koμrūno",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI5b. o > u /_C$U",
-        "PI8b. ū > u /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 16b. ū > u /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "B33a. ū > ȳ",
-        "B33b. ȳ > ī",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B41b. o > ø /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
-        "B49b. ī > i",
-        "W52d. ẹ,ø > e",
-        "W64. μ > v"
+        "IC-B 14. ū > ȳ",
+        "IC-B 15. ȳ > ī",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 31b. o > ø /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
+        "B-OW 1b. ī > i",
+        "B-OW 12c. ẹ,ø > e",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "kəvrin",
       "welshED": 0.083333336
     },
     {
-      "protoCeltic": "ladano",
+      "protoCeltic": "laðano",
       "irishTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "laðən",
       "irishED": 0.0,
       "welshTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44e. l > ll /#_",
-        "W57a. ll > ɬ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43e. l > ll /#_",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1210,19 +1234,19 @@
     {
       "protoCeltic": "lēko",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10e. k > x /V_V,R,#",
-        "OIr3a. ē > ia /_X"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20c. k > x /V_V,R,#",
+        "OI-MI 3. ē > ia /_X"
       ],
       "oldIrish": "lʲiax",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44c. k > g /V_V,R,#",
-        "B44e. l > ll /#_",
-        "B49c. ē > uɨ",
-        "W57a. ll > ɬ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43c. k > g /V_V,R,#",
+        "IC-B 43e. l > ll /#_",
+        "B-OW 2a. ē > uɨ",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1230,16 +1254,16 @@
     {
       "protoCeltic": "lesko",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "lʲesk",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43d. sk,xs > x /V_",
-        "B44e. l > ll /#_",
-        "W57a. ll > ɬ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 36c. sk,xs > x /V_",
+        "IC-B 43e. l > ll /#_",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1247,75 +1271,76 @@
     {
       "protoCeltic": "lessu",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI5a. e > i /_C$U",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 19. ss > s /_#"
       ],
       "oldIrish": "lʲes",
-      "irishED": 0.3125,
+      "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44e. l > ll /#_",
-        "W57a. ll > ɬ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43e. l > ll /#_",
+        "OW-MW 6a. ll > ɬ",
+        "MW-W 1. ss > s /_#"
       ],
       "middleWelsh": "ɬes",
-      "welshED": 0.25
+      "welshED": 0.0
     },
     {
       "protoCeltic": "lextu",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI5a. e > i /_C$U",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "lʲext",
-      "irishED": 0.0625,
+      "irishED": 0.0,
       "welshTrace": [
-        "B38e. xt > it",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B44e. l > ll /#_",
-        "B49a. i > ɨ",
-        "W57a. ll > ɬ"
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43e. l > ll /#_",
+        "B-OW 1a. i > ɨ",
+        "OW-MW 6a. ll > ɬ"
       ],
-      "middleWelsh": "ɬeiθ",
-      "welshED": 0.16666666
+      "middleWelsh": "ɬeɨθ",
+      "welshED": 0.0
     },
     {
       "protoCeltic": "lisso",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 19. ss > s /_#"
       ],
       "oldIrish": "lʲes",
-      "irishED": 0.25,
+      "irishED": 0.083333336,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44e. l > ll /#_",
-        "B49a. i > ɨ",
-        "W57a. ll > ɬ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43e. l > ll /#_",
+        "B-OW 1a. i > ɨ",
+        "OW-MW 6a. ll > ɬ",
+        "MW-W 1. ss > s /_#"
       ],
       "middleWelsh": "ɬɨs",
-      "welshED": 0.25
+      "welshED": 0.0
     },
     {
       "protoCeltic": "loferno",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI17. Ø > ə /C_R#"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 1. Ø > ə /C_R#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B27b. e > i /_rn",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44e. l > ll /#_",
-        "B49a. i > ɨ",
-        "W50x. oɨ > oe",
-        "W57a. ll > ɬ"
+        "PRC-PC 4. f > Ø",
+        "IC-B 4a. e > i /_rn",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43e. l > ll /#_",
+        "B-OW 1a. i > ɨ",
+        "B-OW 7. oɨ > oe",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "ɬeuɨrn",
       "welshED": 0.29166666
@@ -1323,15 +1348,15 @@
     {
       "protoCeltic": "losko",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "losk",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43d. sk,xs > x /V_",
-        "B44e. l > ll /#_",
-        "W57a. ll > ɬ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 36c. sk,xs > x /V_",
+        "IC-B 43e. l > ll /#_",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1339,21 +1364,21 @@
     {
       "protoCeltic": "lustā",
       "irishTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s",
-        "PI7. u > o /_C$a,C$ā,C$o,C$ō",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 15b. u > o /C_Ca,Cā,Co,Cō",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "B32b. u > o /_C$a$#,C$ā$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43e. t > Ø /V_s",
-        "B44e. l > ll /#_",
-        "W57a. ll > ɬ"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 13b. u > o /_C$a$#,C$ā$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s",
+        "IC-B 43e. l > ll /#_",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "ɬost",
       "welshED": 0.25
@@ -1361,19 +1386,19 @@
     {
       "protoCeltic": "lutā",
       "irishTrace": [
-        "PI7. u > o /_C$a,C$ā,C$o,C$ō",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 15b. u > o /C_Ca,Cā,Co,Cō",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "loθ",
       "irishED": 0.0,
       "welshTrace": [
-        "B32b. u > o /_C$a$#,C$ā$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B44e. l > ll /#_",
-        "W57a. ll > ɬ"
+        "IC-B 13b. u > o /_C$a$#,C$ā$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 43e. l > ll /#_",
+        "OW-MW 6a. ll > ɬ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1381,14 +1406,15 @@
     {
       "protoCeltic": "mati",
       "irishTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 10e. Ø > ʲ /aX_i,ī",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20d. tʲ > θʲ /V_V,R,#"
       ],
       "oldIrish": "maθʲ",
-      "irishED": 0.055555556,
+      "irishED": 0.0,
       "welshTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "B44b. t > d /V_V,R,#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#"
       ],
       "middleWelsh": "mad",
       "welshED": 0.0
@@ -1396,13 +1422,13 @@
     {
       "protoCeltic": "mero",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "mʲer",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1410,48 +1436,33 @@
     {
       "protoCeltic": "messu",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI5a. e > i /_C$U",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 19. ss > s /_#"
       ],
-      "oldIrish": "mʲess",
-      "irishED": 0.0625,
+      "oldIrish": "mʲes",
+      "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "MW-W 1. ss > s /_#"
       ],
       "middleWelsh": "mes",
-      "welshED": 0.25
-    },
-    {
-      "protoCeltic": "meto",
-      "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
-      ],
-      "oldIrish": "",
-      "irishED": 1.0,
-      "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#"
-      ],
-      "middleWelsh": "medi",
-      "welshED": 0.25
+      "welshED": 0.0
     },
     {
       "protoCeltic": "mēto",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "OIr3a. ē > ia /_X"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "OI-MI 3. ē > ia /_X"
       ],
       "oldIrish": "mʲēθ",
       "irishED": 0.375,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49c. ē > uɨ"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "B-OW 2a. ē > uɨ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1459,12 +1470,12 @@
     {
       "protoCeltic": "mī",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E"
       ],
       "oldIrish": "mʲē",
       "irishED": 0.125,
       "welshTrace": [
-        "B49b. ī > i"
+        "B-OW 1b. ī > i"
       ],
       "middleWelsh": "mi",
       "welshED": 0.0
@@ -1472,169 +1483,139 @@
     {
       "protoCeltic": "nanī",
       "irishTrace": [
-        "PI4c. Ø > ʲ /aX_i,ī",
-        "PI8a. ī > i /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10e. Ø > ʲ /aX_i,ī",
+        "IC-PI 16a. ī > i /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B37g. a > ẹ /_C$ī$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W52b. ẹ,ø > ɨ /_$#"
+        "IC-B 23g. a > ẹ /_C$ī$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 12a. ẹ,ø > ɨ /_$#"
       ],
-      "middleWelsh": "nain",
-      "welshED": 0.3125
+      "middleWelsh": "naɨn",
+      "welshED": 0.25
     },
     {
       "protoCeltic": "nāwā",
       "irishTrace": [
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI19. w,wʲ > Ø"
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 3. w,wʲ,j > Ø"
       ],
       "oldIrish": "nau",
       "irishED": 0.41666666,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 29b. w > u /_#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4b. ɔ̄ > o",
+        "B-OW 8. ou,ow > əʉ"
       ],
       "middleWelsh": "noe",
-      "welshED": 0.5625
+      "welshED": 0.5
     },
     {
       "protoCeltic": "nawito",
       "irishTrace": [
-        "PI4c. Ø > ʲ /aX_i,ī",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "PI16a. w,wʲ,h,j > Ø /V_V"
+        "IC-PI 10e. Ø > ʲ /aX_i,ī",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "IC-PI 28. w,wʲ,h,j > Ø /V_V"
       ],
       "oldIrish": "nʲeōid",
       "irishED": 0.4166667,
       "welshTrace": [
-        "B31. wi > wu",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "W58. w > Ø /_u,o"
+        "IC-B 12. wi > wu",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "OW-MW 7. w > Ø /_u,o"
       ],
       "middleWelsh": "neʉed",
       "welshED": 0.3
     },
     {
-      "protoCeltic": "nemo",
+      "protoCeltic": "neμo",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "nʲeμʲ",
       "irishED": 0.055555556,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W64. μ > v"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
-      "protoCeltic": "nemos",
+      "protoCeltic": "neμos",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "NC25b. s > h /V,Vw_V,R,#",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "nʲeμ",
       "irishED": 0.0,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "NC25b. s > h /V,Vw_V,R,#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W64. μ > v"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "nev",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "nowslo",
+      "protoCeltic": "oβnu",
       "irishTrace": [
-        "PC0b. ow > ou /C_C",
-        "NC23. ou,ow > ō /_C,#",
-        "NC25b. s > h /V,Vw_V,R,#",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI17. Ø > ə /C_R#",
-        "OIr3b. ō > ua"
+        "PRC-PC 6. β > μ /_n",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 1. Ø > ə /C_R#"
       ],
-      "oldIrish": "nuall",
-      "irishED": 0.29166666,
+      "oldIrish": "oμən",
+      "irishED": 0.0,
       "welshTrace": [
-        "PC0b. ow > ou /C_C",
-        "NC23. ou,ow > ō /_C,#",
-        "NC25b. s > h /V,Vw_V,R,#",
-        "B34a. ō > ū",
-        "B34b. ū > ȳ",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49e. ȳ > ʉ"
+        "PRC-PC 6. β > μ /_n",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
-      "protoCeltic": "obnu",
-      "irishTrace": [
-        "PC10a. b > β /V,Vw_V,R,#",
-        "PC14b. β > μ /_n",
-        "PI5b. o > u /_C$U",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI17. Ø > ə /C_R#"
-      ],
-      "oldIrish": "oμun",
-      "irishED": 0.25,
-      "welshTrace": [
-        "PC10a. b > β /V,Vw_V,R,#",
-        "PC14b. β > μ /_n",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W64. μ > v"
-      ],
-      "middleWelsh": "ovʉɨn",
-      "welshED": 0.4
-    },
-    {
       "protoCeltic": "olīnā",
       "irishTrace": [
-        "PI5b. o > u /_C$U",
-        "PI8a. ī > i /VC$_",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 10h. Ø > ʲ /VÐ_i,ī",
+        "IC-PI 11b. o > u /_CU,NTU",
+        "IC-PI 16a. ī > i /VC$_",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
       "oldIrish": "ulʲən",
-      "irishED": 0.041666668,
+      "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B41b. o > ø /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
-        "B49b. ī > i",
-        "W52d. ẹ,ø > e"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 31b. o > ø /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
+        "B-OW 1b. ī > i",
+        "B-OW 12c. ẹ,ø > e"
       ],
       "middleWelsh": "elin",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "omo",
+      "protoCeltic": "oμo",
       "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "oμ",
       "irishED": 0.0,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W64. μ > v"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1642,12 +1623,12 @@
     {
       "protoCeltic": "ono",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "on",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1655,114 +1636,60 @@
     {
       "protoCeltic": "oxtū",
       "irishTrace": [
-        "PI5b. o > u /_C$U",
-        "PI8b. ū > u /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 16b. ū > u /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "oxt",
-      "irishED": 0.083333336,
+      "irishED": 0.0,
       "welshTrace": [
-        "B33a. ū > ȳ",
-        "B33b. ȳ > ī",
-        "B37e. o > ø /_C$ī$#",
-        "B38e. xt > it",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49a. i > ɨ",
-        "W52d. ẹ,ø > e"
+        "IC-B 14. ū > ȳ",
+        "IC-B 15. ȳ > ī",
+        "IC-B 23e. o > ø /_C$ī$#",
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ",
+        "B-OW 12c. ẹ,ø > e"
       ],
       "middleWelsh": "uɨθ",
-      "welshED": 0.38888887
-    },
-    {
-      "protoCeltic": "razdo",
-      "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
-      ],
-      "oldIrish": "",
-      "irishED": 1.0,
-      "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44f. r > rr /#_",
-        "W57b. rr > r̥ /#_"
-      ],
-      "middleWelsh": "r̥aθʉ",
-      "welshED": 0.33333334
-    },
-    {
-      "protoCeltic": "rendi",
-      "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI5a. e > i /_C$U",
-        "PI9. Ø > ʲ /X_E$#",
-        "PI10a. V(C) > Ø /VC$_#"
-      ],
-      "oldIrish": "rʲind",
-      "irishED": 0.041666668,
-      "welshTrace": [
-        "B27a. e > i /_NT",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44f. r > rr /#_",
-        "B49a. i > ɨ",
-        "W55b. nd > nn",
-        "W57b. rr > r̥ /#_"
-      ],
-      "middleWelsh": "",
-      "welshED": 1.0
+      "welshED": 0.25
     },
     {
       "protoCeltic": "rentu",
       "irishTrace": [
-        "PI2aa. i, e, æ > ε̄ /_NP,ns",
-        "PI2abb. nt > dd /V_",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr6. ε̄ > ē"
+        "IC-PI 6. i,e,æ > ε̄ /_NP,ns",
+        "IC-PI 7ab. nt > dd /V_",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 5. ε̄ > ē",
+        "OI-MI 6a. dd > d /_#"
       ],
       "oldIrish": "rʲēd",
-      "irishED": 0.25,
+      "irishED": 0.0,
       "welshTrace": [
-        "B27a. e > i /_NT",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44f. r > rr /#_",
-        "B45d. t > θ /V,R_",
-        "B49a. i > ɨ",
-        "W57b. rr > r̥ /#_"
+        "IC-B 3a. e > i /_NT",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41d. t > θ /R_",
+        "IC-B 43f. r > rr /#_",
+        "B-OW 1a. i > ɨ",
+        "OW-MW 6b. rr > r̥ /#_"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
-      "protoCeltic": "rinno",
-      "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI17. Ø > ə /C_R#"
-      ],
-      "oldIrish": "",
-      "irishED": 1.0,
-      "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44f. r > rr /#_",
-        "B49a. i > ɨ",
-        "W57b. rr > r̥ /#_"
-      ],
-      "middleWelsh": "r̥in",
-      "welshED": 0.3125
-    },
-    {
       "protoCeltic": "sati",
       "irishTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 10e. Ø > ʲ /aX_i,ī",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20d. tʲ > θʲ /V_V,R,#"
       ],
       "oldIrish": "saθʲe",
-      "irishED": 0.29166666,
+      "irishED": 0.25,
       "welshTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "B26z. s > h /#_V,w",
-        "B44b. t > d /V_V,R,#"
+        "IC-B 1. s > h /#_V,w",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#"
       ],
       "middleWelsh": "heɨd",
       "welshED": 0.3125
@@ -1770,17 +1697,17 @@
     {
       "protoCeltic": "sferā",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "PRC-PC 4. f > Ø",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B26z. s > h /#_V,w",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "PRC-PC 4. f > Ø",
+        "IC-B 1. s > h /#_V,w",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#"
       ],
       "middleWelsh": "fer",
       "welshED": 0.055555556
@@ -1788,22 +1715,22 @@
     {
       "protoCeltic": "skʷetlo",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI6ce. kʷʲ > kʲ",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "PI11d. eF > ε̄ /_R",
-        "OIr6. ε̄ > ē"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 13e. kʷʲ > kʲ",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "IC-PI 22d. eF > ε̄ /_R",
+        "OI-MI 5. ε̄ > ē"
       ],
       "oldIrish": "sʲkʲēl",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43a. kʷ > p",
-        "B44b. t > d /V_V,R,#",
-        "B47. d > ð /V_l,n",
-        "W56. s > əs /#_P"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 35. kʷ > p",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 46. d > ð /V_l,n",
+        "OW-MW 5. s > əs /#_P"
       ],
       "middleWelsh": "xwedl",
       "welshED": 0.29166666
@@ -1811,17 +1738,17 @@
     {
       "protoCeltic": "skāto",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "skāθ",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#",
-        "W56. s > əs /#_P"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#",
+        "OW-MW 5. s > əs /#_P"
       ],
       "middleWelsh": "əskaud",
       "welshED": 0.0
@@ -1829,57 +1756,38 @@
     {
       "protoCeltic": "skīto",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "sʲkʲīθ",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49b. ī > i",
-        "W56. s > əs /#_P"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "B-OW 1b. ī > i",
+        "OW-MW 5. s > əs /#_P"
       ],
-      "middleWelsh": "",
-      "welshED": 1.0
+      "middleWelsh": "eskʉd",
+      "welshED": 0.2
     },
     {
-      "protoCeltic": "skoltā",
+      "protoCeltic": "sliμno",
       "irishTrace": [
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
-      ],
-      "oldIrish": "",
-      "irishED": 1.0,
-      "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B45d. t > θ /V,R_",
-        "W56. s > əs /#_P"
-      ],
-      "middleWelsh": "hoɬt",
-      "welshED": 0.43055555
-    },
-    {
-      "protoCeltic": "slimno",
-      "irishTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI17. Ø > ə /C_R#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 1. Ø > ə /C_R#"
       ],
       "oldIrish": "sʲlʲeμən",
-      "irishED": 0.0,
+      "irishED": 0.041666668,
       "welshTrace": [
-        "PC10d. m > μ /V,Vw_V,R",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43g. s > st /#_l",
-        "B49a. i > ɨ",
-        "W56. s > əs /#_P",
-        "W64. μ > v"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 39. s > st /#_l",
+        "B-OW 1a. i > ɨ",
+        "OW-MW 5. s > əs /#_P",
+        "OW-MW 14. μ,β > v"
       ],
       "middleWelsh": "ɬɨvn",
       "welshED": 0.45238096
@@ -1887,16 +1795,17 @@
     {
       "protoCeltic": "snīs",
       "irishTrace": [
-        "NC25b. s > h /V,Vw_V,R,#",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18i. h > Ø /V_#"
       ],
       "oldIrish": "sʲnʲī",
-      "irishED": 0.25,
+      "irishED": 0.0,
       "welshTrace": [
-        "NC25b. s > h /V,Vw_V,R,#",
-        "B49b. ī > i",
-        "W59a. h > x /_#"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "B-OW 1b. ī > i",
+        "OW-MW 8. h > x /_#"
       ],
       "middleWelsh": "ni",
       "welshED": 0.5
@@ -1904,15 +1813,16 @@
     {
       "protoCeltic": "stlondo",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "slond",
       "irishED": 0.16666667,
       "welshTrace": [
-        "B27c. o > u /_NT",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "W55b. nd > nn",
-        "W56. s > əs /#_P"
+        "IC-B 3b. o > u /_NT",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "OW-MW 4b. nd > nn",
+        "OW-MW 5. s > əs /#_P",
+        "MW-W 2. nn > n /_#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -1920,15 +1830,15 @@
     {
       "protoCeltic": "sukko",
       "irishTrace": [
-        "PI7. u > o /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "OI-MI 6e. kk > k /_#"
       ],
       "oldIrish": "sok",
-      "irishED": 0.25,
+      "irishED": 0.083333336,
       "welshTrace": [
-        "B26z. s > h /#_V,w",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B45c. kk > x /V,R_"
+        "IC-B 1. s > h /#_V,w",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41c. kk > x"
       ],
       "middleWelsh": "hux",
       "welshED": 0.0
@@ -1936,21 +1846,21 @@
     {
       "protoCeltic": "swekru",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI5a. e > i /_C$U",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10e. k > x /V_V,R,#",
-        "PI11c. iF > ī /_R",
-        "PI16d. w,wʲ > Ø /C_"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20c. k > x /V_V,R,#",
+        "IC-PI 22d. eF > ε̄ /_R",
+        "IC-PI 30. w,wʲ > Ø /C_",
+        "OI-MI 5. ε̄ > ē"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B26z. s > h /#_V,w",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43b. h > x /_w",
-        "B44c. k > g /V_V,R,#"
+        "IC-B 1. s > h /#_V,w",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 36a. h > x /_w",
+        "IC-B 43c. k > g /V_V,R,#"
       ],
       "middleWelsh": "xwegr",
       "welshED": 0.0
@@ -1958,20 +1868,20 @@
     {
       "protoCeltic": "swerwo",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI16b. w > β /L_",
-        "PI16d. w,wʲ > Ø /C_"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 29a. w > β /L_",
+        "IC-PI 30. w,wʲ > Ø /C_"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B26z. s > h /#_V,w",
-        "B28a. o > a /w_",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B39b. w > u /C_#",
-        "B43b. h > x /_w"
+        "IC-B 1. s > h /#_V,w",
+        "IC-B 7. o > a /w_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 29b. w > u /_#",
+        "IC-B 36a. h > x /_w"
       ],
       "middleWelsh": "xweru",
       "welshED": 0.0
@@ -1979,63 +1889,60 @@
     {
       "protoCeltic": "swīs",
       "irishTrace": [
-        "NC25b. s > h /V,Vw_V,R,#",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI16d. w,wʲ > Ø /C_"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 18i. h > Ø /V_#",
+        "IC-PI 30. w,wʲ > Ø /C_"
       ],
       "oldIrish": "sʲī",
-      "irishED": 0.33333334,
+      "irishED": 0.0,
       "welshTrace": [
-        "NC25b. s > h /V,Vw_V,R,#",
-        "B26z. s > h /#_V,w",
-        "B43b. h > x /_w",
-        "B49b. ī > i",
-        "W59a. h > x /_#"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-B 1. s > h /#_V,w",
+        "IC-B 36a. h > x /_w",
+        "B-OW 1b. ī > i",
+        "OW-MW 8. h > x /_#"
       ],
       "middleWelsh": "xwi",
       "welshED": 0.25
     },
     {
-      "protoCeltic": "tawso",
+      "protoCeltic": "tauso",
       "irishTrace": [
-        "PC0a. aw > au /C_C",
-        "NC25b. s > h /V,Vw_V,R,#",
-        "PI1a. au > ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr3b. ō > ua"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-PI 1. au > ō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18i. h > Ø /V_#"
       ],
       "oldIrish": "tō",
-      "irishED": 0.625,
+      "irishED": 0.0,
       "welshTrace": [
-        "PC0a. aw > au /C_C",
-        "NC25b. s > h /V,Vw_V,R,#",
-        "B26c. au > ā",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#",
-        "W59a. h > x /_#"
+        "PC-IC 15. s > h /V,Vw_V,R,#",
+        "IC-B 2c. au > ā",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#",
+        "OW-MW 8. h > x /_#"
       ],
       "middleWelsh": "tau",
       "welshED": 0.25
     },
     {
-      "protoCeltic": "tegu",
+      "protoCeltic": "teɣu",
       "irishTrace": [
-        "PC10b. g > ɣ /V,Vw_V,R,#",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI5a. e > i /_C$U",
-        "PI6da. Ø > u /S_Cu",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 11a. e > i /_CU,NTU",
+        "IC-PI 14a. Ø > u /S_Cu",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "PC10b. g > ɣ /V,Vw_V,R,#",
-        "B27f. e > i /_ɣV",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49a. i > ɨ",
-        "W53a. ɣ > Ø /V_"
+        "IC-B 6. e > i /_ɣV",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ",
+        "OW-MW 1. ɣ > Ø /V_"
       ],
       "middleWelsh": "teu",
       "welshED": 0.5
@@ -2043,36 +1950,36 @@
     {
       "protoCeltic": "tixtā",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "tʲext",
-      "irishED": 0.0,
+      "irishED": 0.0625,
       "welshTrace": [
-        "B32a. i > e /_C$a$#,C$ā$#",
-        "B38e. xt > it",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49a. i > ɨ"
+        "IC-B 13a. i > e /_C$a$#,C$ā$#",
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ"
       ],
-      "middleWelsh": "teiθ",
-      "welshED": 0.16666666
+      "middleWelsh": "teɨθ",
+      "welshED": 0.0
     },
     {
       "protoCeltic": "tlāti",
       "irishTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 10h. Ø > ʲ /VÐ_i,ī",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20d. tʲ > θʲ /V_V,R,#"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "NC16. e, i > Ø /t,s_#",
-        "B44b. t > d /V_V,R,#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#"
       ],
       "middleWelsh": "tlauð",
       "welshED": 0.05
@@ -2080,16 +1987,16 @@
     {
       "protoCeltic": "trātu",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#"
       ],
       "oldIrish": "trāθ",
       "irishED": 0.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#"
       ],
       "middleWelsh": "traud",
       "welshED": 0.0
@@ -2097,19 +2004,20 @@
     {
       "protoCeltic": "trīkont",
       "irishTrace": [
-        "PI2abb. nt > dd /V_",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4ab. Ø > ʲ /#X_(J)E",
-        "PI10e. k > x /V_V,R,#",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 7ab. nt > dd /V_",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10b. Ø > ʲ /#X_(J)E",
+        "IC-PI 20c. k > x /V_V,R,#",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C",
+        "OI-MI 6a. dd > d /_#"
       ],
       "oldIrish": "tʲrʲīxo",
-      "irishED": 0.39285713,
+      "irishED": 0.29166666,
       "welshTrace": [
-        "B27c. o > u /_NT",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44c. k > g /V_V,R,#",
-        "B49b. ī > i"
+        "IC-B 3b. o > u /_NT",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43c. k > g /V_V,R,#",
+        "B-OW 1b. ī > i"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -2117,15 +2025,15 @@
     {
       "protoCeltic": "tuxtu",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#"
       ],
       "oldIrish": "tuxt",
       "irishED": 0.0,
       "welshTrace": [
-        "B38e. xt > it",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B49a. i > ɨ"
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 1a. i > ɨ"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -2133,92 +2041,96 @@
     {
       "protoCeltic": "ufoklijo",
       "irishTrace": [
-        "PC14a. f > Ø",
-        "PI5b. o > u /_C$U",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10bc. j > Ø /V_#",
-        "PI10e. k > x /V_V,R,#",
-        "PI11g. uF > ū /_R"
+        "PRC-PC 4. f > Ø",
+        "PRC-PC 5. u > w /#_V",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18c. j > Ø /e,i_#",
+        "IC-PI 20c. k > x /V_V,R,#",
+        "IC-PI 22f. oF > ō /_R",
+        "PI-OI 2a. w > f /#_"
       ],
       "oldIrish": "foxla",
-      "irishED": 0.5,
+      "irishED": 0.3,
       "welshTrace": [
-        "PC14a. f > Ø",
-        "B36. j > ð /E_V(V)$#",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B41b. o > ø /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
-        "B44c. k > g /V_V,R,#",
-        "B49a. i > ɨ",
-        "W52d. ẹ,ø > e"
+        "PRC-PC 4. f > Ø",
+        "PRC-PC 5. u > w /#_V",
+        "IC-B 7. o > a /w_",
+        "IC-B 22. j > ð /E_V(V)$#",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 31c. a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
+        "IC-B 43c. k > g /V_V,R,#",
+        "IC-B 43d. w > gʷ /#_",
+        "B-OW 1a. i > ɨ",
+        "B-OW 12c. ẹ,ø > e"
       ],
       "middleWelsh": "",
       "welshED": 1.0
     },
     {
-      "protoCeltic": "ufolawto",
+      "protoCeltic": "ufolauto",
       "irishTrace": [
-        "PC0a. aw > au /C_C",
-        "PC14a. f > Ø",
-        "PI1a. au > ō",
-        "PI8d. ō > o /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10c. t > θ /V_V,R,#",
-        "OIr1. i,e,a,o > ə /VC$_C",
-        "OIr5a. θ > ð /VC$V_#"
+        "PRC-PC 4. f > Ø",
+        "PRC-PC 5. u > w /#_V",
+        "IC-PI 1. au > ō",
+        "IC-PI 16d. ō > o /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "PI-OI 2a. w > f /#_",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C",
+        "OI-MI 4a. θ > ð /VC$V_#"
       ],
-      "oldIrish": "foluð",
-      "irishED": 0.35,
+      "oldIrish": "foləð",
+      "irishED": 0.0,
       "welshTrace": [
-        "PC0a. aw > au /C_C",
-        "PC14a. f > Ø",
-        "B26c. au > ā",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#"
+        "PRC-PC 4. f > Ø",
+        "PRC-PC 5. u > w /#_V",
+        "IC-B 2c. au > ā",
+        "IC-B 7. o > a /w_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 43d. w > gʷ /#_",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#"
       ],
       "middleWelsh": "golʉd",
-      "welshED": 0.375
+      "welshED": 0.36111113
     },
     {
       "protoCeltic": "wastu",
       "irishTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s",
-        "PI6da. Ø > u /S_Cu",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI18a. w > f /#_"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 14a. Ø > u /S_Cu",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 2a. w > f /#_"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43e. t > Ø /V_s",
-        "B44d. w > gʷ /#_"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s",
+        "IC-B 43d. w > gʷ /#_"
       ],
       "middleWelsh": "gʷas",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "waidā",
+      "protoCeltic": "waiðā",
       "irishTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI18a. w > f /#_"
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 2a. w > f /#_"
       ],
       "oldIrish": "faið",
-      "irishED": 0.0625,
+      "irishED": 0.0,
       "welshTrace": [
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "B26a. ai > ε̄",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44d. w > gʷ /#_",
-        "B49d. ε̄ > oɨ",
-        "W50x. oɨ > oe"
+        "IC-B 2a. ai > ε̄",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43d. w > gʷ /#_",
+        "B-OW 2b. ε̄ > oɨ",
+        "B-OW 7. oɨ > oe"
       ],
       "middleWelsh": "gʷaeð",
       "welshED": 0.1875
@@ -2226,21 +2138,21 @@
     {
       "protoCeltic": "wailino",
       "irishTrace": [
-        "PI4b. Ø > ʲ /EX_E",
-        "PI7. i > e /_C$a,C$ā,C$o,C$ō",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI18a. w > f /#_",
-        "OIr1. i,e,a,o > ə /VC$_C"
+        "IC-PI 10c. Ø > ʲ /EX_E",
+        "IC-PI 15a. i > e /C_Ca,Cā,Co,Cō",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 2a. w > f /#_",
+        "OI-MI 1. i,e,a,o,u > ə /VC$_C"
       ],
-      "oldIrish": "failʲənn",
-      "irishED": 0.14285715,
+      "oldIrish": "failʲən",
+      "irishED": 0.0,
       "welshTrace": [
-        "B26a. ai > ε̄",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44d. w > gʷ /#_",
-        "B49a. i > ɨ",
-        "B49d. ε̄ > oɨ",
-        "W50x. oɨ > oe"
+        "IC-B 2a. ai > ε̄",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43d. w > gʷ /#_",
+        "B-OW 1a. i > ɨ",
+        "B-OW 2b. ε̄ > oɨ",
+        "B-OW 7. oɨ > oe"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -2248,40 +2160,41 @@
     {
       "protoCeltic": "wextā",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI18b. wʲ > fʲ /#_"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 2b. wʲ > fʲ /#_"
       ],
       "oldIrish": "fʲext",
       "irishED": 0.0,
       "welshTrace": [
-        "B38e. xt > it",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B44d. w > gʷ /#_",
-        "B49a. i > ɨ"
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43d. w > gʷ /#_",
+        "B-OW 1a. i > ɨ"
       ],
-      "middleWelsh": "gʷeiθ",
-      "welshED": 0.16666666
+      "middleWelsh": "gʷeɨθ",
+      "welshED": 0.0
     },
     {
       "protoCeltic": "winto",
       "irishTrace": [
-        "PI2aa. i, e, æ > ε̄ /_NP,ns",
-        "PI2abb. nt > dd /V_",
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI18b. wʲ > fʲ /#_",
-        "OIr6. ε̄ > ē"
+        "IC-PI 6. i,e,æ > ε̄ /_NP,ns",
+        "IC-PI 7ab. nt > dd /V_",
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 2b. wʲ > fʲ /#_",
+        "OI-MI 5. ε̄ > ē",
+        "OI-MI 6a. dd > d /_#"
       ],
       "oldIrish": "fʲed",
-      "irishED": 0.3125,
+      "irishED": 0.083333336,
       "welshTrace": [
-        "B31. wi > wu",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44d. w > gʷ /#_",
-        "B45d. t > θ /V,R_"
+        "IC-B 12. wi > wu",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 41d. t > θ /R_",
+        "IC-B 43d. w > gʷ /#_"
       ],
       "middleWelsh": "gʷɨnt",
       "welshED": 0.1875
@@ -2289,36 +2202,38 @@
     {
       "protoCeltic": "wissu",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI18b. wʲ > fʲ /#_"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 19. ss > s /_#",
+        "PI-OI 2b. wʲ > fʲ /#_"
       ],
       "oldIrish": "fʲius",
       "irishED": 0.25,
       "welshTrace": [
-        "B31. wi > wu",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44d. w > gʷ /#_"
+        "IC-B 12. wi > wu",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43d. w > gʷ /#_",
+        "MW-W 1. ss > s /_#"
       ],
       "middleWelsh": "gʷɨs",
-      "welshED": 0.375
+      "welshED": 0.16666667
     },
     {
       "protoCeltic": "wītjo",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI10ba. j > e /C_#",
-        "PI10c. t > θ /V_V,R,#",
-        "PI18b. wʲ > fʲ /#_"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 18b. j > e /C_#",
+        "IC-PI 20a. t > θ /V_V,R,#",
+        "PI-OI 2b. wʲ > fʲ /#_"
       ],
       "oldIrish": "fʲīθʲe",
       "irishED": 0.041666668,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B44d. w > gʷ /#_",
-        "B49b. ī > i"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43b. t > d /V_V,R,#",
+        "IC-B 43d. w > gʷ /#_",
+        "B-OW 1b. ī > i"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -2326,19 +2241,19 @@
     {
       "protoCeltic": "wiwero",
       "irishTrace": [
-        "PI4aa. Ø > ʲ /#X(X)_E",
-        "PI4b. Ø > ʲ /EX_E",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI16a. w,wʲ,h,j > Ø /V_V",
-        "PI18b. wʲ > fʲ /#_"
+        "IC-PI 10a. Ø > ʲ /#X(X)_E",
+        "IC-PI 10c. Ø > ʲ /EX_E",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 28. w,wʲ,h,j > Ø /V_V",
+        "PI-OI 2b. wʲ > fʲ /#_"
       ],
       "oldIrish": "iaru",
       "irishED": 0.5625,
       "welshTrace": [
-        "B31. wi > wu",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44d. w > gʷ /#_",
-        "W51. ɨ,u,y > ə /_C$V$#"
+        "IC-B 12. wi > wu",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43d. w > gʷ /#_",
+        "B-OW 10. ɨ,u,y > ə /_C$V$#"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -2346,41 +2261,41 @@
     {
       "protoCeltic": "woxtlo",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI17. Ø > ə /C_R#",
-        "PI18a. w > f /#_"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "IC-PI 21. xtl > gl",
+        "PI-OI 1. Ø > ə /C_R#",
+        "PI-OI 2a. w > f /#_"
       ],
-      "oldIrish": "fogull",
-      "irishED": 0.38888893,
+      "oldIrish": "fogəl",
+      "irishED": 0.0,
       "welshTrace": [
-        "B28a. o > a /w_",
-        "B38e. xt > it",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B44b. t > d /V_V,R,#",
-        "B44d. w > gʷ /#_",
-        "B47. d > ð /V_l,n",
-        "B49a. i > ɨ",
-        "W50y. aɨ > ae"
+        "IC-B 7. o > a /w_",
+        "IC-B 25c. xt > it",
+        "IC-B 26a. t > θ /Vi_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 43d. w > gʷ /#_",
+        "B-OW 1a. i > ɨ",
+        "B-OW 6. aɨ > ae"
       ],
       "middleWelsh": "gʷaeθl",
-      "welshED": 0.033333335
+      "welshED": 0.0
     },
     {
       "protoCeltic": "wrastā",
       "irishTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "PI1d. ts > s",
-        "PI8g. ā > a /VC$_",
-        "PI10a. V(C) > Ø /VC$_#",
-        "PI18a. w > f /#_"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-PI 4. ts > s",
+        "IC-PI 16g. ā > a /VC$_",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 2a. w > f /#_"
       ],
-      "oldIrish": "frass",
-      "irishED": 0.2,
+      "oldIrish": "fras",
+      "irishED": 0.0,
       "welshTrace": [
-        "NC20a. st,tst > ts /V,Vw_",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B43e. t > Ø /V_s",
-        "B44d. w > gʷ /#_"
+        "PC-IC 5. st,tst > ts /V,Vw_",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 37. t > Ø /V_s",
+        "IC-B 43d. w > gʷ /#_"
       ],
       "middleWelsh": "",
       "welshED": 1.0
@@ -2388,12 +2303,13 @@
     {
       "protoCeltic": "jalo",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 3. w,wʲ,j > Ø"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#"
       ],
       "middleWelsh": "jal",
       "welshED": 0.0
@@ -2401,37 +2317,36 @@
     {
       "protoCeltic": "jālo",
       "irishTrace": [
-        "PI10a. V(C) > Ø /VC$_#"
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 3. w,wʲ,j > Ø"
       ],
       "oldIrish": "ālʲ",
-      "irishED": 0.38888887,
+      "irishED": 0.083333336,
       "welshTrace": [
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B48z. ā > ɔ̄",
-        "B49f. ɔ̄ > au /_$#"
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "IC-B 47. ā > ɔ̄",
+        "B-OW 4a. ɔ̄ > au /_$#"
       ],
       "middleWelsh": "jaul",
       "welshED": 0.0
     },
     {
-      "protoCeltic": "jowdo",
+      "protoCeltic": "jowðo",
       "irishTrace": [
-        "PC0b. ow > ou /C_C",
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "NC23. ou,ow > ō /_C,#",
-        "PI10a. V(C) > Ø /VC$_#",
-        "OIr3b. ō > ua"
+        "PRC-PC 1b. ow > ou /C_C",
+        "PC-IC 12. ou,ow > ō /_C,#",
+        "IC-PI 18a. V(C) > Ø /VC$_#",
+        "PI-OI 3. w,wʲ,j > Ø"
       ],
       "oldIrish": "",
       "irishED": 1.0,
       "welshTrace": [
-        "PC0b. ow > ou /C_C",
-        "PC10c. d > ð /V,Vw_V,R,#",
-        "NC23. ou,ow > ō /_C,#",
-        "B34a. ō > ū",
-        "B34b. ū > ȳ",
-        "B39a. (j)V(C)(C)(C) > Ø /VC$_#",
-        "B49e. ȳ > ʉ"
+        "PRC-PC 1b. ow > ou /C_C",
+        "PC-IC 12. ou,ow > ō /_C,#",
+        "IC-B 17. ō > ū",
+        "IC-B 18. ū > ȳ",
+        "IC-B 29a. (j)V(C)(C)(C) > Ø /VC$_#",
+        "B-OW 3. ȳ > ʉ"
       ],
       "middleWelsh": "ʉd",
       "welshED": 0.41666666

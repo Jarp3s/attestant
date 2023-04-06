@@ -5,7 +5,7 @@ anawo; anae; anaw
 aramo; ; araf
 argo; arg; 
 arto; art; arth
-axtīno; ; eithin
+axtīno; aitten; eithin
 banowessā; banais; 
 bēto; bíad; bwyd
 biyatli; biáil; bwell
@@ -13,15 +13,16 @@ blātu; bláth; blawd
 borro; ; bwrr
 bostā; bos; bos
 bow; bó; bu
+brig; ; bre
+brīgo; bríg; bri
 bristi; ; brys
 brixtu; bricht; -brith
 brokko; ; broch
+brū; brú;
 brugno; brón; brwyn
 bruson; brú; bron
 budaro; bodar; byddar
 damniyo; damnae; defnydd
-dīko; ; dic
-dina; denaid; dynu
 dīreyo; díre; dirwy
 dowyo; dóe; 
 drūxtu; drúcht; 
@@ -37,26 +38,28 @@ flikkā; lecc; llech
 fotlo; ól; 
 frato; rath; 
 frēmo; ; rwyf
+friyo; ; rydd
 fowlwo; ; ulw
 gweltā; geilt; gwellt
+gato; ; gadu
 glasto; glas; glas
 gliwo; ; glew
 gloysto; glésse; 
-gnāto; gnáth; 
+gnāto; gnáth;
 gnūsti; gnúis; gnis
-gowstā; gúas; 
 gritu; grith; 
+gulbīno; gulban; gylfin
 gustu; guss; 
 kwākwo; cách; pawb
 kwenkwekont; cóica; pymmwnt
-kallī; caill; celli
+kallī; ; celli
 kani; cain; cein
 kato; cath; 
 kēro; cíar; 
 klamo; clam; claf
 klisso; cles; 
 klito; ; clyd
-klitro; clithar; cledr
+klitro; ; cledr
 kliyaro; ; claear
 knidā; cned; 
 komrūno; ; cyfrin
@@ -73,7 +76,6 @@ lutā; loth;
 mati; maith; mad
 mero; mer; 
 messu; mess; mes
-meto; ; medi
 mēto; méth; 
 mī; mé; mi
 nanī; ; nain
@@ -81,22 +83,17 @@ nāwā; nau; noe
 nawito; neóit; neued
 nemo; neim; 
 nemos; nem; nef
-nowslo; nuall; 
-obnu; omun; ofuyn
+obnu; omun; 
 olīnā; uilen; elin
 omo; om; 
 ono; on; 
 oxtū; ocht; wyth
-razdo; ; rathu
-rendi; rind; 
 rentu; rét; 
-rinno; ; rin
 sati; saithe; heyd
 sferā; ; ffer
 skwetlo; scél; chwedl
 skāto; scáth; ysgawd
-skīto; scíth; 
-skoltā; ; hollt
+skīto; scíth; escud
 slimno; slemon; llyfn
 snīs; sní; ni
 stlondo; slond; 

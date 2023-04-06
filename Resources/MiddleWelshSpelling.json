@@ -2,133 +2,138 @@
   "language": "Middle Welsh",
   "soundLawRepresentations": [
     {
-      "number": "SMW1a",
+      "number": "Sp MW 1a",
       "law": "ph > ɸ",
       "context": ""
     },
     {
-      "number": "SMW1b",
+      "number": "Sp MW 1b",
       "law": "th > θ",
       "context": ""
     },
     {
-      "number": "SMW1c",
+      "number": "Sp MW 1c",
       "law": "ch > x",
       "context": ""
     },
     {
-      "number": "SMW2",
+      "number": "Sp MW 2",
       "law": "ng > ŋ",
       "context": ""
     },
     {
-      "number": "SMW3a",
+      "number": "Sp MW 3a",
       "law": "mh > m̥",
       "context": ""
     },
     {
-      "number": "SMW3b",
+      "number": "Sp MW 3b",
       "law": "nh > n̥",
       "context": ""
     },
     {
-      "number": "SMW3c",
+      "number": "Sp MW 3c",
       "law": "ŋh > ŋ̊",
       "context": ""
     },
     {
-      "number": "SMW4a",
+      "number": "Sp MW 4a",
       "law": "f > v",
       "context": ""
     },
     {
-      "number": "SMW4b",
+      "number": "Sp MW 4b",
       "law": "vv > f",
       "context": ""
     },
     {
-      "number": "SMW5",
+      "number": "Sp MW 5",
       "law": "dd > ð",
       "context": ""
     },
     {
-      "number": "SMW6a",
+      "number": "Sp MW 6a",
       "law": "rh > r̥",
       "context": ""
     },
     {
-      "number": "SMW6b",
+      "number": "Sp MW 6b",
       "law": "r > r̥ /#_",
       "context": ""
     },
     {
-      "number": "SMW6c",
+      "number": "Sp MW 7",
       "law": "ll > ɬ",
       "context": ""
     },
     {
-      "number": "SMW7a",
+      "number": "Sp MW 8a",
       "law": "y > ɨ /_$#",
       "context": "y in final syllable"
     },
     {
-      "number": "SMW7b",
+      "number": "Sp MW 8b",
       "law": "y > ə",
       "context": "y in non-final syllable"
     },
     {
-      "number": "SMW8",
+      "number": "Sp MW 9",
       "law": "u > ʉ",
       "context": ""
     },
     {
-      "number": "SMW9a",
+      "number": "Sp MW 10",
       "law": "gw > gʷ",
       "context": ""
     },
     {
-      "number": "SMW9b",
+      "number": "Sp MW 11a",
       "law": "w > u",
       "context": ""
     },
     {
-      "number": "SMW9c",
+      "number": "Sp MW 11b",
       "law": "u > w /x_V",
       "context": ""
     },
     {
-      "number": "SMW10",
+      "number": "Sp MW 12",
       "law": "c > k",
       "context": ""
     },
     {
-      "number": "SMW11",
+      "number": "Sp MW 13",
       "law": "- > Ø",
       "context": "Dash removal"
     },
     {
-      "number": "SMW12",
+      "number": "Sp MW 14",
       "law": "gn > ɣn",
       "context": ""
     },
     {
-      "number": "SMW13a",
+      "number": "Sp MW 15a",
       "law": "sg > sk",
       "context": ""
     },
     {
-      "number": "SMW13b",
+      "number": "Sp MW 15b",
       "law": "sd > st",
       "context": ""
     },
     {
-      "number": "SMW13c",
+      "number": "Sp MW 15c",
       "law": "sb > sp",
       "context": ""
     },
     {
-      "number": "SMW14",
+      "number": "Sp MW 16",
       "law": "i > j /#_V",
+      "context": ""
+    },
+    {
+      "number": "Sp MW 17",
+      "law": "i > ɨ /V_",
       "context": ""
     }
   ]

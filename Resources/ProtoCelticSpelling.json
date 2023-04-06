@@ -2,57 +2,57 @@
   "language": "Proto Celtic",
   "soundLawRepresentations": [
     {
-      "number": "SPC2a",
-      "law": "y > i /V_C",
-      "context": ""
-    },
-    {
-      "number": "SPC2b",
-      "law": "y > j",
-      "context": ""
-    },
-    {
-      "number": "SPC3a",
-      "law": "gw > gʷ",
-      "context": ""
-    },
-    {
-      "number": "SPC3b",
-      "law": "kw > kʷ",
-      "context": ""
-    },
-    {
-      "number": "SP4a",
+      "number": "Sp PC 1a",
       "law": "aw > au /C_C",
       "context": ""
     },
     {
-      "number": "SP4b",
+      "number": "Sp PC 1b",
       "law": "ow > ou /C_C",
       "context": ""
     },
     {
-      "number": "SP5a",
+      "number": "Sp PC 1c",
+      "law": "y > i /V_C",
+      "context": ""
+    },
+    {
+      "number": "Sp PC 2",
+      "law": "y > j",
+      "context": ""
+    },
+    {
+      "number": "Sp PC 3a",
+      "law": "gw > gʷ",
+      "context": ""
+    },
+    {
+      "number": "Sp PC 3b",
+      "law": "kw > kʷ",
+      "context": ""
+    },
+    {
+      "number": "Sp PC 4a",
       "law": "b > β /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "SP5b",
+      "number": "Sp PC 4b",
       "law": "g > ɣ /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "SP5c",
+      "number": "Sp PC 4c",
       "law": "d > ð /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "SP5d",
+      "number": "Sp PC 4d",
       "law": "m > μ /V,Vw_V,R",
       "context": "Lenition"
     },
     {
-      "number": "SP6",
+      "number": "Sp PC 5",
       "law": "n > ŋ /_K",
       "context": ""
     }

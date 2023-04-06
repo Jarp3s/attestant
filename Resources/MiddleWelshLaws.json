@@ -2,834 +2,839 @@
   "language": "Middle Welsh",
   "soundLawRepresentations": [
     {
-      "number": "PC0a",
+      "number": "PRC-PC 1a",
       "law": "aw > au /C_C",
       "context": ""
     },
     {
-      "number": "PC0b",
+      "number": "PRC-PC 1b",
       "law": "ow > ou /C_C",
       "context": ""
     },
     {
-      "number": "PC10a",
+      "number": "PRC-PC 2a",
       "law": "b > β /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "PC10b",
+      "number": "PRC-PC 2b",
       "law": "g > ɣ /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "PC10c",
+      "number": "PRC-PC 2c",
       "law": "d > ð /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "PC10d",
+      "number": "PRC-PC 2d",
       "law": "m > μ /V,Vw_V,R",
       "context": "Lenition"
     },
     {
-      "number": "PC13",
+      "number": "PRC-PC 3",
       "law": "sf > h /V,Vw_V,R,#",
       "context": ""
     },
     {
-      "number": "PC14aa",
+      "number": "PRC-PC 4",
       "law": "f > Ø",
       "context": ""
     },
     {
-      "number": "PC14ab",
+      "number": "PRC-PC 5",
       "law": "u > w /#_V",
       "context": ""
     },
     {
-      "number": "PC14b",
+      "number": "PRC-PC 6",
       "law": "β > μ /_n",
       "context": ""
     },
     {
-      "number": "NC15",
+      "number": "PRC-PC 7a",
+      "law": "s > r /V_rV",
+      "context": ""
+    },
+    {
+      "number": "PRC-PC 7b",
+      "law": "s > l /V_lV",
+      "context": ""
+    },
+    {
+      "number": "PC-IC 1",
       "law": "ð > Ø /_#",
       "context": "Loss of word-final ð"
     },
     {
-      "number": "NC16",
-      "law": "e, i > Ø /t,s_#",
-      "context": "Early i-apocope"
-    },
-    {
-      "number": "NC17",
+      "number": "PC-IC 2",
       "law": "e > a /_Ra",
       "context": ""
     },
     {
-      "number": "NC18a",
+      "number": "PC-IC 3",
       "law": "a > æ /_NT,Ns,nn,N#",
       "context": ""
     },
     {
-      "number": "NC18b",
+      "number": "PC-IC 4",
       "law": "e > æ /_ge,gi",
       "context": ""
     },
     {
-      "number": "NC20a",
+      "number": "PC-IC 5",
       "law": "st,tst > ts /V,Vw_",
       "context": ""
     },
     {
-      "number": "NC20b",
+      "number": "PC-IC 6",
       "law": "s > Ø /L_T",
       "context": ""
     },
     {
-      "number": "NC21a",
-      "law": "s > θ /#_r",
+      "number": "PC-IC 7a",
+      "law": "s > θ / #_r",
       "context": ""
     },
     {
-      "number": "NC21b",
+      "number": "PC-IC 7b",
       "law": "ts > θ /_r",
       "context": ""
     },
     {
-      "number": "NC21c",
+      "number": "PC-IC 8",
       "law": "s > ð /_r",
       "context": ""
     },
     {
-      "number": "NC21d",
+      "number": "PC-IC 9",
       "law": "s,z > ð /_B",
       "context": ""
     },
     {
-      "number": "NC22a",
+      "number": "PC-IC 10",
       "law": "e > o /_u",
       "context": ""
     },
     {
-      "number": "NC22b",
+      "number": "PC-IC 11",
       "law": "e,u > o /_w",
       "context": ""
     },
     {
-      "number": "NC23",
+      "number": "PC-IC 12",
       "law": "ou,ow > ō /_C,#",
       "context": ""
     },
     {
-      "number": "NC24",
+      "number": "PC-IC 13",
       "law": "m > n /_#",
       "context": ""
     },
     {
-      "number": "NC25a",
+      "number": "PC-IC 14",
       "law": "oi,ai,ē > ī /_#",
       "context": ""
     },
     {
-      "number": "NC25b",
+      "number": "PC-IC 15",
       "law": "s > h /V,Vw_V,R,#",
       "context": ""
     },
     {
-      "number": "B26z",
+      "number": "IC-B 1",
       "law": "s > h /#_V,w",
       "context": ""
     },
     {
-      "number": "B26a",
+      "number": "IC-B 2a",
       "law": "ai > ε̄",
       "context": "Elimination of Diphthongs"
     },
     {
-      "number": "B26b",
+      "number": "IC-B 2b",
       "law": "oi > ō",
       "context": "Elimination of Diphthongs"
     },
     {
-      "number": "B26c",
+      "number": "IC-B 2c",
       "law": "au > ā",
       "context": "Elimination of Diphthongs"
     },
     {
-      "number": "B27a",
+      "number": "IC-B 3a",
       "law": "e > i /_NT",
       "context": ""
     },
     {
-      "number": "B27b",
-      "law": "e > i /_rn",
-      "context": ""
-    },
-    {
-      "number": "B27c",
+      "number": "IC-B 3b",
       "law": "o > u /_NT",
       "context": ""
     },
     {
-      "number": "B27d",
+      "number": "IC-B 4a",
+      "law": "e > i /_rn",
+      "context": ""
+    },
+    {
+      "number": "IC-B 4b",
       "law": "o > u /_rn",
       "context": ""
     },
     {
-      "number": "B27e",
+      "number": "IC-B 5",
       "law": "o > u /_rg",
       "context": ""
     },
     {
-      "number": "B27f",
+      "number": "IC-B 6",
       "law": "e > i /_ɣV",
       "context": ""
     },
     {
-      "number": "B28a",
+      "number": "IC-B 7",
       "law": "o > a /w_",
       "context": ""
     },
     {
-      "number": "B28b",
+      "number": "IC-B 8",
       "law": "o > a /_ɣV",
       "context": ""
     },
     {
-      "number": "B28c",
+      "number": "IC-B 9",
       "law": "e > a /j_",
       "context": ""
     },
     {
-      "number": "B29",
+      "number": "IC-B 10",
       "law": "o > a /_Ra",
       "context": ""
     },
     {
-      "number": "B30",
+      "number": "IC-B 11",
       "law": "awa > au",
       "context": ""
     },
     {
-      "number": "B31",
+      "number": "IC-B 12",
       "law": "wi > wu",
       "context": ""
     },
     {
-      "number": "B32a",
+      "number": "IC-B 13a",
       "law": "i > e /_C$a$#,C$ā$#",
       "context": "a-affection"
     },
     {
-      "number": "B32b",
+      "number": "IC-B 13b",
       "law": "u > o /_C$a$#,C$ā$#",
       "context": "a-affection"
     },
     {
-      "number": "B32c",
+      "number": "IC-B 13c",
       "law": "j > Ø /C$_a$#,ā$#",
       "context": "a-affection"
     },
     {
-      "number": "B33a",
+      "number": "IC-B 14",
       "law": "ū > ȳ",
       "context": ""
     },
     {
-      "number": "B33b",
+      "number": "IC-B 15",
       "law": "ȳ > ī",
       "context": ""
     },
     {
-      "number": "B33c",
+      "number": "IC-B 16",
       "law": "ī > i /_jV",
       "context": "Shortening in hiatus"
     },
     {
-      "number": "B34a",
+      "number": "IC-B 17",
       "law": "ō > ū",
       "context": ""
     },
     {
-      "number": "B34b",
+      "number": "IC-B 18",
       "law": "ū > ȳ",
       "context": ""
     },
     {
-      "number": "B35a",
+      "number": "IC-B 19",
       "law": "e > ε̄ /_hi,hī",
       "context": ""
     },
     {
-      "number": "B35b",
+      "number": "IC-B 20",
       "law": "h > j /_i,ī",
       "context": ""
     },
     {
-      "number": "B35c",
+      "number": "IC-B 21",
       "law": "e > ī /_hV",
       "context": ""
     },
     {
-      "number": "B36",
+      "number": "IC-B 22",
       "law": "j > ð /E_V(V)$#",
       "context": ""
     },
     {
-      "number": "B37a",
+      "number": "IC-B 23a",
       "law": "u > y /_C$ī#",
       "context": "final i-affection"
     },
     {
-      "number": "B37b",
+      "number": "IC-B 23b",
       "law": "u > y /_C$jV$#",
       "context": "final i-affection"
     },
     {
-      "number": "B37c",
+      "number": "IC-B 23c",
       "law": "e > i /_C$ī#,C$i$#",
       "context": "final i-affection"
     },
     {
-      "number": "B37d",
+      "number": "IC-B 23d",
       "law": "e > i /_C$jV$#",
       "context": "final i-affection"
     },
     {
-      "number": "B37e",
+      "number": "IC-B 23e",
       "law": "o > ø /_C$ī$#",
       "context": "final i-affection"
     },
     {
-      "number": "B37f",
+      "number": "IC-B 23f",
       "law": "o > ø /_C$jV$#",
       "context": "final i-affection"
     },
     {
-      "number": "B37g",
+      "number": "IC-B 23g",
       "law": "a > ẹ /_C$ī$#",
       "context": "final i-affection"
     },
     {
-      "number": "B37h",
+      "number": "IC-B 23h",
       "law": "a > ẹ /_C$jV$#",
       "context": "final i-affection"
     },
     {
-      "number": "B38a",
+      "number": "IC-B 24a",
       "law": "k > g /_n",
       "context": ""
     },
     {
-      "number": "B38b",
+      "number": "IC-B 24b",
       "law": "g > ɣ /_n",
       "context": ""
     },
     {
-      "number": "B38c",
+      "number": "IC-B 25a",
       "law": "ɣ,ð,θ > i /S_R",
       "context": "Rise of new diphthongs"
     },
     {
-      "number": "B38d",
+      "number": "IC-B 25b",
       "law": "ii > ē",
       "context": "Rise of new diphthongs"
     },
     {
-      "number": "B38e",
+      "number": "IC-B 25c",
       "law": "xt > it",
       "context": "Rise of new diphthongs"
     },
     {
-      "number": "B45d",
+      "number": "IC-B 26a",
       "law": "t > θ /Vi_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45e",
+      "number": "IC-B 26b",
       "law": "p > f /Vi_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45f",
+      "number": "IC-B 26c",
       "law": "k > x /Vi_",
       "context": "Spirantisation"
     },
     {
-      "number": "B38f",
+      "number": "IC-B 27",
       "law": "ii > ī",
-      "context": "Rise of new diphthongs"
+      "context": ""
     },
     {
-      "number": "B38g",
+      "number": "IC-B 28",
       "law": "āɣ > ɔ̄u",
       "context": ""
     },
     {
-      "number": "B39a",
+      "number": "IC-B 29a",
       "law": "(j)V(C)(C)(C) > Ø /VC$_#",
       "context": "Apocope"
     },
     {
-      "number": "B39b",
+      "number": "IC-B 29b",
       "law": "w > u /_#",
       "context": "Apocope"
     },
     {
-      "number": "B40",
+      "number": "IC-B 30",
       "law": "V > Ø /VC$_C$V$#",
       "context": "Syncope"
     },
     {
-      "number": "B41a",
+      "number": "IC-B 31a",
       "law": "u > y /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
       "context": "Internal i-affection"
     },
     {
-      "number": "B41b",
+      "number": "IC-B 31b",
       "law": "o > ø /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
       "context": "Internal i-affection"
     },
     {
-      "number": "B41c",
+      "number": "IC-B 31c",
       "law": "a > ẹ /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
       "context": "Internal i-affection"
     },
     {
-      "number": "B41d",
+      "number": "IC-B 31d",
       "law": "ē > ī /_C$ī,C$i,C$y,C$ø,C$ẹ,C$j",
       "context": "Internal i-affection"
     },
     {
-      "number": "B42a",
+      "number": "IC-B 32",
       "law": "i,ī > ə /_(j)a$#",
       "context": ""
     },
     {
-      "number": "B42b",
+      "number": "IC-B 33",
       "law": "ə(j)a > uɨa /m,b_",
       "context": ""
     },
     {
-      "number": "B42c",
+      "number": "IC-B 34",
       "law": "ə(j)a > aɨa",
       "context": ""
     },
     {
-      "number": "B43a",
+      "number": "IC-B 35",
       "law": "kʷ > p",
       "context": ""
     },
     {
-      "number": "B43b",
+      "number": "IC-B 36a",
       "law": "h > x /_w",
       "context": ""
     },
     {
-      "number": "B43c",
+      "number": "IC-B 36b",
       "law": "sk > xw /_e,i",
       "context": ""
     },
     {
-      "number": "B43d",
+      "number": "IC-B 36c",
       "law": "sk,xs > x /V_",
       "context": ""
     },
     {
-      "number": "B43e",
+      "number": "IC-B 37",
       "law": "t > Ø /V_s",
       "context": ""
     },
     {
-      "number": "B43f",
+      "number": "IC-B 38",
       "law": "θ > f /#_r",
       "context": ""
     },
     {
-      "number": "B43g",
+      "number": "IC-B 39",
       "law": "s > st /#_l",
       "context": ""
     },
     {
-      "number": "B43h",
+      "number": "IC-B 40",
       "law": "h > Ø /#_l",
       "context": ""
     },
     {
-      "number": "B45a",
+      "number": "IC-B 41a",
       "law": "tt,ðd > θ",
       "context": "Spirantisation"
     },
     {
-      "number": "B45b",
+      "number": "IC-B 41b",
       "law": "pp > f",
       "context": "Spirantisation"
     },
     {
-      "number": "B45c",
+      "number": "IC-B 41c",
       "law": "kk > x",
       "context": "Spirantisation"
     },
     {
-      "number": "B45d",
+      "number": "IC-B 41d",
       "law": "t > θ /R_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45e",
+      "number": "IC-B 41e",
       "law": "p > f /R_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45f",
+      "number": "IC-B 41f",
       "law": "k > x /R_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45g",
+      "number": "IC-B 41g",
       "law": "b > β /L,ð_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45h",
+      "number": "IC-B 41h",
       "law": "d > ð /L,ð_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45i",
+      "number": "IC-B 41i",
       "law": "g > ɣ /L,ð_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45j",
+      "number": "IC-B 41j",
       "law": "m > μ /L,ð_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45k",
+      "number": "IC-B 42a",
       "law": "nm > nμ",
-      "context": "Spirantisation"
+      "context": ""
     },
     {
-      "number": "B45l",
+      "number": "IC-B 42b",
       "law": "nμ > nw",
-      "context": "Spirantisation"
+      "context": ""
     },
     {
-      "number": "B44a",
+      "number": "IC-B 43a",
       "law": "p > b /V_V,R,#",
       "context": "Phonemic lenition"
     },
     {
-      "number": "B44b",
+      "number": "IC-B 43b",
       "law": "t > d /V_V,R,#",
       "context": "Phonemic lenition"
     },
     {
-      "number": "B44c",
+      "number": "IC-B 43c",
       "law": "k > g /V_V,R,#",
       "context": "Phonemic lenition"
     },
     {
-      "number": "B44d",
+      "number": "IC-B 43d",
       "law": "w > gʷ /#_",
       "context": "Phonemic lenition"
     },
     {
-      "number": "B44e",
+      "number": "IC-B 43e",
       "law": "l > ll /#_",
       "context": "Phonemic lenition"
     },
     {
-      "number": "B44f",
+      "number": "IC-B 43f",
       "law": "r > rr /#_",
       "context": "Phonemic lenition"
     },
     {
-      "number": "B45m",
+      "number": "IC-B 44a",
       "law": "t > θ /V_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45n",
+      "number": "IC-B 44b",
       "law": "p > f /V_",
       "context": "Spirantisation"
     },
     {
-      "number": "B45o",
+      "number": "IC-B 44c",
       "law": "k > x /V_",
       "context": "Spirantisation"
     },
     {
-      "number": "B46a",
+      "number": "IC-B 45a",
       "law": "bh > ph",
       "context": "Provection"
     },
     {
-      "number": "B46b",
+      "number": "IC-B 45b",
       "law": "dh > th",
       "context": "Provection"
     },
     {
-      "number": "B46c",
+      "number": "IC-B 45c",
       "law": "gh > kh",
       "context": "Provection"
     },
     {
-      "number": "B46d",
+      "number": "IC-B 45d",
       "law": "ÞÞ > t",
       "context": "Provection"
     },
     {
-      "number": "B46e",
+      "number": "IC-B 45e",
       "law": "Td > t",
       "context": "Provection"
     },
     {
-      "number": "B46f",
+      "number": "IC-B 45f",
       "law": "Tg > k",
       "context": "Provection"
     },
     {
-      "number": "B46g",
+      "number": "IC-B 45g",
       "law": "Tb > p",
       "context": "Provection"
     },
     {
-      "number": "B46h",
+      "number": "IC-B 45h",
       "law": "T > Ø /_T",
       "context": "Provection"
     },
     {
-      "number": "B47",
+      "number": "IC-B 46",
       "law": "d > ð /V_l,n",
       "context": ""
     },
     {
-      "number": "B48z",
+      "number": "IC-B 47",
       "law": "ā > ɔ̄",
       "context": ""
     },
     {
-      "number": "B48y",
+      "number": "IC-B 48",
       "law": "æ > a",
       "context": ""
     },
     {
-      "number": "B48a",
+      "number": "IC-B 49a",
       "law": "i,u > ə /_CC$V$#,C$VC$V$#",
       "context": ""
     },
     {
-      "number": "B48b",
+      "number": "IC-B 49b",
       "law": "ē > i /_CC$V$#,C$VC$V$#",
       "context": ""
     },
     {
-      "number": "B48c",
+      "number": "IC-B 49c",
       "law": "ɔ̄ > o /_CC$V$#,C$VC$V$#",
       "context": ""
     },
     {
-      "number": "B49a",
+      "number": "B-OW 1a",
       "law": "i > ɨ",
       "context": ""
     },
     {
-      "number": "B49b",
+      "number": "B-OW 1b",
       "law": "ī > i",
       "context": ""
     },
     {
-      "number": "B49c",
+      "number": "B-OW 2a",
       "law": "ē > uɨ",
       "context": ""
     },
     {
-      "number": "B49d",
+      "number": "B-OW 2b",
       "law": "ε̄ > oɨ",
       "context": ""
     },
     {
-      "number": "B49e",
+      "number": "B-OW 3",
       "law": "ȳ > ʉ",
       "context": ""
     },
     {
-      "number": "B49f",
+      "number": "B-OW 4a",
       "law": "ɔ̄ > au /_$#",
       "context": ""
     },
     {
-      "number": "B49g",
-      "law": "ɔ̄ > ɔ",
+      "number": "B-OW 4b",
+      "law": "ɔ̄ > o",
       "context": ""
     },
     {
-      "number": "W50z",
+      "number": "B-OW 5",
       "law": "yɨ > uɨ",
       "context": ""
     },
     {
-      "number": "W50y",
+      "number": "B-OW 6",
       "law": "aɨ > ae",
       "context": ""
     },
     {
-      "number": "W50x",
+      "number": "B-OW 7",
       "law": "oɨ > oe",
       "context": ""
     },
     {
-      "number": "W50w",
+      "number": "B-OW 8",
       "law": "ou,ow > əʉ",
       "context": ""
     },
     {
-      "number": "W50",
+      "number": "B-OW 9",
       "law": "ɨ > e /_C$i,C$ẹ",
       "context": ""
     },
     {
-      "number": "W51",
+      "number": "B-OW 10",
       "law": "ɨ,u,y > ə /_C$V$#",
       "context": ""
     },
     {
-      "number": "W52a",
+      "number": "B-OW 11",
       "law": "y > ɨ",
       "context": ""
     },
     {
-      "number": "W52b",
+      "number": "B-OW 12a",
       "law": "ẹ,ø > ɨ /_$#",
       "context": ""
     },
     {
-      "number": "W52c",
+      "number": "B-OW 12b",
       "law": "ẹ,ø > ei /_C$jV",
       "context": ""
     },
     {
-      "number": "W52d",
+      "number": "B-OW 12c",
       "law": "ẹ,ø > e",
       "context": ""
     },
     {
-      "number": "W53a",
+      "number": "OW-MW 1",
       "law": "ɣ > Ø /V_",
       "context": ""
     },
     {
-      "number": "W53b",
+      "number": "OW-MW 2",
       "law": "ɣ > j /L_",
       "context": ""
     },
     {
-      "number": "W54",
+      "number": "OW-MW 3",
       "law": "oɨ > ae /w_",
       "context": ""
     },
     {
-      "number": "W55a",
+      "number": "OW-MW 4a",
       "law": "mb > mm",
       "context": ""
     },
     {
-      "number": "W55b",
+      "number": "OW-MW 4b",
       "law": "nd > nn",
       "context": ""
     },
     {
-      "number": "W55c",
+      "number": "OW-MW 4c",
       "law": "ŋg > ŋŋ",
       "context": ""
     },
     {
-      "number": "W55d",
+      "number": "OW-MW 4d",
       "law": "mp > mh /_$(V)$",
       "context": ""
     },
     {
-      "number": "W55e",
+      "number": "OW-MW 4e",
       "law": "nt > nh /_$(V)$",
       "context": ""
     },
     {
-      "number": "W55f",
+      "number": "OW-MW 4f",
       "law": "ŋk > ŋh /_$(V)$",
       "context": ""
     },
     {
-      "number": "W56",
+      "number": "OW-MW 5",
       "law": "s > əs /#_P",
       "context": ""
     },
     {
-      "number": "W57a",
+      "number": "OW-MW 6a",
       "law": "ll > ɬ",
       "context": ""
     },
     {
-      "number": "W57b",
+      "number": "OW-MW 6b",
       "law": "rr > r̥ /#_",
       "context": ""
     },
     {
-      "number": "W58",
+      "number": "OW-MW 7",
       "law": "w > Ø /_u,o",
       "context": ""
     },
     {
-      "number": "W59a",
+      "number": "OW-MW 8",
       "law": "h > x /_#",
       "context": ""
     },
     {
-      "number": "W59b",
+      "number": "OW-MW 9",
       "law": "h > Ø /V_V",
       "context": ""
     },
     {
-      "number": "W60a",
+      "number": "OW-MW 10a",
       "law": "lθ > ɬ /V_V",
       "context": ""
     },
     {
-      "number": "W60b",
+      "number": "OW-MW 10b",
       "law": "lθ > ɬt",
       "context": ""
     },
     {
-      "number": "W60c",
+      "number": "OW-MW 11",
       "law": "nt > θ /_L",
       "context": ""
     },
     {
-      "number": "W62",
+      "number": "OW-MW 12",
       "law": "u > a /aR_ɨ#",
       "context": ""
     },
     {
-      "number": "W63",
+      "number": "OW-MW 13",
       "law": "uv > y /_#",
       "context": ""
     },
     {
-      "number": "W64",
-      "law": "μ > v",
+      "number": "OW-MW 14",
+      "law": "μ,β > v",
       "context": ""
     },
     {
-      "number": "W65",
+      "number": "MW-W 1",
       "law": "ss > s /_#",
-      "context": ""
+      "context": "Elimination of geminates"
     },
     {
-      "number": "W66",
-      "law": "ɔ > o",
-      "context": ""
+      "number": "MW-W 2",
+      "law": "nn > n /_#",
+      "context": "Elimination of geminates"
     }
   ]
 }

@@ -2,602 +2,642 @@
   "language": "Old Irish",
   "soundLawRepresentations": [
     {
-      "number": "PC0a",
+      "number": "PRC-PC 1a",
       "law": "aw > au /C_C",
       "context": ""
     },
     {
-      "number": "PC0b",
+      "number": "PRC-PC 1b",
       "law": "ow > ou /C_C",
       "context": ""
     },
     {
-      "number": "PC10a",
+      "number": "PRC-PC 2a",
       "law": "b > β /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "PC10b",
+      "number": "PRC-PC 2b",
       "law": "g > ɣ /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "PC10c",
+      "number": "PRC-PC 2c",
       "law": "d > ð /V,Vw_V,R,#",
       "context": "Lenition"
     },
     {
-      "number": "PC10d",
+      "number": "PRC-PC 2d",
       "law": "m > μ /V,Vw_V,R",
       "context": "Lenition"
     },
     {
-      "number": "PC13",
+      "number": "PRC-PC 3",
       "law": "sf > h /V,Vw_V,R,#",
       "context": ""
     },
     {
-      "number": "PC14aa",
+      "number": "PRC-PC 4",
       "law": "f > Ø",
       "context": ""
     },
     {
-      "number": "PC14ab",
+      "number": "PRC-PC 5",
       "law": "u > w /#_V",
       "context": ""
     },
     {
-      "number": "PC14b",
+      "number": "PRC-PC 6",
       "law": "β > μ /_n",
       "context": ""
     },
     {
-      "number": "NC15",
+      "number": "PRC-PC 7a",
+      "law": "s > r /V_rV",
+      "context": ""
+    },
+    {
+      "number": "PRC-PC 7b",
+      "law": "s > l /V_lV",
+      "context": ""
+    },
+    {
+      "number": "PC-IC 1",
       "law": "ð > Ø /_#",
       "context": "Loss of word-final ð"
     },
     {
-      "number": "NC16",
-      "law": "e, i > Ø /t,s_#",
-      "context": "Early i-apocope"
-    },
-    {
-      "number": "NC17",
+      "number": "PC-IC 2",
       "law": "e > a /_Ra",
       "context": ""
     },
     {
-      "number": "NC18a",
+      "number": "PC-IC 3",
       "law": "a > æ /_NT,Ns,nn,N#",
       "context": ""
     },
     {
-      "number": "NC18b",
+      "number": "PC-IC 4",
       "law": "e > æ /_ge,gi",
       "context": ""
     },
     {
-      "number": "NC20a",
+      "number": "PC-IC 5",
       "law": "st,tst > ts /V,Vw_",
       "context": ""
     },
     {
-      "number": "NC20b",
+      "number": "PC-IC 6",
       "law": "s > Ø /L_T",
       "context": ""
     },
     {
-      "number": "NC21a",
+      "number": "PC-IC 7a",
       "law": "s > θ / #_r",
       "context": ""
     },
     {
-      "number": "NC21b",
+      "number": "PC-IC 7b",
       "law": "ts > θ /_r",
       "context": ""
     },
     {
-      "number": "NC21c",
+      "number": "PC-IC 8",
       "law": "s > ð /_r",
       "context": ""
     },
     {
-      "number": "NC21d",
+      "number": "PC-IC 9",
       "law": "s,z > ð /_B",
       "context": ""
     },
     {
-      "number": "NC22a",
+      "number": "PC-IC 10",
       "law": "e > o /_u",
       "context": ""
     },
     {
-      "number": "NC22b",
+      "number": "PC-IC 11",
       "law": "e,u > o /_w",
       "context": ""
     },
     {
-      "number": "NC23",
+      "number": "PC-IC 12",
       "law": "ou,ow > ō /_C,#",
       "context": ""
     },
     {
-      "number": "NC24",
+      "number": "PC-IC 13",
       "law": "m > n /_#",
       "context": ""
     },
     {
-      "number": "NC25a",
+      "number": "PC-IC 14",
       "law": "oi,ai,ē > ī /_#",
       "context": ""
     },
     {
-      "number": "NC25b",
+      "number": "PC-IC 15",
       "law": "s > h /V,Vw_V,R,#",
       "context": ""
     },
     {
-      "number": "PI1a",
+      "number": "IC-PI 1",
       "law": "au > ō",
       "context": ""
     },
     {
-      "number": "PI1b",
+      "number": "IC-PI 2",
       "law": "θ > s /#_r",
       "context": ""
     },
     {
-      "number": "PI1c",
+      "number": "IC-PI 3",
       "law": "ðd > dd",
       "context": ""
     },
     {
-      "number": "PI1d",
+      "number": "IC-PI 4",
       "law": "ts > s",
       "context": ""
     },
     {
-      "number": "PI2aa",
-      "law": "i,e,æ > ε̄ /_NP,ns",
-      "context": ""
-    },
-    {
-      "number": "PI2aba",
-      "law": "mp > bb /V_",
-      "context": ""
-    },
-    {
-      "number": "PI2abb",
-      "law": "nt > dd /V_",
-      "context": ""
-    },
-    {
-      "number": "PI2abc",
-      "law": "nk > gg /V_",
-      "context": ""
-    },
-    {
-      "number": "PI2abd",
-      "law": "nkʷ > gʷgʷ /V_",
-      "context": ""
-    },
-    {
-      "number": "PI2aca",
-      "law": "on > ō /_s",
-      "context": ""
-    },
-    {
-      "number": "PI2acb",
-      "law": "un > ū /_s",
-      "context": ""
-    },
-    {
-      "number": "PI2acc",
-      "law": "an > ā /_s",
-      "context": ""
-    },
-    {
-      "number": "PI2acd",
-      "law": "n > Ø /ε̄_s",
-      "context": ""
-    },
-    {
-      "number": "PI2ad",
-      "law": "æ > e /_N",
-      "context": ""
-    },
-    {
-      "number": "PI3",
-      "law": "e > i /_(h)O",
-      "context": ""
-    },
-    {
-      "number": "PI4aa",
-      "law": "Ø > ʲ /#X(X)_E",
-      "context": "First Palatalization"
-    },
-    {
-      "number": "PI4ab",
-      "law": "Ø > ʲ /#X_(J)E",
-      "context": "First Palatalization"
-    },
-    {
-      "number": "PI4b",
-      "law": "Ø > ʲ /EX_E",
-      "context": "First Palatalization"
-    },
-    {
-      "number": "PI4c",
-      "law": "Ø > ʲ /aX_i,ī",
-      "context": "First Palatalization"
-    },
-    {
-      "number": "PI4d",
-      "law": "Ø > ʲ /VÐ_i,ī",
-      "context": "First Palatalization"
-    },
-    {
-      "number": "PI5a",
-      "law": "e > i /_CU",
-      "context": "Raising of e"
-    },
-    {
-      "number": "PI5b",
-      "law": "o > u /_CU",
-      "context": "Raising of o"
-    },
-    {
-      "number": "PI6a",
-      "law": "a > o /G(L)_",
-      "context": ""
-    },
-    {
-      "number": "PI6b",
-      "law": "i > u /G(L)_",
-      "context": ""
-    },
-    {
-      "number": "PI6ca",
-      "law": "kʷ > k",
-      "context": "Loss of labialisation"
-    },
-    {
-      "number": "PI6cb",
-      "law": "gʷ > g",
-      "context": "Loss of labialisation"
-    },
-    {
-      "number": "PI6cc",
-      "law": "xʷ > x",
-      "context": "Loss of labialisation"
-    },
-    {
-      "number": "PI6cd",
-      "law": "ɣʷ > ɣ",
-      "context": "Loss of labialisation"
-    },
-    {
-      "number": "PI6ce",
-      "law": "kʷʲ > kʲ",
-      "context": "Loss of labialisation"
-    },
-    {
-      "number": "PI6cf",
-      "law": "gʷʲ > gʲ",
-      "context": "Loss of labialisation"
-    },
-    {
-      "number": "PI6da",
-      "law": "Ø > u /S_Cu",
-      "context": "u-infection"
-    },
-    {
-      "number": "PI6db",
-      "law": "uu > u /_Cu",
-      "context": "u-infection"
-    },
-    {
-      "number": "PI7",
-      "law": "i > e /C_Ca,Cā,Co,Cō",
-      "context": "Lowering of i"
-    },
-    {
-      "number": "PI7",
-      "law": "u > o /C_Ca,Cā,Co,Cō",
-      "context": "Lowering of u"
-    },
-    {
-      "number": "PI8a",
-      "law": "ī > i /VC$_",
-      "context": ""
-    },
-    {
-      "number": "PI8b",
-      "law": "ū > u /VC$_",
-      "context": ""
-    },
-    {
-      "number": "PI8c",
-      "law": "ē > e /VC$_",
-      "context": ""
-    },
-    {
-      "number": "PI8d",
-      "law": "ō > o /VC$_",
-      "context": ""
-    },
-    {
-      "number": "PI8e",
-      "law": "ε̄ > ɛ /VC$_",
-      "context": ""
-    },
-    {
-      "number": "PI8f",
-      "law": "ǣ > æ /VC$_",
-      "context": ""
-    },
-    {
-      "number": "PI8g",
-      "law": "ā > a /VC$_",
-      "context": ""
-    },
-    {
-      "number": "PI9",
-      "law": "Ø > ʲ /X_E$#",
-      "context": "Second Palatalisation"
-    },
-    {
-      "number": "PI10a",
-      "law": "V(C) > Ø /VC$_#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10ba",
-      "law": "j > e /C_#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10bb",
-      "law": "j > Ø /e,i_#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10bc",
-      "law": "j > i /O_#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10bd",
-      "law": "j > Ø /V_#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10be",
-      "law": "ā > a /C_i#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10bf",
-      "law": "ō > o /C_i#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10bg",
-      "law": "ū > u /C_i#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10bh",
-      "law": "h > Ø /V_#",
-      "context": "Apocope"
-    },
-    {
-      "number": "PI10bh",
-      "law": "ss > s /_#",
-      "context": ""
-    },
-    {
-      "number": "PI1e",
+      "number": "IC-PI 5",
       "law": "xs > ss",
       "context": ""
     },
     {
-      "number": "PI10c",
+      "number": "IC-PI 6",
+      "law": "i,e,æ > ε̄ /_NP,ns",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 7aa",
+      "law": "mp > bb /V_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 7ab",
+      "law": "nt > dd /V_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 7ac",
+      "law": "nk > gg /V_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 7ad",
+      "law": "nkʷ > gʷgʷ /V_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 7ba",
+      "law": "on > ō /_s",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 7bb",
+      "law": "un > ū /_s",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 7bc",
+      "law": "an > ā /_s",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 7c",
+      "law": "n > Ø /ε̄_s",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 8",
+      "law": "æ > e /_N",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 9",
+      "law": "e > i /_(h)O",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 10a",
+      "law": "Ø > ʲ /#X(X)_E",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "IC-PI 10b",
+      "law": "Ø > ʲ /#X_(J)E",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "IC-PI 10c",
+      "law": "Ø > ʲ /EX_E",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "IC-PI 10d",
+      "law": "Ø > ʲ /End,Eŋg,Emb_E",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "IC-PI 10e",
+      "law": "Ø > ʲ /aX_i,ī",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "IC-PI 10f",
+      "law": "Ø > ʲ /and,aŋg,amb_i,ī",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "IC-PI 10g",
+      "law": "Ø > ʲ /N_J",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "IC-PI 10h",
+      "law": "Ø > ʲ /VÐ_i,ī",
+      "context": "First Palatalization"
+    },
+    {
+      "number": "IC-PI 11a",
+      "law": "e > i /_CU,NTU",
+      "context": "Raising of e"
+    },
+    {
+      "number": "IC-PI 11b",
+      "law": "o > u /_CU,NTU",
+      "context": "Raising of o"
+    },
+    {
+      "number": "IC-PI 12a",
+      "law": "a > o /G(L)_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 12b",
+      "law": "i > u /G(L)_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 13a",
+      "law": "kʷ > k",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "IC-PI 13b",
+      "law": "gʷ > g",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "IC-PI 13c",
+      "law": "xʷ > x",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "IC-PI 13d",
+      "law": "ɣʷ > ɣ",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "IC-PI 13e",
+      "law": "kʷʲ > kʲ",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "IC-PI 13f",
+      "law": "gʷʲ > gʲ",
+      "context": "Loss of labialisation"
+    },
+    {
+      "number": "IC-PI 14a",
+      "law": "Ø > u /S_Cu",
+      "context": "u-infection"
+    },
+    {
+      "number": "IC-PI 14b",
+      "law": "uu > u /_Cu",
+      "context": "u-infection"
+    },
+    {
+      "number": "IC-PI 15a",
+      "law": "i > e /C_Ca,Cā,Co,Cō",
+      "context": "Lowering of i"
+    },
+    {
+      "number": "IC-PI 15b",
+      "law": "u > o /C_Ca,Cā,Co,Cō",
+      "context": "Lowering of u"
+    },
+    {
+      "number": "IC-PI 16a",
+      "law": "ī > i /VC$_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 16b",
+      "law": "ū > u /VC$_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 16c",
+      "law": "ē > e /VC$_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 16d",
+      "law": "ō > o /VC$_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 16e",
+      "law": "ε̄ > ɛ /VC$_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 16f",
+      "law": "ǣ > æ /VC$_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 16g",
+      "law": "ā > a /VC$_",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 17",
+      "law": "Ø > ʲ /X_E$#",
+      "context": "Second Palatalisation"
+    },
+    {
+      "number": "IC-PI 18a",
+      "law": "V(C) > Ø /VC$_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 18b",
+      "law": "j > e /C_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 18c",
+      "law": "j > Ø /e,i_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 18d",
+      "law": "j > i /O_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 18e",
+      "law": "j > Ø /V_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 18f",
+      "law": "ā > a /C_i#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 18g",
+      "law": "ō > o /C_i#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 18h",
+      "law": "ū > u /C_i#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 18i",
+      "law": "h > Ø /V_#",
+      "context": "Apocope"
+    },
+    {
+      "number": "IC-PI 19",
+      "law": "ss > s /_#",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 20a",
       "law": "t > θ /V_V,R,#",
       "context": "Phonetic Lenition"
     },
     {
-      "number": "PI10d",
+      "number": "IC-PI 20b",
       "law": "p > ɸ /V_V,R,#",
       "context": "Phonetic Lenition"
     },
     {
-      "number": "PI10e",
+      "number": "IC-PI 20c",
       "law": "k > x /V_V,R,#",
       "context": "Phonetic Lenition"
     },
     {
-      "number": "PI11a",
+      "number": "IC-PI 20d",
+      "law": "tʲ > θʲ /V_V,R,#",
+      "context": "Phonetic Lenition"
+    },
+    {
+      "number": "IC-PI 20e",
+      "law": "pʲ > ɸʲ /V_V,R,#",
+      "context": "Phonetic Lenition"
+    },
+    {
+      "number": "IC-PI 20f",
+      "law": "kʲ > xʲ /V_V,R,#",
+      "context": "Phonetic Lenition"
+    },
+    {
+      "number": "IC-PI 21",
+      "law": "xtl > gl",
+      "context": ""
+    },
+    {
+      "number": "IC-PI 22a",
       "law": "iF > īu /_Q",
       "context": ""
     },
     {
-      "number": "PI11b",
+      "number": "IC-PI 22b",
       "law": "eF > ε̄u /_Q",
       "context": ""
     },
     {
-      "number": "PI11c",
+      "number": "IC-PI 22c",
       "law": "iF > ī /_R",
       "context": ""
     },
     {
-      "number": "PI11d",
+      "number": "IC-PI 22d",
       "law": "eF > ε̄ /_R",
       "context": ""
     },
     {
-      "number": "PI11e",
+      "number": "IC-PI 22e",
       "law": "aF > ā /_R",
       "context": ""
     },
     {
-      "number": "PI11f",
+      "number": "IC-PI 22f",
       "law": "oF > ō /_R",
       "context": ""
     },
     {
-      "number": "PI11g",
+      "number": "IC-PI 22g",
       "law": "uF > ū /_R",
       "context": ""
     },
     {
-      "number": "PI12a",
+      "number": "IC-PI 23",
       "law": "ou, eu, iu > u /VC$_",
       "context": ""
     },
     {
-      "number": "PI12b",
+      "number": "IC-PI 24",
       "law": "oi, ai > i /VC$_",
       "context": ""
     },
     {
-      "number": "PI13",
+      "number": "IC-PI 25",
       "law": "u > i /VC$_J",
       "context": ""
     },
     {
-      "number": "PI14",
+      "number": "IC-PI 26",
       "law": "Ø > ʲ /#C$VX(X)(X)_EC$V",
       "context": "Third Palatalisation"
     },
     {
-      "number": "PI15",
+      "number": "IC-PI 27",
       "law": "V > Ø /#C$VC$_C$V",
       "context": "Syncope"
     },
     {
-      "number": "PI16a",
+      "number": "IC-PI 28",
       "law": "w,wʲ,h,j > Ø /V_V",
       "context": ""
     },
     {
-      "number": "PI16b",
+      "number": "IC-PI 29a",
       "law": "w > β /L_",
       "context": ""
     },
     {
-      "number": "PI16c",
+      "number": "IC-PI 29b",
       "law": "wʲ > βʲ /L_",
       "context": ""
     },
     {
-      "number": "PI16d",
+      "number": "IC-PI 30",
       "law": "w,wʲ > Ø /C_",
       "context": ""
     },
     {
-      "number": "PI17",
+      "number": "PI-OI 1",
       "law": "Ø > ə /C_R#",
       "context": ""
     },
     {
-      "number": "PI18a",
+      "number": "PI-OI 2a",
       "law": "w > f /#_",
       "context": ""
     },
     {
-      "number": "PI18b",
+      "number": "PI-OI 2b",
       "law": "wʲ > fʲ /#_",
       "context": ""
     },
     {
-      "number": "PI19",
-      "law": "w,wʲ > Ø",
+      "number": "PI-OI 3",
+      "law": "w,wʲ,j > Ø",
       "context": ""
     },
     {
-      "number": "PI20a",
+      "number": "IPI-OI 4a",
       "law": "a > ā /#$_#",
       "context": "Lengthening in monosyllabic words"
     },
     {
-      "number": "PI20b",
+      "number": "PI-OI 4b",
       "law": "e > ē /#$_#",
       "context": "Lengthening in monosyllabic words"
     },
     {
-      "number": "PI20c",
+      "number": "PI-OI 4c",
       "law": "i > ī /#$_#",
       "context": "Lengthening in monosyllabic words"
     },
     {
-      "number": "PI20d",
+      "number": "PI-OI 4d",
       "law": "o > ō /#$_#",
       "context": "Lengthening in monosyllabic words"
     },
     {
-      "number": "PI20e",
+      "number": "PI-OI 4e",
       "law": "u > ū /#$_#",
       "context": "Lengthening in monosyllabic words"
     },
     {
-      "number": "OIr1",
+      "number": "OI-MI 1",
       "law": "i,e,a,o,u > ə /VC$_C",
       "context": ""
     },
     {
-      "number": "OIr2",
+      "number": "OI-MI 2",
       "law": "t > d /VC$V_",
       "context": ""
     },
     {
-      "number": "OIr3",
+      "number": "OI-MI 3",
       "law": "ē > ia /_X",
       "context": ""
     },
     {
-      "number": "OIr5a",
+      "number": "OI-MI 4a",
       "law": "θ > ð /VC$V_#",
       "context": ""
     },
     {
-      "number": "OIr5b",
+      "number": "OI-MI 4b",
       "law": "xʲ > ɣʲ /VC$V_#",
       "context": ""
     },
     {
-      "number": "OIr6",
+      "number": "OI-MI 5",
       "law": "ε̄ > ē",
       "context": ""
     },
     {
-      "number": "OIr7a",
+      "number": "OI-MI 6a",
       "law": "dd > d /_#",
       "context": "elimination of final geminates"
     },
     {
-      "number": "OIr7b",
+      "number": "OI-MI 6b",
       "law": "gg > g /_#",
       "context": "elimination of final geminates"
     },
     {
-      "number": "OIr7c",
+      "number": "OI-MI 6c",
       "law": "bb > b /_#",
       "context": "elimination of final geminates"
     },
     {
-      "number": "OIr7d",
+      "number": "OI-MI 6d",
       "law": "tt > t /_#",
       "context": "elimination of final geminates"
     },
     {
-      "number": "OIr7e",
+      "number": "OI-MI 6e",
       "law": "kk > k /_#",
       "context": "elimination of final geminates"
     },
     {
-      "number": "OIr7f",
+      "number": "OI-MI 6f",
       "law": "pp > p /_#",
       "context": "elimination of final geminates"
     }
