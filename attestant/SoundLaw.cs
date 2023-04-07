@@ -28,9 +28,6 @@ public class SoundLaw
     /// </summary>
     public string Apply(Word word)
     {
-        int i = 0;
-        if (word.CharacterizedPhonemes == "olīnā")
-            i = 1;
         var result = _antecedent.Replace(word.CharacterizedPhonemes, _consequent);
         var result2 = Regex.Replace(result, @"[Ⅰ-Ⅹ,ᚠ-ᛪ]", match
             => Phoneme.Characterization.Reverse[char.Parse(match.Value)]);
